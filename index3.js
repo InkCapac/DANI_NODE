@@ -2,7 +2,7 @@ const http = require("http");
 //La siguiente const permite leer archivos
 const fs = require("fs");
 http.createServer( (req, res) => {
-    if(req, url === "/" || req.url === "indec.html"){
+    if(req, url === "/" || req.url === "/index.html"){
     fs.readFile("index.html", (error, datos) => {
         if(error){
             //El << 500 >> indica un error interno
