@@ -1,0 +1,25 @@
+{
+  "name": "dani_node",
+  "version": "1.0.0",
+  "description": "Archivos node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InkCapac/DANI_NODE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InkCapac/DANI_NODE/issues"
+  },
+  "homepage": "https://github.com/InkCapac/DANI_NODE#readme",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scripts": "^5.0.1"
+  }
+}
