@@ -1,8 +1,11 @@
+//Para utilizar este file siempre debemos hacer el comando 'npm install express' 
 const express = require ('express');
 const path = require("path");
 //Es mejor definir el puerto como un <<const>>
 const puerto = 8080;
 const app = express();
+
+//Métodos para recibir información -> get post put patch delete
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"));
