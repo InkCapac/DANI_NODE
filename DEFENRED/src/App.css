@@ -1,42 +1,162 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  /* Los colores principales de la página */
+  --black: rgb(20, 20, 20);
+  --verdeAzulado: rgb(0, 255, 200);
+  --cian: rgb(0, 200, 255);
+  --azul: rgb(0, 100, 255);
+  --morado: rgb(150, 0, 255);
+  --rojoBrillante: rgb(255, 50, 0);
+  --naranja: rgb(255, 150, 0);
+  --snow: snow;
+}
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  font-size: 1em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navbar.solid {
+  background-color: var(--black);
+  color: var(--snow);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a {
+  font-family: "Source Code Pro", monospace;
+  /*Modificar la línea de abajo después*/
+  letter-spacing: normal;
+  color: var(--snow);
+  text-decoration: none;
+  font-size: 2em;
+  padding: 10px;
+  /*Transition permite el cambio de color con un tiempo determinado*/
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.logo-nav {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  pointer-events: none;
 }
 
-.card {
-  padding: 2em;
+.navbar a:hover {
+  background-color: var(--morado);
+  color: var(--snow);
 }
 
-.read-the-docs {
-  color: #888;
+.navbar a img {
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
+  padding: 0;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: default;
+  pointer-events: none;
+}
+*.gallery {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.gallery {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  /*Altura completa de la ventana gráfica menos la altura del botón*/
+  height: calc(100vh - 50px);
+}
+
+.gallery-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/*Configuración de las imágenes individuales de la galería*/
+.gallery-item {
+  /*Mantener la relación de aspecto y cubrir el espacio*/
+  object-fit: cover;
+  /* Posicionar imágenes absolutamente */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*Asegurar que las imágenes estén detrás de los controles*/
+  z-index: 1;
+  opacity: 0;
+  /*Iniciar con un ligero zoom-in*/
+  transform: scale(2.0);
+  /*Transiciones suaves para opacidad y zoom-out*/
+  transition: opacity 3s ease, transform 2s ease;
+  /*Ocultar imágenes inicialmente*/
+  visibility: hidden;
+}
+.gallery-item.active {
+  /*Totalmente visible*/
+  opacity: 1;
+  /*Hacerla visible cuando está activa*/
+  visibility: visible;
+  /*Aplicar efecto de zoom-out*/
+  transform: scale(1);
+}
+
+/*Estilos de los botones 'anterior' y 'siguiente'*/
+.nav-buttons {
+  font-family: "Source Code Pro", monospace;
+  /*Usar flexbox para alinear botones*/
+  display: flex;
+  /*Ancho completo de la ventana gráfica*/
+  width: 100vw;
+  /*Establecer una altura para los botones*/
+  height: 50px;
+  background-color: var(--snow);
+}
+
+.nav-button {
+  /* El ancho de los botones ocupa el mismo espacio */
+  flex: 1;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: var(--black);
+  color: var(--snow);
+  font-size: xx-large;
+  border: none;
+  /*Eliminar márgenes*/
+  margin: 0;
+  /*Establecer el botón como contenedor flex*/
+  display: flex;
+  /*Centrar el texto verticalmente*/
+  align-items: center;
+  /*Centrar el texto horizontalmente*/
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover */
+.nav-button:hover {
+  background-color: var(--morado);
+  color: var(--snow);
+}
+
+/* Estado activo del botón (opcional) */
+.nav-button:active {
+  background-color: var(--cian);
 }
