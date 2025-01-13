@@ -5,7 +5,7 @@ type Artic = {
 }
 export const data: Artic[] = [
     {
-        titulo: "El premohh",
+        titulo: "REVIVE",
         imagen: "",
         descripcion: "No words needed"
       },
