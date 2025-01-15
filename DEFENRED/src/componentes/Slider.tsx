@@ -33,7 +33,7 @@ function prevImage() {
     updateGallery(); 
 }
 
-// Añadir eventos a los botones (CORREGIR, cualquier fallo evita la recarga de la página)
+// Añadir eventos a los botones (CORREGIR, cualquier fallo -como este 'null'- evita la recarga de la página)
 //document.getElementById('prevButton').addEventListener('click', prevImage); 
 //document.getElementById('nextButton').addEventListener('click', nextImage); 
 
