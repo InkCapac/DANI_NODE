@@ -1,41 +1,52 @@
 function Slider(){
-    // Seleccionar todos los elementos de la galería
+// Seleccionar todos los elementos de la galería
 const galleryItems = document.querySelectorAll('.gallery-item'); 
-let currentIndex = 0; // Índice de la imagen actual
+// Índice de la imagen actual
+let currentIndex = 0; 
 
 // Función para actualizar la imagen mostrada
 function updateGallery() {
     galleryItems.forEach((el, i) => {
         if (i === currentIndex) {
-            el.classList.add('active'); // Añadir clase activa a la imagen actual
+            // Añadir clase activa a la imagen actual
+            el.classList.add('active'); 
         } else {
-            el.classList.remove('active'); // Eliminar clase activa de otras imágenes
+            // Eliminar clase activa de otras imágenes
+            el.classList.remove('active'); 
         }
     });
 }
 
 // Función para pasar a la siguiente imagen
 function nextImage() {
-    currentIndex = (currentIndex === galleryItems.length - 1) ? 0 : currentIndex + 1; // Actualizar el índice
-    updateGallery(); // Actualizar la galería
+    // Actualizar el índice
+    currentIndex = (currentIndex === galleryItems.length - 1) ? 0 : currentIndex + 1; 
+    // Actualizar la galería
+    updateGallery(); 
 }
 
 // Función para pasar a la imagen anterior
 function prevImage() {
-    currentIndex = (currentIndex === 0) ? galleryItems.length - 1 : currentIndex - 1; // Actualizar el índice
-    updateGallery(); // Actualizar la galería
+    // Actualizar el índice
+    currentIndex = (currentIndex === 0) ? galleryItems.length - 1 : currentIndex - 1; 
+    // Actualizar la galería
+    updateGallery(); 
 }
 
 // Añadir eventos a los botones (CORREGIR, cualquier fallo evita la recarga de la página)
 //document.getElementById('prevButton').addEventListener('click', prevImage); 
 //document.getElementById('nextButton').addEventListener('click', nextImage); 
+
 // Funcionalidad del carrusel automático
-let carouselInterval = setInterval(nextImage, 5000); // Cambiar imagen cada 5 segundos (ajustable)
+// Cambiar imagen cada 5 segundos (ajustable)
+let carouselInterval = setInterval(nextImage, 5000); 
 
 // Función para reiniciar el intervalo del carrusel
 function resetCarousel() {
-    clearInterval(carouselInterval); // Limpiar intervalo actual
-    carouselInterval = setInterval(nextImage, 5000); // Reiniciar intervalo
+    // Limpiar intervalo actual
+    clearInterval(carouselInterval); 
+    // Reiniciar intervalo
+    carouselInterval = setInterval(nextImage, 5000); 
 }
 
     return(
@@ -49,11 +60,11 @@ function resetCarousel() {
     </nav>
     <div className="gallery">
         <div className="gallery-container">
-            <img className="gallery-item active" src="https://instronic.com/wp-content/uploads/PORTADA-FULL-SIZE-1-scaled.jpg" data-index="1"/>
-            <img className="gallery-item" src="https://fotografias.larazon.es/clipping/cmsimages01/2023/08/03/B3F57F5E-B3A6-441B-8FAA-152CAA6441BF/formacion-pelicula-sector-expansion-asi-son-grados-the-core_98.jpg?crop=1116,628,x43,y0&width=1900&height=1069&optimize=low&format=webply" data-index="2"/>
-            <img className="gallery-item" src="https://www.thecoreschool.com/wp-content/uploads/2023/11/FP_innovacion.jpg" data-index="3"/>
-            <img className="gallery-item" src="https://www.periodicopublicidad.com/media/lapublicidad/images/2022/03/23/20220323091553116676.jpg" data-index="4"/>
-            <img className="gallery-item" src="https://www.morillas.com/assets/themes/www.morillas.com/img/gallery/galeria_thecore_2/es/thecore6a_min.jpg" data-index="5"/></div>
+            <img className="gallery-item active" src="https://static1.thetravelimages.com/wordpress/wp-content/uploads/2023/04/alcala-de-henarez.jpeg" data-index="1"/>
+            <img className="gallery-item" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Tres_Cantos_-_Ayuntamiento_1.JPG" data-index="2"/>
+            <img className="gallery-item" src="https://www.comunidad.madrid/sites/default/files/img/carteleria/la_sede_del_gobierno_regional_en_la_puerta_del_sol_luce_en_su_balcon_principal_la_bandera_de_venezuela_2.jpeg" data-index="3"/>
+            <img className="gallery-item" src="https://masmadrid.org/wp-content/uploads/2023/10/Free_Palestina57-scaled.jpg" data-index="4"/>
+            <img className="gallery-item" src="https://grupo-ae.com/wp-content/uploads/2022/03/WhatsApp-Image-2022-03-04-at-15.53.12.jpeg" data-index="5"/></div>
             </div>
     <div className="nav-buttons">
         <button className="nav-button" id="prevButton">Anterior</button>
