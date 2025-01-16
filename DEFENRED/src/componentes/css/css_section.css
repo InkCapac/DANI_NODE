@@ -5,10 +5,11 @@
     padding-left: 20px;
 }
 .title-house{
-    display: flex;
-    text-align: left;
+/* El flex evita que funcione; display: flex;*/
+    text-align: right;
     padding-right: 20px;
 }
+/*Estilos de las secciones*/
 .section-who{
     display: grid;
     grid-template-columns: 50%, 50%;
@@ -23,7 +24,7 @@
     max-width: 80%;
     /*margin: 0 auto;*/
 }
-
+/*Estilos para secciones 'casa de respiro'*/
 .section-who p {
     flex: 1;
     width: 150px;
@@ -38,7 +39,6 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 
 }
-
 .section-who p:hover {
     background-color: var(--color5);
     color: var(--color3);
@@ -47,7 +47,6 @@
     padding: 20px;
     border-radius: 5px;
 }
-
 .section-who img {
     width: 500px;
     height: auto;
@@ -56,7 +55,53 @@
     transition: transform 0.5s ease;
     object-fit: cover;
 }
-
 .section-who img:hover {
+    transform: rotate(-3deg) scale(1.1);
+}
+.section-house{
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    padding: 20px;
+}
+.section-house {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 80%;
+    /*margin: 0 auto;*/
+}
+.section-house p {
+    flex: 1;
+    width: 150px;
+    height: auto;
+    text-align: justify;
+    font-size: 1.2em;
+    border-style: dotted;
+    background-color: snow;
+    padding: 20px;
+    color: black;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+.section-house p:hover {
+    background-color: var(--color5);
+    color: var(--color3);
+    font-weight: bold;
+    border-style: groove;
+    padding: 20px;
+    border-radius: 5px;
+}
+.section-house img {
+    width: 500px;
+    height: auto;
+    border-style: dashed;
+    transform: rotate(6deg);
+    transition: transform 0.5s ease;
+    object-fit: cover;
+}
+.section-house img:hover {
     transform: rotate(-3deg) scale(1.1);
 }
