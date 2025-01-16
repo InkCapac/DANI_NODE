@@ -50,7 +50,6 @@
 .section-who img {
     width: 500px;
     height: auto;
-    border-style: dashed;
     transform: rotate(6deg);
     transition: transform 0.5s ease;
     object-fit: cover;
@@ -97,7 +96,6 @@
 .section-house img {
     width: 500px;
     height: auto;
-    border-style: dashed;
     transform: rotate(6deg);
     transition: transform 0.5s ease;
     object-fit: cover;
