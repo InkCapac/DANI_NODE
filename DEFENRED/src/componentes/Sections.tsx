@@ -16,7 +16,6 @@ function Sections() {
                 <h1 className='title-who'>¿Qué nos motiva?</h1>
                 <div className='section-who'>
                     <p>La protección y promoción de los derechos humanos (políticos, civiles, económicos, sociales y culturales) es la base de la libertad, la justicia y la paz. Las personas que trabajan diariamente para que estos derechos se hagan realidad  son piezas clave en aquellos países con políticas más represivas, o en los países embarcados en reformas profundas o que atraviesan períodos de transición. Incluso son imprescindibles en sociedades democráticas, donde suelen ser el principal apoyo de las minorías. Ellas son las  personas defensoras de derechos humanos.
-                        <img src="" alt="" />
 
                         Pero defender los derechos humanos puede convertirse en una amenaza. Muchas sufren un acoso constante, desde amenazas veladas, a hostigamiento e incluso agresiones físicas, a ellas o a sus familiares. El motivo es claro: con su labor ponen en cuestionamiento el poder de aquellos que sustentan su posición privilegiada a través del abuso y las violaciones de los derechos de los demás.
 
@@ -29,7 +28,9 @@ function Sections() {
                         Es necesario apoyar el trabajo de estas personas. Las personas defensoras de derechos humanos son piezas clave para el desarrollo de su entorno de una manera justa e igualitaria. Suelen tener un profundo conocimiento de sus realidades. Y por la influencia en sus comunidades, son los que pueden generar mecanismos de cambio y alternativas para mejorar la situación de derechos humanos.
 
                         El objetivo de nuestro grupo es reforzar su labor, atendiendo a algunas de las necesidades señaladas. Si apoyamos a los defensores y defensoras, lo estaremos haciendo a todas las personas y comunidades que se benefician de su trabajo por los derechos humanos. Y estaremos mejorando la situación de derechos humanos de todas ellas.S</p>
-                </div></div>
+                </div>
+                <img src="" alt="" />
+                </div>
         </section>
     )
 }
