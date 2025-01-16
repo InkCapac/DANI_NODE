@@ -1,16 +1,19 @@
+import '../componentes/css/css_section.css'
 function Sections() {
     return (
         <section>
                 <div className="sections-quienes">
-                    <section>
-                        <h1>¿Quiénes somos?</h1>
+                        <h1 className='title-who'>¿Quiénes somos?</h1>
+                    <div className="section-who">
                         <p>Defenred es una organización que nace con el firme propósito de que los defensores y defensoras de derechos humanos puedan desarrollar su labor, y apoyarles de una forma directa en la importante tarea que realizan de construir un mundo más justo. Nuestro objetivo es apoyar su trabajo para el desarrollo justo e igualitario de su entorno.</p>
-                    </section>
-                    <section>
-                        <h1>Casa de respiro</h1>
+                        <img src="../assets/img/reunion_defenred.jpg" alt="" />
+                    </div>
+                    <div>
+                        <h1 className='title-house'>Casa de respiro</h1>
+                        <img src="" alt="" />
                         <p>A diario, la violencia y el hostigamiento que sufren estas personas afecta gravemente a su salud y bienestar. Por ese motivo estamos convencidos de que es necesario para ellos encontrar espacios y tiempos para parar, descansar y recuperarse a nivel físico y emocional. Nuestro proyecto quiere responder a esta necesidad ofreciendo un espacio de respiro y descanso donde los defensores y defensoras puedan realizar un proceso de recuperación y autocuidado, apoyado por un equipo de profesionales expertos en temas de salud (física y emocional)</p>
-                    </section>
-                    <section>
+                    </div>
+                    <div>
                         <h1>¿Qué nos motiva?</h1>
                         <p>La protección y promoción de los derechos humanos (políticos, civiles, económicos, sociales y culturales) es la base de la libertad, la justicia y la paz. Las personas que trabajan diariamente para que estos derechos se hagan realidad  son piezas clave en aquellos países con políticas más represivas, o en los países embarcados en reformas profundas o que atraviesan períodos de transición. Incluso son imprescindibles en sociedades democráticas, donde suelen ser el principal apoyo de las minorías. Ellas son las  personas defensoras de derechos humanos.
 
@@ -25,7 +28,7 @@ La unión de todos estos factores (la amenaza y agresión hacia su persona y sus
 Es necesario apoyar el trabajo de estas personas. Las personas defensoras de derechos humanos son piezas clave para el desarrollo de su entorno de una manera justa e igualitaria. Suelen tener un profundo conocimiento de sus realidades. Y por la influencia en sus comunidades, son los que pueden generar mecanismos de cambio y alternativas para mejorar la situación de derechos humanos.
 
 El objetivo de nuestro grupo es reforzar su labor, atendiendo a algunas de las necesidades señaladas. Si apoyamos a los defensores y defensoras, lo estaremos haciendo a todas las personas y comunidades que se benefician de su trabajo por los derechos humanos. Y estaremos mejorando la situación de derechos humanos de todas ellas.S</p>
-                        </section></div>
+                        </div></div>
         </section>
     )
 }
