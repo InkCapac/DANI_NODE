@@ -1,0 +1,84 @@
+:root {
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+  }
+  
+  .orange {
+    background-color: var(--orange);
+  }
+  
+  .white {
+    background-color: var(--white);
+  }
+  
+  .black {
+    background-color: var(--black);
+  }
+  
+  .blue {
+    background-color: var(--blue);
+  }
+  
+  .gray {
+    background-color: var(--gray);
+  }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: space-around; /* Distribuye los elementos de manera uniforme */
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    background-color: transparent; /* Color de fondo por defecto */
+  }
+  
+  .navbar.solid {
+    background-color: orange;
+    color: white;
+  }
+  
+  .navbar ul {
+    display: flex; /* Asegúrate de que los elementos <li> se alineen en fila */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+    list-style-type: none; /* Elimina los puntos de las listas */
+  }
+  
+  .navbar li {
+    margin: 0 20px; /* Añade separación entre los elementos */
+  }
+  
+  .navbar a {
+    font-family: "Source Code Pro", monospace;
+    letter-spacing: normal;
+    color: var(--snow);
+    text-decoration: none;
+    font-size: 2em;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: blue;
+    color: var(--snow);
+  }
+  
+  .navbar a img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+    padding: 0;
+    max-height: 100%;
+    object-fit: contain;
+    cursor: default;
+    pointer-events: none;
+  }
+  

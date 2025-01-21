@@ -1,10 +1,8 @@
 import React from "react";
-import Navtab from "../componentes/navTab";
 
 const Inicio = () => {
     return (
     <div>
-    <Navtab/>
     <h2>DEFENRED</h2>
     <p>Defenred es una organización comprometida con el apoyo y la protección de defensores de
     derechos humanos que enfrentan riesgos en sus países de origen. A través de programas de

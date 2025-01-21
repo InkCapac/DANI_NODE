@@ -31,61 +31,6 @@ emplearemos en fondos de sección, este color sirve para
 separar diferentes áreas sin distraer la atención del contenido
 principal.
 */
-.navbar {
-  position: fixed;
-  overflow: hidden;
-  font-size: 1em;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  box-sizing: border-box;
-  z-index: 1000;
-  transition: background-color 0.3s ease;
-}
-
-.navbar.solid {
-  background-color: orange;
-  color: white;
-}
-
-.navbar a {
-  font-family: "Source Code Pro", monospace;
-  /*Modificar la línea de abajo después*/
-  letter-spacing: normal;
-  color: var(--snow);
-  text-decoration: none;
-  font-size: 2em;
-  padding: 10px;
-  /*Transition permite el cambio de color con un tiempo determinado*/
-  transition: background-color 0.3s ease;
-}
-
-.logo-nav {
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-  pointer-events: none;
-}
-
-.navbar a:hover {
-  background-color: blue;
-  color: var(--snow);
-}
-
-.navbar a img {
-  height: 50px;
-  width: auto;
-  margin-right: 15px;
-  padding: 0;
-  max-height: 100%;
-  object-fit: contain;
-  cursor: default;
-  pointer-events: none;
-}
 *.gallery {
   box-sizing: border-box;
 }
