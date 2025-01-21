@@ -18,7 +18,8 @@ const userSchema = new mongoose.Schema({
     apellido:{
         type: String,
         required: true
-}, apellido2:{
+}, 
+apellido2:{
     type: String,
     required: false
 },
