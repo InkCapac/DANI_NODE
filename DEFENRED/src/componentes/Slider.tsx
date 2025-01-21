@@ -1,5 +1,7 @@
 //
 import React, { useEffect, useRef } from "react";
+import Inicio from "../linkedPages/inicio"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Slider() {
     const galleryItemsRef = useRef<HTMLImageElement[]>([]); // Referencia para las imágenes
@@ -68,7 +70,7 @@ function Slider() {
     return (
         <section>
           <nav className="grid navbar">
-            <a href="#inicio-index">Inicio</a>
+            <a href="../linkedPages/inicio.tsx">Inicio</a>
             <a href="./registro.php">Registrarse</a>
             <a href=""> </a>
             <a href="./galeria.php">Galería</a>

@@ -1,11 +1,25 @@
-import React from 'react';
-const navTab = () => {
-    return <nav className="grid navbar">
-        <a href="#inicio-index">Inicio</a>
-        <a href="./registro.php">Registrarse</a>
-        <a href=""> </a>
-        <a href="./galeria.php">Galería</a>
-        <a href="">Favoritos</a>
+import React from "react";
+import { Link } from "react-router-dom";
+
+const NavTab = () => {
+  return (
+    <nav className="navbar">
+      <ul>
+        <li>
+          <Link to="/">Inicio</Link>
+        </li>
+        <li>
+          <Link to="/registro">Registrarse</Link>
+        </li>
+        <li>
+          <Link to="/galeria">Galería</Link>
+        </li>
+        <li>
+          <Link to="/favoritos">Favoritos</Link>
+        </li>
+      </ul>
     </nav>
+  );
 };
-export default navTab;
+
+export default NavTab;
