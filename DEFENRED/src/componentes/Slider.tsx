@@ -69,13 +69,6 @@ function Slider() {
     }, []);
     return (
         <section>
-          <nav className="grid navbar">
-            <a href="../linkedPages/inicio.tsx">Inicio</a>
-            <a href="./registro.php">Registrarse</a>
-            <a href=""> </a>
-            <a href="./galeria.php">Galería</a>
-            <a href="">Favoritos</a>
-          </nav>
           <div className="gallery">
             <div className="gallery-container">
               <img
