@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./css/css_navTab.css";
+import "./css/Navtab.css";
 
 const Navtab = () => {
   const [solid, setSolid] = useState(false);
