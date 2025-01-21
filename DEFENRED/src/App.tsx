@@ -5,7 +5,7 @@ import Sections from "./componentes/Sections"
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Inicio from "./linkedPages/inicio";
-import Navtab from "./componentes/Navtab";
+import Navtab from "./componentes/navTab";
 import Slider from "./componentes/Slider";
 import './App.css'
 
