@@ -9,6 +9,7 @@ const mongoose = require('mongoose');
 //Métodos para recibir información -> get post put patch delete
 
 // "mongodb://localhost:PUERTO/BBDD"
+//Conexión con MongoDB Compass (Software, instalar)
 const userSchema = new mongoose.Schema({
     nombre:{
         type: String,
