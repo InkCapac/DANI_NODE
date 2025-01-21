@@ -37,6 +37,20 @@ contrasenia:{
 }
 }
 )
+const Usuario = mongoose.model("Usuario", userSchema);
+
+const nuevoUsuario = new Usuario({
+    nombre: "Pepito",
+    apellido1: "Garcia",
+    apellido2: "Abascal",
+    edad: 33,
+    correo: "kchaviejas@vox.es",
+    contrasenia: "ArribaEspania",
+})
+nuevoUsuario.save()
+.then(usuario) => {
+    console.log("Usuario creado correctamente: "+usuario)
+}
 const url = "mongodb://localhost:27017/Sigma";
 mongoose.connect(url, {
     useNewUrlParse: true,
