@@ -5,6 +5,7 @@ const path = require("path");
 const puerto = 8080;
 const app = express();
 const userSchema = require('./schemas/usuario');
+const mongoose = require('mongoose');
 const mongoose = require ('./functions/conexion');
 
 app.get("/", (req, res) => {
