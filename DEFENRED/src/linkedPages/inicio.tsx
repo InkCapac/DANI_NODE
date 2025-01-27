@@ -1,4 +1,5 @@
 import React from "react";
+import Articulo from "../Articulo";
 
 const Inicio = () => {
     return (
@@ -9,6 +10,8 @@ const Inicio = () => {
     refugio, formación, autocuidado y redes de apoyo, Defenred brinda a estos activistas un espacio
     seguro para recuperar fuerzas, adquirir nuevas herramientas y conectarse con aliados
     internacionales.</p>
+    <Articulo>
+    </Articulo>
     </div>
     )
 };
