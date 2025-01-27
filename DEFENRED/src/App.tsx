@@ -4,9 +4,23 @@ import Index from "./index";
 const App = () => {
   fetch("http://localhost:8080/insertarUsuario")
   return (
-    <div>
-      <Index/>
-      <Route>
+    <diV>
+      <form>
+        <label>Nombre</label>
+        <input type="text" />
+        <label>Apellido</label>
+        <input type="text" />
+        <label>Apellido2</label>
+        <input type="text" />
+        <label>Edad</label>
+        <input type="number" />
+        <label>Correo</label>
+        <input type="email" />
+        <label>Contraseña</label>
+        <input type="password" />
+        <button>Enviar</button>
+      </form>
+      <BrowserRouter>
       <Routes>
       <Route path="/" element={<Index />}>
       </Route>
@@ -16,8 +30,8 @@ const App = () => {
       >
       </Route>
       </Routes>
-      </Route>
-        </div>
+      </BrowserRouter>
+        </diV>
   );
 };
 

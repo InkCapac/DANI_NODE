@@ -1,4 +1,4 @@
-//const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 //Métodos para recibir información -> get post put patch delete
 
