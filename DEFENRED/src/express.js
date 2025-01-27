@@ -4,7 +4,10 @@ const path = require("path");
 //Es mejor definir el puerto como un <<const>>
 const puerto = 8080;
 const app = express();
+const userSchema = require('./');
 const mongoose = require('mongoose');
+const conexion = require('mongoose');
+const usuarios = require('usuarios');
 
 //Métodos para recibir información -> get post put patch delete
 
@@ -50,7 +53,6 @@ const nuevoUsuario = new Usuario({
 nuevoUsuario.save()
 .then(usuario) => {
     console.log("Usuario creado correctamente: "+usuario)
-}
 const url = "mongodb://localhost:27017/Sigma";
 mongoose.connect(url, {
     useNewUrlParse: true,
