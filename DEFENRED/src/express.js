@@ -1,6 +1,7 @@
 //Para utilizar este file siempre debemos hacer el comando 'npm install express' 
 const express = require ('express');
 const path = require("path");
+const cors = require("cors");
 //Es mejor definir el puerto como un <<const>>
 const puerto = 8080;
 const app = express();
@@ -8,6 +9,7 @@ const userSchema = require('../schemas/usuario');
 const mongooseCon = require('../functions/conexion');
 const mongoose = require('mongoose');
 const usuario = require("usuario", userSchema);
+console.log(userSchema);
 
 //Métodos para recibir información -> get post put patch delete
 
@@ -70,7 +72,6 @@ app.get("/contacto", (req, res) => {
     res.sendFile(path.join(__dirname, "contacto.html"));
 })
 app.get("insertarUsuario", (req, res) => {
-    const Usuario = mongoose.model("Usuario", userSchema);
     const nuevoUsuario = new Usuario({
         nombre: "Pepito",
         apellido: "Garcia",
@@ -78,11 +79,14 @@ app.get("insertarUsuario", (req, res) => {
         edad: 33,
         correo: "juanitosfuertes69@vox.es",
         contrasenia: "ArribaEspaña"
-
-
     })
-    nuevoUsuario.save().then
-    res.sendFile(path.join(__dirname, "404.html"));
+    nuevoUsuario.save().then((usuario) => {
+        console.log("Usuario creado correctamente: "+usuario)
+    })
+    res.send("Usuario creado correctamente");
+})
+app.use((req, res) => {
+    res.status(404).sendFile(path.join(__dirname, "404.html"));
 })
 app.listen(puerto, () => {
     console.log(`El servidor ha arrancado en el puerto ${puerto}`);
