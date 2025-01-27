@@ -74,7 +74,9 @@ app.get("/", (req, res) => {
 app.get("/contacto", (req, res) => {
     res.sendFile(path.join(__dirname, "contacto.html"));
 })
-app.get("/insertarUsuario", (req, res) => {
+//Cambiamos get por post
+app.post("/insertarUsuario", (req, res) => 
+console.log(req.body);
     const nuevoUsuario = new Usuario({
         nombre: "Pepito",
         apellido: "Garcia",

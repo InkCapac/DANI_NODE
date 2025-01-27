@@ -2,10 +2,29 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./index";
 const App = () => {
-  fetch("http://localhost:8080/insertarUsuario")
+  const usuario = {
+    nombre: "Juanfra",
+    apellido: "Quijote",
+    apellido2: "Reydama",
+    edad: "55",
+    correo: "juanfrareydama@vox.es",
+    pass: "1234"
+  }
+  const enviar = (event: Event) => {
+    event?.preventDefault();
+  fetch("http://localhost:8080/insertarUsuario", 
+  {
+    method: "POST",
+    headers: {
+      'Content-type': 'application/json'
+    },
+    body: JSON.stringify(usuario),
+  }
+)
+}
   return (
     <section>
-      <form>
+      <form onSubmit={enviar}>
         <label>Nombre</label>
         <input type="text" />
         <label>Apellido</label>
