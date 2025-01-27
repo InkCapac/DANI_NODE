@@ -5,26 +5,6 @@
     --blue: rgb(12, 53, 67);
     --gray: rgb(217, 217, 217);
   }
-  
-  .orange {
-    background-color: var(--orange);
-  }
-  
-  .white {
-    background-color: var(--white);
-  }
-  
-  .black {
-    background-color: var(--black);
-  }
-  
-  .blue {
-    background-color: var(--blue);
-  }
-  
-  .gray {
-    background-color: var(--gray);
-  }
 .navbar {
     position: fixed;
     top: 0;
