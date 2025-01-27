@@ -6,8 +6,9 @@ const cors = require("cors");
 const puerto = 8080;
 const app = express();
 const userSchema = require('../schemas/usuario');
+const mongoose = require("mongoose");
 const mongooseCon = require('../functions/conexion');
-const mongoose = require('mongoose');
+//(REDUNDANTE) const mongoose = require('mongoose');
 const usuario = require("usuario", userSchema);
 console.log(userSchema);
 
