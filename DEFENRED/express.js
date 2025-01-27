@@ -16,57 +16,10 @@ console.log(userSchema);
 
 // "mongodb://localhost:PUERTO/BBDD"
 //Conexión con MongoDB Compass (Software, instalar)
-/*
-const userSchema = new mongoose.Schema({
-    nombre:{
-        type: String,
-        required: true
-    },
-    apellido:{
-        type: String,
-        required: true
-}, 
-apellido2:{
-    type: String,
-    required: false
-},
-edad:{
-    type: String,
-    required: true
-},
-correo:{
-    type: String,
-    required: true
-},
-contrasenia:{
-    type: String,
-    required: true
-}
-}
-)
-const Usuario = mongoose.model("Usuario", userSchema);
 
-const nuevoUsuario = new Usuario({
-    nombre: "Pepito",
-    apellido1: "Garcia",
-    apellido2: "Abascal",
-    edad: 33,
-    correo: "kchaviejas@vox.es",
-    contrasenia: "ArribaEspania",
-})
-nuevoUsuario.save()
-.then(usuario) => {
-    console.log("Usuario creado correctamente: "+usuario)
-const url = "mongodb://localhost:27017/Sigma";
-mongoose.connect(url, {
-    useNewUrlParse: true,
-    useUnifiedTopology: true
-})
-.then( () => {
-    console.log("Conectado!")
-})
-*/
+app.use(express.json());
 app.use(cors());
+app.use(express.urlencoded({extended: true}));
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"));
@@ -76,14 +29,15 @@ app.get("/contacto", (req, res) => {
 })
 //Cambiamos get por post
 app.post("/insertarUsuario", (req, res) => {
+    const datos = req.body;
     console.log(req.body);
     const nuevoUsuario = new Usuario({
-        nombre: "Pepito",
-        apellido: "Garcia",
-        apellido2: "Abascal",
-        edad: 33,
-        correo: "juanitosfuertes69@vox.es",
-        contrasenia: "ArribaEspaña"
+        nombre: datos.nombre,
+        apellido: datos.apellido,
+        apellido2: datos.apellido2,
+        edad: datos.edad,
+        correo: datos.correo,
+        contrasenia: datos.pass
     });
     nuevoUsuario.save()
         .then((usuario) => {

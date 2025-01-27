@@ -10,7 +10,7 @@ const App = () => {
     correo: "juanfrareydama@vox.es",
     pass: "1234"
   }
-  const enviar = (event: Event) => {
+  const enviar = (event: any) => {
     event?.preventDefault();
   fetch("http://localhost:8080/insertarUsuario", 
   {
