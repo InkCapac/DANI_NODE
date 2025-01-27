@@ -6,9 +6,6 @@ const Index = () => {
     return (
       //<BrowserRouter>
       <div>
-        <Navtab/> {/* La barra de navegación siempre estará visible */}
-        <Slider/>
-        <Inicio/>
       </div>
     );
   };
