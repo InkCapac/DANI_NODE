@@ -4,7 +4,7 @@ import Index from "./index";
 const App = () => {
   fetch("http://localhost:8080/insertarUsuario")
   return (
-    <diV>
+    <section>
       <form>
         <label>Nombre</label>
         <input type="text" />
@@ -31,7 +31,7 @@ const App = () => {
       </Route>
       </Routes>
       </BrowserRouter>
-        </diV>
+        </section>
   );
 };
 
