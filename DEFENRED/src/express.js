@@ -4,15 +4,16 @@ const path = require("path");
 //Es mejor definir el puerto como un <<const>>
 const puerto = 8080;
 const app = express();
-const userSchema = require('./');
+const userSchema = require('../schemas/usuario');
+const mongooseCon = require('../functions/conexion');
 const mongoose = require('mongoose');
-const conexion = require('mongoose');
-const usuarios = require('usuarios');
+const usuario = require("usuario", userSchema);
 
 //Métodos para recibir información -> get post put patch delete
 
 // "mongodb://localhost:PUERTO/BBDD"
 //Conexión con MongoDB Compass (Software, instalar)
+/*
 const userSchema = new mongoose.Schema({
     nombre:{
         type: String,
@@ -61,14 +62,26 @@ mongoose.connect(url, {
 .then( () => {
     console.log("Conectado!")
 })
-
+*/
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"));
 })
 app.get("/contacto", (req, res) => {
     res.sendFile(path.join(__dirname, "contacto.html"));
 })
-app.use((req, res) => {
+app.get("insertarUsuario", (req, res) => {
+    const Usuario = mongoose.model("Usuario", userSchema);
+    const nuevoUsuario = new Usuario({
+        nombre: "Pepito",
+        apellido: "Garcia",
+        apellido2: "Abascal",
+        edad: 33,
+        correo: "juanitosfuertes69@vox.es",
+        contrasenia: "ArribaEspaña"
+
+
+    })
+    nuevoUsuario.save().then
     res.sendFile(path.join(__dirname, "404.html"));
 })
 app.listen(puerto, () => {
