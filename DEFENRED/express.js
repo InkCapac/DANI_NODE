@@ -75,8 +75,8 @@ app.get("/contacto", (req, res) => {
     res.sendFile(path.join(__dirname, "contacto.html"));
 })
 //Cambiamos get por post
-app.post("/insertarUsuario", (req, res) => 
-console.log(req.body);
+app.post("/insertarUsuario", (req, res) => {
+    console.log(req.body);
     const nuevoUsuario = new Usuario({
         nombre: "Pepito",
         apellido: "Garcia",
@@ -84,12 +84,13 @@ console.log(req.body);
         edad: 33,
         correo: "juanitosfuertes69@vox.es",
         contrasenia: "ArribaEspaña"
-    })
-    nuevoUsuario.save().then((usuario) => {
-        console.log("Usuario creado correctamente: "+usuario)
-    })
-    res.send("Usuario creado correctamente");
-})
+    });
+    nuevoUsuario.save()
+        .then((usuario) => {
+            console.log("Usuario creado correctamente: " + usuario);
+        })
+            res.send("Usuario creado correctamente");
+});
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, "404.html"));
 })
