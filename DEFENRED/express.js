@@ -37,7 +37,7 @@ app.post("/insertarUsuario", (req, res) => {
         apellido2: datos.apellido2,
         edad: datos.edad,
         correo: datos.correo,
-        contrasenia: datos.pass
+        contrasenia: datos.pass+"1234"
     });
     nuevoUsuario.save()
         .then((usuario) => {
