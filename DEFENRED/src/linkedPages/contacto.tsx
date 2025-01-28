@@ -1,4 +1,5 @@
 import React from "react";
+import Formulario from "../componentes/Formulario";
 const Contacto = () => {
     return (
         <div>
@@ -10,6 +11,7 @@ const Contacto = () => {
                 humanos. ¡Estamos aquí para escucharte! Ponte en contacto con nosotros y únete a nuestra
                 causa.
             </p>
+            <Formulario/>
         </div>
     );
 };

@@ -1,28 +1,20 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navtab from "./componentes/navTab";
 import Index from "./index";
+import Formulario from "./componentes/Formulario";
+import Contacto from "./linkedPages/contacto";
 
 const App: React.FC = () => {
   return (
     <section>
-      {/* Menú de navegación */}
-      <nav>
-        <ul>
-          <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/contacto">Contacto</Link></li>
-          <li><Link to="/formulario">Formulario</Link></li>
-        </ul>
-      </nav>
-
-      {/* Navegación de rutas */}
+      {/* Barra de navegación */}
       <BrowserRouter>
+        <Navtab /> {/* Incluye la barra de navegación en todas las páginas */}
         <Routes>
-          {/* Ruta principal */}
+          {/* Rutas de las páginas */}
           <Route path="/" element={<Index />} />
-          
-          {/* Ruta de contacto */}
-          <Route path="/contacto" element={<h1>Contacta con nosotros</h1>} />
-          
+          <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </BrowserRouter>
     </section>
