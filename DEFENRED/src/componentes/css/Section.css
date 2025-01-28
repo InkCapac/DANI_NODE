@@ -50,13 +50,14 @@
 .section-who img {
     width: 500px;
     height: auto;
-    transform: rotate(6deg);
     transition: transform 0.5s ease;
     object-fit: cover;
 }
+/*
 .section-who img:hover {
     transform: rotate(-3deg) scale(1.1);
 }
+*/
 .section-house{
     display: grid;
     grid-template-columns: 50%, 50%;
