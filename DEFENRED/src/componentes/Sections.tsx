@@ -1,4 +1,4 @@
-import '../componentes/css/css_section.css'
+import '../componentes/css/Section.css'
 function Sections() {
     return (
         <section>
@@ -6,7 +6,7 @@ function Sections() {
                 <h1 className='title-who'>¿Quiénes somos?</h1>
                 <div className="section-who">
                     <p>Defenred es una organización que nace con el firme propósito de que los defensores y defensoras de derechos humanos puedan desarrollar su labor, y apoyarles de una forma directa en la importante tarea que realizan de construir un mundo más justo. Nuestro objetivo es apoyar su trabajo para el desarrollo justo e igualitario de su entorno.</p>
-                    <img src="../assets/img/reunion_defenred.jpg" alt="" />
+                    <img src="/DEFENRED/public/assets/img/reunion_defenred.jpg" alt="" />
                 </div>
                 <h1 className='title-house'>Casa de respiro</h1>
                 <div className='section-house'>

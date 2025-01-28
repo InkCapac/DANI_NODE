@@ -4,6 +4,9 @@ import Navtab from "./componentes/navTab";
 import Index from "./index";
 import Formulario from "./componentes/Formulario";
 import Contacto from "./linkedPages/contacto";
+import QueHacemos from "./linkedPages/queHacemos";
+import Defenred from "./linkedPages/defenred";
+import Defensoras from "./linkedPages/defensoras";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +17,9 @@ const App: React.FC = () => {
         <Routes>
           {/* Rutas de las páginas */}
           <Route path="/" element={<Index />} />
+          <Route path="/Defenred" element={<Defenred />} />
+          <Route path="/queHacemos" element={<QueHacemos />} />
+          <Route path="/Defensoras" element={<Defensoras />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </BrowserRouter>

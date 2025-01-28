@@ -20,3 +20,10 @@
     color: var(--orange);
     line-height: 1.6;
 }
+.parrafo1-inicio:hover {
+  font-style: italic;
+  /*
+  font-size: x-large;
+  background-size: 110%; 
+  */
+}

@@ -30,8 +30,9 @@ const Navtab = () => {
       {/* Links de navegación */}
       <ul>
         <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/registro">Registrarse</Link></li>
-        <li><Link to="/galeria">Galería</Link></li>
+        <li><Link to="/defenred">Defenred</Link></li>
+        <li><Link to="/queHacemos">¿Qué hacemos?</Link></li>
+        <li><Link to="/Defensoras">Defensoras</Link></li>
         <li><Link to="/contacto">Contacto</Link></li>
       </ul>
     </nav>
