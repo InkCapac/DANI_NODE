@@ -1,3 +1,10 @@
+:root { /*COLORES DETERMINADOS PARA EL SITIO WEB*/
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+  }
 .parrafo1-inicio {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 600;
@@ -10,6 +17,6 @@
     background-position: center;
     transition: background-size 0.5s ease, font-style 0.3s ease;
     margin: 20px;
-    color: var(--color3);
+    color: var(--orange);
     line-height: 1.6;
 }

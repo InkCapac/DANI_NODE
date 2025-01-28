@@ -1,6 +1,6 @@
 import React from "react";
 import Articulo from "../Articulo";
-import "../componentes/css/inicio-style.css"
+import "../componentes/css/inicioStyle.css"
 
 const Inicio = () => {
     return (
