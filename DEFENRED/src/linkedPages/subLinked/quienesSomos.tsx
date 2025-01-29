@@ -1,18 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link and Outlet
 import PorqueProyecto from "../linkedPages/subLinked/porqueProyecto"
 
-const Defenred = () => {
+const quienesSomos = () => {
     return (
         <section>
-            <Sections/>
             <h2>¿QUIÉNES SOMOS?</h2>
             <nav>
         <ul>
           <li>
-            <Link to="PorqueProyecto">Porque este proyecto</Link>
+            <Link to="porqueProyecto">Porque este proyecto</Link>
           </li>
           <li>
-            <Link to="quienes-somos">Quienes somos</Link>
+            <Link to="quienesSomos">Quienes somos</Link>
           </li>
         </ul>
       </nav>
@@ -20,4 +20,4 @@ const Defenred = () => {
     );
 };
 
-export default Defenred;
+export default quienesSomos;

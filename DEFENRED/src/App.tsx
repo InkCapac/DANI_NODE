@@ -19,7 +19,7 @@ const App: React.FC = () => {
           <Route path="/Defenred" element={<Defenred />} />
           {/* Nested routes for Defenred */}
           <Route path="/porqueProyecto" element={<PorqueProyecto />} />
-            <Route path="/quienesSomos" element={<QuienesSomos />} />
+            <Route path="/quienesSomos" element={<quienesSomos />} />
           <Route path="/queHacemos" element={<QueHacemos />} />
           <Route path="/Defensoras" element={<Defensoras />} />
           <Route path="/contacto" element={<Contacto />} />
