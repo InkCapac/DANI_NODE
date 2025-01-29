@@ -7,9 +7,9 @@ const Index = () => {
     return (
       //<BrowserRouter>
       <div>
-        <Inicio></Inicio>
         <Navtab></Navtab>
         <Slider></Slider>
+        <Inicio></Inicio>
         <Formulario></Formulario>
       </div>
     );

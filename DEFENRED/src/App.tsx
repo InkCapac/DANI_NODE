@@ -18,6 +18,9 @@ const App: React.FC = () => {
           {/* Rutas de las páginas */}
           <Route path="/" element={<Index />} />
           <Route path="/Defenred" element={<Defenred />} />
+          {/* Nested routes for Defenred */}
+          <Route path="porque-este-proyecto" element={<PorqueProyecto />} />
+            <Route path="quienes-somos" element={<QuienesSomos />} />
           <Route path="/queHacemos" element={<QueHacemos />} />
           <Route path="/Defensoras" element={<Defensoras />} />
           <Route path="/contacto" element={<Contacto />} />

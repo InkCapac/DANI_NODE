@@ -1,5 +1,4 @@
 import React from "react";
-import Articulo from "../Articulo";
 import "../componentes/css/inicioStyle.css"
 
 const Inicio = () => {
@@ -13,11 +12,6 @@ const Inicio = () => {
                 seguro para recuperar fuerzas, adquirir nuevas herramientas y conectarse con aliados
                 internacionales.
             </p>
-            <Articulo
-                titulo="Aguacate"
-                descripcion="Este es un aguacate delicioso."
-                imagen="https://ruta-a-imagen.jpg"
-            />
         </div>
     );
 };
