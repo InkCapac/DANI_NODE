@@ -1,12 +1,11 @@
 import React from "react";
-import Sections from "../componentes/Sections"
 import PorqueProyecto from "../linkedPages/subLinked/porqueProyecto"
 
 const Defenred = () => {
     return (
         <section>
             <Sections/>
-            <h2>¿Por qué elegimos este proyecto?</h2>
+            <h2>¿QUIÉNES SOMOS?</h2>
             <nav>
         <ul>
           <li>
