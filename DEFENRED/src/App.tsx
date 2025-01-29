@@ -9,6 +9,7 @@ import Defensoras from "./linkedPages/defensoras";
 
 const App: React.FC = () => {
   return (
+    
     <section>
       {/* Barra de navegación */}
       <BrowserRouter>
@@ -16,16 +17,15 @@ const App: React.FC = () => {
         <Routes>
           {/* Rutas de las páginas */}
           <Route path="/" element={<Index />} />
-          <Route path="/Defenred" element={<Defenred />} />
+          {/*<Route path="/Defenred" element={<Defenred />} />*/}
           {/* Nested routes for Defenred */}
-          <Route path="/porqueProyecto" element={<PorqueProyecto />} />
-            <Route path="/quienesSomos" element={<quienesSomos />} />
           <Route path="/queHacemos" element={<QueHacemos />} />
           <Route path="/Defensoras" element={<Defensoras />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </BrowserRouter>
     </section>
+    
   );
 };
 
