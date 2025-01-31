@@ -4,7 +4,6 @@ import Navtab from "./componentes/navTab";
 import Index from "./index";
 import Contacto from "./linkedPages/contacto";
 import QueHacemos from "./linkedPages/queHacemos";
-import Defenred from "./linkedPages/defenred";
 import Defensoras from "./linkedPages/defensoras";
 
 const App: React.FC = () => {

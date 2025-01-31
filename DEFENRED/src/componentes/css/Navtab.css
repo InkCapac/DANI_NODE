@@ -17,7 +17,8 @@
     box-sizing: border-box;
     z-index: 1000;
     transition: background-color 0.3s ease;
-    background-color: transparent; /* Color de fondo por defecto */
+    /*background-color: transparent;*/ /* Color de fondo por defecto */
+    background-color: var(--blue);
   }
   
   .navbar.solid {
@@ -60,5 +61,9 @@
     object-fit: contain;
     cursor: default;
     pointer-events: none;
+  }
+  .logo-nav img {
+    width: 100px;
+    height: auto;
   }
   

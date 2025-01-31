@@ -1,6 +1,4 @@
-import React from "react";
 import { Link } from "react-router-dom"; // Import Link and Outlet
-import PorqueProyecto from "../linkedPages/subLinked/porqueProyecto"
 
 const quienesSomos = () => {
     return (

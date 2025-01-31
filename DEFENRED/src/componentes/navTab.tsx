@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./css/Navtab.css";
 
@@ -22,18 +22,27 @@ const Navtab = () => {
 
   return (
     <nav className={`navbar ${solid ? "solid" : ""}`}>
-      {/* Logo de navegación */}
-      <div className="logo-nav">
-        <img src="path_to_logo.png" alt="Logo" />
-      </div>
 
-      {/* Links de navegación */}
+      <div className="logo-nav">
+        <img src="./src/assets/logo/logo_blackOrange.png" alt="Logo Defenred" />
+        
+      </div>
       <ul>
-        <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/defenred">Defenred</Link></li>
-        <li><Link to="/queHacemos">¿Qué hacemos?</Link></li>
-        <li><Link to="/Defensoras">Defensoras</Link></li>
-        <li><Link to="/contacto">Contacto</Link></li>
+        <li>
+          <Link to="/">Inicio</Link>
+        </li>
+        <li>
+          <Link to="/defenred">Defenred</Link>
+        </li>
+        <li>
+          <Link to="/queHacemos">¿Qué hacemos?</Link>
+        </li>
+        <li>
+          <Link to="/Defensoras">Defensoras</Link>
+        </li>
+        <li>
+          <Link to="/contacto">Contacto</Link>
+        </li>
       </ul>
     </nav>
   );
