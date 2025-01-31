@@ -1,3 +1,4 @@
+import Footer from "../componentes/Footer"
 import "../linkedPages/css_pages/inicioStyle.css";
 import "./css_pages/inicioStyle.css"
 
@@ -18,6 +19,7 @@ const Inicio = () => {
                 seguro para recuperar fuerzas, adquirir nuevas herramientas y conectarse con aliados
                 internacionales.
             </p>
+            <Footer/>
         </div>
     );
 };
