@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-import "../componentes/css/inicioStyle.css"
-=======
-import React from "react";
+import "../linkedPages/css_pages/inicioStyle.css";
 import "./css_pages/inicioStyle.css"
->>>>>>> 2e7934bf9eda546c458728ac9afd47e000c0541b
+
+
+
 
 const Inicio = () => {
     return (
