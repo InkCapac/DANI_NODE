@@ -1,5 +1,6 @@
 import React from "react";
 import Formulario from "../componentes/Formulario";
+import Footer from "../componentes/Footer"
 import "./css_pages/contacto.css"
 const Contacto = () => {
     return (
@@ -14,6 +15,7 @@ const Contacto = () => {
                 causa.
             </p>
             <Formulario/>
+            <Footer/>
         </div>
     );
 };
