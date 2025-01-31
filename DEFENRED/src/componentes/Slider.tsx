@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import Inicio from "../linkedPages/inicio"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./css/slider.css"
 
 function Slider() {
     const galleryItemsRef = useRef<HTMLImageElement[]>([]); // Referencia para las imágenes
