@@ -1,0 +1,48 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Form group (label + input) */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Adds space between label and input */
+  }
+  
+  /* Labels */
+  .form-group label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Submit button */
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }

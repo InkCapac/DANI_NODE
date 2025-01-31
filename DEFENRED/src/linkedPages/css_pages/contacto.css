@@ -1,0 +1,24 @@
+:root {
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+}
+body{
+    background-color: var(--white);
+}
+.contact-title {
+    /*El 80% va para el top/bottom y el 20% va para el left/right*/
+    margin: 80px 20px;
+    font-size: xx-large;
+}
+.meta-contact-title{
+    margin: 20px;
+}
+.keywords {
+    color: var(--blue);
+}
+.contact-info{
+    margin: 20px;
+}

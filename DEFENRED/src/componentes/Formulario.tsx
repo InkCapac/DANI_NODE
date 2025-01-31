@@ -35,27 +35,39 @@ const Formulario: React.FC = () => {
   };
 
   return (
-    <form onSubmit={enviar}>
-      <label htmlFor="nombre">Nombre</label>
-      <input id="nombre" type="text" ref={nombre} />
+    <form onSubmit={enviar} className="form-container">
+  <div className="form-group">
+    <label htmlFor="nombre">Nombre</label>
+    <input id="nombre" type="text" ref={nombre} />
+  </div>
 
-      <label htmlFor="apellido">Apellido</label>
-      <input id="apellido" type="text" ref={apellido} />
+  <div className="form-group">
+    <label htmlFor="apellido">Apellido</label>
+    <input id="apellido" type="text" ref={apellido} />
+  </div>
 
-      <label htmlFor="apellido2">Segundo Apellido</label>
-      <input id="apellido2" type="text" ref={apellido2} />
+  <div className="form-group">
+    <label htmlFor="apellido2">Segundo Apellido</label>
+    <input id="apellido2" type="text" ref={apellido2} />
+  </div>
 
-      <label htmlFor="edad">Edad</label>
-      <input id="edad" type="number" ref={edad} />
+  <div className="form-group">
+    <label htmlFor="edad">Edad</label>
+    <input id="edad" type="number" ref={edad} />
+  </div>
 
-      <label htmlFor="correo">Correo</label>
-      <input id="correo" type="email" ref={correo} />
+  <div className="form-group">
+    <label htmlFor="correo">Correo</label>
+    <input id="correo" type="email" ref={correo} />
+  </div>
 
-      <label htmlFor="pass">Contraseña</label>
-      <input id="pass" type="password" ref={pass} />
+  <div className="form-group">
+    <label htmlFor="pass">Contraseña</label>
+    <input id="pass" type="password" ref={pass} />
+  </div>
 
-      <button type="submit">Enviar</button>
-    </form>
+  <button type="submit" className="submit-button">Enviar</button>
+</form>
   );
 };
 
