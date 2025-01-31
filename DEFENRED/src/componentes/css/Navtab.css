@@ -39,7 +39,7 @@
   .navbar a {
     font-family: "Source Code Pro", monospace;
     letter-spacing: normal;
-    color: var(--white);
+    color: var(--blue);
     text-decoration: none;
     font-size: 2em;
     padding: 10px;

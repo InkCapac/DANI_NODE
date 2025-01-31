@@ -5,6 +5,9 @@
     --blue: rgb(12, 53, 67);
     --gray: rgb(217, 217, 217);
   }
+.title-inicio{
+margin-left: 30px;
+}
 .parrafo1-inicio {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 600;
