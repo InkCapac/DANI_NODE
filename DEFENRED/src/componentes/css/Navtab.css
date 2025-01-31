@@ -34,7 +34,8 @@
   }
   
   .navbar li {
-    margin: 0 20px; /* Añade separación entre los elementos */
+    margin: 0 20px;
+    text-transform: uppercase; /* Añade separación entre los elementos */
   }
   
   .navbar a {
