@@ -40,6 +40,7 @@ body {
   /*10px es para el top/bottom y 20px es para el left/right*/
   padding: 15px 25px;
   transition: background-color ease 0.3s;
+  cursor: pointer;
 }
 
 .cta-unete:hover {

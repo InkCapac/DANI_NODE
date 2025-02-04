@@ -1,3 +1,12 @@
+:root {
+    /*COLORES DETERMINADOS PARA EL SITIO WEB*/
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+  }
+  
 footer {
     text-align: center;
     padding: 20px;
@@ -21,7 +30,7 @@ footer {
 .socialIcons a {
     text-decoration: none;
     padding: 10px;
-    background-color: var(--color3);
+    background-color: transparent;
     margin: 10px;
     border-radius: 50%;
 }
@@ -34,11 +43,11 @@ footer {
 
 /*Efecto hover en los íconos de redes sociales*/
 .socialIcons a:hover {
-    background-color: var(--color2);
+    background-color: var(--orange);
     transition: 0.5s;
 }
 
 .socialIcons a:hover i {
-    color: var(--color3);
+    color: var(--white);
     transition: 0.5s;
 }
