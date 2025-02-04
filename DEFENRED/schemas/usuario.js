@@ -7,31 +7,16 @@ const mongoose = require('mongoose');
 /*
 export const userSchema = new mongoose.Schema({
     */
-   const userSchema = new mongoose.Schema({
-    nombre: {
-        type: String,
-        required: true
-    },
-    apellido: {
-        type: String,
-        required: true
-    },
-    apellido2: {
-        type: String,
-        required: false
-    },
-    edad: {
-        type: String,
-        required: true
-    },
-    correo: {
-        type: String,
-        required: true
-    },
-    contrasenia: {
-        type: String,
-        required: true
-    }
-}
-)
-module.exports = userSchema;
+    const usuarioSchema = new mongoose.Schema({
+      nombre: { type: String, required: true },
+      apellido: { type: String, required: true },
+      apellido2: { type: String, default: "" },  // Puede ser vacío
+      correo: { type: String, required: true },
+      donativo: { type: Number, default: 0 },  // Si no hay donativo, se asigna 0
+      telefono: { type: String, default: "" },  // Si no hay teléfono, se asigna vacío
+      observacion: { type: String, default: "" },  // Si no hay observación, se asigna vacío
+      consentimiento: { type: Boolean, required: true },  // Convertir el consentimiento a booleano
+    });
+    
+    module.exports = usuarioSchema;
+    

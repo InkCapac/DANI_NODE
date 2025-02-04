@@ -9,7 +9,7 @@ const app = express();
 
 // MongoDB Connection
 mongoose
-  .connect("mongodb://localhost:27017/your-database-name", {
+  .connect("mongodb://localhost:27017/Defenred", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -40,20 +40,23 @@ app.get("/contacto", (req, res) => {
 app.post("/insertarUsuario", (req, res) => {
   const datos = req.body;
 
-  // Validate required fields
-  if (!datos.nombre || !datos.apellido || !datos.correo || !datos.pass) {
+  // Validar campos obligatorios
+  if (!datos.nombre || !datos.apellido || !datos.correo || datos.consentimiento === undefined) {
     return res.status(400).json({ error: "Faltan campos obligatorios" });
   }
 
   const nuevoUsuario = new Usuario({
     nombre: datos.nombre,
     apellido: datos.apellido,
-    apellido2: datos.apellido2,
-    edad: datos.edad,
+    apellido2: datos.apellido2 || "",  // Puede ser vacío
     correo: datos.correo,
-    contrasenia: datos.pass,
+    donativo: datos.donativo || 0,  // Si no hay donativo, se asigna 0
+    telefono: datos.telefono || "",  // Si no hay teléfono, se asigna vacío
+    observacion: datos.observacion || "",  // Si no hay observación, se asigna vacío
+    consentimiento: datos.consentimiento === "true",  // Convertir el consentimiento a booleano
   });
 
+  // Guardar en la base de datos
   nuevoUsuario
     .save()
     .then((usuario) => {
