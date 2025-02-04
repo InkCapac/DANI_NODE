@@ -1,30 +1,60 @@
-/*Estilos de los títulos de cada sección de 'quiénes somos'*/
-.title-who{
+:root {
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+}
+
+.quote-defensoras {
+    margin-top: 80px;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-defensoras p {
+    padding: 20px;
+    text-align: center;
+    color: var(--black);
+}
+
+.quote-defensoras p:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+/* Estilos de los títulos de cada sección de 'quiénes somos' */
+.title-who {
     display: flex;
     text-align: right;
     padding-left: 20px;
 }
-.title-house{
-/* El flex evita que funcione; display: flex;*/
+
+.title-house {
+    /* El flex evita que funcione, display: flex; */
     text-align: right;
     padding-right: 20px;
 }
-/*Estilos de las secciones*/
-.section-who{
-    display: grid;
-    grid-template-columns: 50%, 50%;
-    padding: 20px;
-}
-.section-who {
-    padding: 20px;
+
+/* Estilos generales de las secciones */
+.section-who,
+.section-house {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    padding: 20px;
     max-width: 80%;
-    /*margin: 0 auto;*/
 }
-/*Estilos para secciones 'casa de respiro'*/
+
+/* Sección 'quiénes somos' */
+.section-who {
+    grid-template-columns: 50% 50%;
+    /* Si usas grid, quita los estilos flexibles para evitar conflictos */
+}
+
 .section-who p {
     flex: 1;
     width: 150px;
@@ -37,8 +67,8 @@
     color: black;
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
-
 }
+
 .section-who p:hover {
     background-color: var(--color5);
     color: var(--color3);
@@ -47,31 +77,20 @@
     padding: 20px;
     border-radius: 5px;
 }
+
 .section-who img {
     width: 500px;
     height: auto;
     transition: transform 0.5s ease;
     object-fit: cover;
 }
-/*
-.section-who img:hover {
-    transform: rotate(-3deg) scale(1.1);
-}
-*/
-.section-house{
-    display: grid;
-    grid-template-columns: 50%, 50%;
-    padding: 20px;
-}
+
+/* Sección 'casa de respiro' */
 .section-house {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    max-width: 80%;
-    /*margin: 0 auto;*/
+    grid-template-columns: 50% 50%;
+    /* Si usas grid, quita los estilos flexibles para evitar conflictos */
 }
+
 .section-house p {
     flex: 1;
     width: 150px;
@@ -84,8 +103,8 @@
     color: black;
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
-
 }
+
 .section-house p:hover {
     background-color: var(--color5);
     color: var(--color3);
@@ -94,6 +113,7 @@
     padding: 20px;
     border-radius: 5px;
 }
+
 .section-house img {
     width: 500px;
     height: auto;
@@ -101,6 +121,7 @@
     transition: transform 0.5s ease;
     object-fit: cover;
 }
+
 .section-house img:hover {
     transform: rotate(-3deg) scale(1.1);
 }

@@ -1,9 +1,14 @@
 import reunionImage from "../assets/img/reunion_defenred.jpg"
 
-import '../componentes/css/Section.css'
+import '../componentes/css/section.css'
 function Sections() {
     return (
         <section>
+            <div className="quote-defensoras">
+                <p>"Descubre cómo Defenred apoya a personas defensoras de los derechos
+                    humanos, y la protección de las libertades fundamentales. Conoce sus historias, los desafíos
+                    que enfrentan.Infórmate sobre cómo contribuimos a su seguridad y visibilidad internacional."</p>
+            </div>
             <div className="sections-quienes">
                 <h1 className='title-who'>¿Quiénes somos?</h1>
                 <div className="section-who">
@@ -29,10 +34,10 @@ function Sections() {
 
                         Es necesario apoyar el trabajo de estas personas. Las personas defensoras de derechos humanos son piezas clave para el desarrollo de su entorno de una manera justa e igualitaria. Suelen tener un profundo conocimiento de sus realidades. Y por la influencia en sus comunidades, son los que pueden generar mecanismos de cambio y alternativas para mejorar la situación de derechos humanos.
 
-                        El objetivo de nuestro grupo es reforzar su labor, atendiendo a algunas de las necesidades señaladas. Si apoyamos a los defensores y defensoras, lo estaremos haciendo a todas las personas y comunidades que se benefician de su trabajo por los derechos humanos. Y estaremos mejorando la situación de derechos humanos de todas ellas.S</p>
+                        El objetivo de nuestro grupo es reforzar su labor, atendiendo a algunas de las necesidades señaladas. Si apoyamos a los defensores y defensoras, lo estaremos haciendo a todas las personas y comunidades que se benefician de su trabajo por los derechos humanos. Y estaremos mejorando la situación de derechos humanos de todas ellas.</p>
                 </div>
                 <img src="" alt="" />
-                </div>
+            </div>
         </section>
     )
 }
