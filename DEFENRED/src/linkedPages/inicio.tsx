@@ -2,9 +2,6 @@ import Footer from "../componentes/Footer"
 import "../linkedPages/css_pages/inicioStyle.css";
 import "./css_pages/inicioStyle.css"
 
-
-
-
 const Inicio = () => {
     return (
         <div>
