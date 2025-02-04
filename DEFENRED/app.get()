@@ -1,0 +1,5 @@
+app.get() // Obtener -> SELECT
+app.post() // INSERT
+app.put() //UPDATE -> Modifica todos los datos
+app.patch //UPDATE -> Modifica solo una columna
+app.delete //DELETE
