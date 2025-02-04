@@ -18,6 +18,8 @@
     padding: 20px;
     text-align: center;
     color: var(--black);
+    font-family: "Montserrat", serif;
+    font-weight: 800;
 }
 
 .quote-defensoras p:hover {
