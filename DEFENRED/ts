@@ -1,0 +1,32 @@
+import bcrypt from 'bcrypt'; // Importar bcrypt
+
+// Función asíncrona para manejar el hashing y la comparación
+const ejemploBcrypt = async (password) => {
+    try {
+        const saltRounds = 10; // Número de rondas de sal
+        const hash = await bcrypt.hash(password, saltRounds); // Generar el hash
+
+        // Simular una comparación de contraseña (en un caso real, el hash vendría de una base de datos)
+        const isMatch = await bcrypt.compare(password, hash);
+
+        if (isMatch) {
+            generarJWT(); // Llamar a la función para generar el JWT
+        } else {
+            error(); // Llamar a la función de error
+        }
+    } catch (err) {
+        console.error('Error:', err); // Manejar errores
+    }
+};
+
+// Funciones ficticias para completar el ejemplo
+const generarJWT = () => {
+    console.log('JWT generado correctamente.');
+};
+
+const error = () => {
+    console.log('Error: las contraseñas no coinciden.');
+};
+
+// Ejemplo de uso
+ejemploBcrypt('miContraseñaSegura');

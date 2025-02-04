@@ -15,32 +15,33 @@ const Formulario: React.FC = () => {
     event.preventDefault();
 
     const usuario = {
-      nombre: nombre.current?.value,
-      apellido: apellido.current?.value,
-      apellido2: apellido2.current?.value,
-      correo: correo.current?.value,
-      donativo: donativo.current?.value,
-      telefono: telefono.current?.value,
-      observacion: observacion.current?.value,
-      consentimiento: consentimiento.current?.checked, // Use .checked for checkboxes
+      nombre: nombre.current?.value || "",
+      apellido: apellido.current?.value || "",
+      apellido2: apellido2.current?.value || "",
+      correo: correo.current?.value || "",
+      donativo: donativo.current?.value ? parseFloat(donativo.current.value) : null,
+      telefono: telefono.current?.value ? telefono.current.value.trim() : "",
+      observacion: observacion.current?.value || "",
+      consentimiento: consentimiento.current?.checked ? "true" : "false",
     };
 
-    console.log(usuario);
+    console.log("Datos a enviar:", JSON.stringify(usuario));
 
     fetch("http://localhost:8080/insertarUsuario", {
       method: "POST",
       headers: {
-        "Content-type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(usuario),
     })
-      .then((response) => {
+      .then(async (response) => {
+        const data = await response.json();
         if (!response.ok) {
+          console.error("Error en respuesta del servidor:", data);
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
-        return response.json();
+        console.log("Usuario insertado:", data);
       })
-      .then((data) => console.log("Usuario insertado:", data))
       .catch((error) => console.error("Error al insertar usuario:", error));
   };
 
