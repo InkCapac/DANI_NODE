@@ -20,8 +20,10 @@
     /*background-color: transparent;*/ /* Color de fondo por defecto */
     background-color: var(--blue);
   }
-  
   .navbar.solid {
+    background-color: var(--white);
+  }
+  .navbar.solid a {
     background-color: var(--white);
     color: var(--black);
   }
