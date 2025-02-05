@@ -10,7 +10,6 @@ const Index = () => {
         <Navtab></Navtab>
         <Slider></Slider>
         <Inicio></Inicio>
-        <Formulario></Formulario>
       </div>
     );
   };

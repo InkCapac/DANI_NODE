@@ -10,7 +10,7 @@ body{
 }
 .contact-title {
     /*El 80% va para el top/bottom y el 20% va para el left/right*/
-    margin: 80px 20px;
+    margin: 100px 20px;
     font-size: xx-large;
 }
 .meta-contact-title{

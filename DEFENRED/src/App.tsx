@@ -10,8 +10,8 @@ import { ParallaxProvider } from "react-scroll-parallax";
 const App: React.FC = () => {
   return (
     
-    <section>
       <ParallaxProvider>
+    <section>
       {/* Barra de navegación */}
       <BrowserRouter>
         <Navtab /> {/* Incluye la barra de navegación en todas las páginas */}
@@ -25,9 +25,9 @@ const App: React.FC = () => {
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </BrowserRouter>
-      </ParallaxProvider>
     </section>
     
+      </ParallaxProvider>
   );
 };
 

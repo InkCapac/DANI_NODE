@@ -43,19 +43,16 @@
 /* Estilos generales de las secciones */
 .section-who,
 .section-house {
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    padding: 20px;
     max-width: 80%;
+    margin: 0 auto;
 }
 
 /* Sección 'quiénes somos' */
-.section-who {
-    grid-template-columns: 50% 50%;
-    /* Si usas grid, quita los estilos flexibles para evitar conflictos */
-}
 
 .section-who p {
     flex: 1;
@@ -64,16 +61,16 @@
     text-align: justify;
     font-size: 1.2em;
     border-style: dotted;
-    background-color: snow;
+    background-color: var(--white);
     padding: 20px;
-    color: black;
+    color: var(--black);
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .section-who p:hover {
-    background-color: var(--color5);
-    color: var(--color3);
+    background-color: var(--orange);
+    color: var(--white);
     font-weight: bold;
     border-style: groove;
     padding: 20px;
@@ -83,15 +80,16 @@
 .section-who img {
     width: 500px;
     height: auto;
+    border-style: dashed;
     transition: transform 0.5s ease;
     object-fit: cover;
 }
 
-/* Sección 'casa de respiro' */
-.section-house {
-    grid-template-columns: 50% 50%;
-    /* Si usas grid, quita los estilos flexibles para evitar conflictos */
+.section-who img:hover {
+    transform: rotate(3deg) scale(1.1);
 }
+
+/* Sección 'casa de respiro' */
 
 .section-house p {
     flex: 1;
@@ -100,16 +98,16 @@
     text-align: justify;
     font-size: 1.2em;
     border-style: dotted;
-    background-color: snow;
+    background-color: var(--white);
     padding: 20px;
-    color: black;
+    color: var(--black);
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .section-house p:hover {
-    background-color: var(--color5);
-    color: var(--color3);
+    background-color: var(--orange);
+    color: var(--white);
     font-weight: bold;
     border-style: groove;
     padding: 20px;
@@ -119,11 +117,11 @@
 .section-house img {
     width: 500px;
     height: auto;
-    transform: rotate(6deg);
+    border-style: dashed;
     transition: transform 0.5s ease;
     object-fit: cover;
 }
 
 .section-house img:hover {
-    transform: rotate(-3deg) scale(1.1);
+    transform: rotate(3deg) scale(1.1);
 }
