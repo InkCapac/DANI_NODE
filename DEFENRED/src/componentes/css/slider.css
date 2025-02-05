@@ -1,4 +1,10 @@
-
+:root {
+  --orange: rgb(240, 101, 0);
+  --white: rgb(230, 229, 229);
+  --black: rgb(34, 34, 34);
+  --blue: rgb(12, 53, 67);
+  --gray: rgb(217, 217, 217);
+}
 *.gallery {
     box-sizing: border-box;
   }
@@ -62,7 +68,7 @@
     width: 100vw;
     /*Establecer una altura para los botones*/
     height: 50px;
-    background-color: white;
+    background-color: var(--white);
   }
   
   .nav-button {
