@@ -36,6 +36,8 @@ body {
 }
 
 .cta-unete {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
   font-size: 120px;
   background-color: var(--blue);
   color: var(--white);
@@ -49,9 +51,10 @@ body {
 }
 
 .cta-unete:hover {
-  background-color: orange;
+  background-color: var(--orange);
 }
-.parrafo1-inicio{
+
+.parrafo1-inicio {
   padding: 45px;
   display: flex;
   align-items: center;
@@ -61,8 +64,10 @@ body {
   margin: 0 auto;
   background-color: var(--gray);
 }
+
 .parrafo1-inicio p {
   flex: 1;
+  font-family: 'Readex Pro', sans-serif;
   width: 140px;
   height: auto;
   text-align: justify;

@@ -61,7 +61,7 @@
   
   /*Estilos de los botones 'anterior' y 'siguiente'*/
   .nav-buttons {
-    font-family: "Source Code Pro", monospace;
+    font-family: 'Readex Pro', sans-serif;
     /*Usar flexbox para alinear botones*/
     display: flex;
     /*Ancho completo de la ventana gráfica*/
