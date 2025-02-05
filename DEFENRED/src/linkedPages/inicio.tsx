@@ -6,11 +6,11 @@ import { useParallax } from "react-scroll-parallax";
 
 const Inicio = () => {
     const parallax = useParallax<HTMLDivElement>({
-        speed: 70
+        speed: 50
     });
     return (
         <div>
-            <h2 className="title-inicio">DEFENRED</h2>
+            {/*<h2 className="title-inicio">DEFENRED</h2>*/}
             {/*METATÍTULO DE LA PÁGINA => "Defenred-Red de Apoyo para Defensores de Derechos Humanos"*/}
             <div className="cta-container" ref={parallax.ref}>
                 <button className="cta-unete">Únete a la red!</button>
