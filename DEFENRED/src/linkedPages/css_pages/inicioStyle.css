@@ -12,7 +12,12 @@ body {
 }
 
 .title-inicio {
-  margin-left: 30px;
+  display: flex;
+  /*margin-left: 30px;*/
+  justify-content: center;
+  color: var(--white);
+  font-size: 5em;
+  background-color: var(--blue);
 }
 
 .meta-info {
@@ -52,15 +57,16 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  max-width: 80%;
+  /*max-width: 80%;*/
   margin: 0 auto;
+  background-color: var(--gray);
 }
 .parrafo1-inicio p {
   flex: 1;
   width: 150px;
   height: auto;
   text-align: justify;
-  font-size: 1.2em;
+  font-size: 1.3em;
   border-style: dotted;
   background-color: var(--white);
   padding: 20px;

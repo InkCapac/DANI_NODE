@@ -11,7 +11,7 @@ const Inicio = () => {
     return (
         <div>
             <h2 className="title-inicio">DEFENRED</h2>
-            <h3 className="meta-info">"Defenred-Red de Apoyo para Defensores de Derechos Humanos"</h3>
+            {/*METATÍTULO DE LA PÁGINA => "Defenred-Red de Apoyo para Defensores de Derechos Humanos"*/}
             <div className="cta-container" ref={parallax.ref}>
                 <button className="cta-unete">Únete a la red!</button>
             </div>
