@@ -1,127 +1,121 @@
+/* Estilos generales */
 :root {
     --orange: rgb(240, 101, 0);
     --white: rgb(230, 229, 229);
     --black: rgb(34, 34, 34);
     --blue: rgb(12, 53, 67);
     --gray: rgb(217, 217, 217);
-}
-
-.quote-defensoras {
-    margin-top: 80px;
-    font-size: xx-large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.quote-defensoras p {
+  }
+  
+  body {
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+    font-family: 'Readex Pro', sans-serif;
+  }
+  
+  /* Estilos para el componente Sections */
+  section {
     padding: 20px;
+    background-color: var(--gray);
+  }
+  
+  .quote-defensoras {
     text-align: center;
-    color: var(--black);
-    font-family: "Montserrat", serif;
-    font-weight: 800;
-}
-
-.quote-defensoras p:hover {
-    background-color: var(--orange);
-    color: var(--white);
-}
-
-/* Estilos de los títulos de cada sección de 'quiénes somos' */
-.title-who {
+    font-size: 1.5em;
+    font-style: italic;
+    color: var(--blue);
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+  }
+  
+  .sections-quienes {
     display: flex;
-    text-align: right;
-    padding-left: 20px;
-}
-
-.title-house {
-    /* El flex evita que funcione, display: flex; */
-    text-align: right;
-    padding-right: 20px;
-}
-
-/* Estilos generales de las secciones */
-.section-who,
-.section-house {
-    padding: 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .title-who,
+  .title-house {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--blue);
+    margin-bottom: 20px;
+  }
+  
+  .section-who,
+  .section-house {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 30px;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-/* Sección 'quiénes somos' */
-
-.section-who p {
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+  }
+  
+  .section-who p,
+  .section-house p {
     flex: 1;
-    width: 150px;
-    height: auto;
+    font-family: 'Readex Pro', sans-serif;
     text-align: justify;
     font-size: 1.2em;
-    border-style: dotted;
-    background-color: var(--white);
-    padding: 20px;
     color: var(--black);
     line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.section-who p:hover {
-    background-color: var(--orange);
-    color: var(--white);
-    font-weight: bold;
-    border-style: groove;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.section-who img {
-    width: 500px;
+  }
+  
+  .section-who img,
+  .section-house img {
+    width: 300px;
     height: auto;
-    border-style: dashed;
+    border-radius: 10px;
+    border: 2px dashed var(--blue);
     transition: transform 0.5s ease;
-    object-fit: cover;
-}
-
-.section-who img:hover {
+  }
+  
+  .section-who img:hover,
+  .section-house img:hover {
     transform: rotate(3deg) scale(1.1);
-}
-
-/* Sección 'casa de respiro' */
-
-.section-house p {
-    flex: 1;
-    width: 150px;
-    height: auto;
-    text-align: justify;
-    font-size: 1.2em;
-    border-style: dotted;
-    background-color: var(--white);
-    padding: 20px;
-    color: var(--black);
-    line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.section-house p:hover {
-    background-color: var(--orange);
-    color: var(--white);
-    font-weight: bold;
-    border-style: groove;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.section-house img {
-    width: 500px;
-    height: auto;
-    border-style: dashed;
-    transition: transform 0.5s ease;
-    object-fit: cover;
-}
-
-.section-house img:hover {
-    transform: rotate(3deg) scale(1.1);
-}
+  }
+  
+  /* Media Queries para responsividad */
+  @media (max-width: 768px) {
+    .section-who,
+    .section-house {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .section-who img,
+    .section-house img {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .title-who,
+    .title-house {
+      font-size: 2em;
+    }
+  
+    .quote-defensoras {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title-who,
+    .title-house {
+      font-size: 1.8em;
+    }
+  
+    .section-who p,
+    .section-house p {
+      font-size: 1em;
+    }
+  
+    .quote-defensoras {
+      font-size: 1em;
+    }
+  }
