@@ -13,7 +13,6 @@ body {
 
 .title-inicio {
   display: flex;
-  /*margin-left: 30px;*/
   justify-content: center;
   color: var(--white);
   font-size: 5em;
@@ -43,8 +42,6 @@ body {
   color: var(--white);
   border-radius: 20px;
   margin: 20px;
-  /*El padding hace que haya espacio alrededor del texto*/
-  /*10px es para el top/bottom y 20px es para el left/right*/
   padding: 15px 25px;
   transition: background-color ease 0.3s;
   cursor: pointer;
@@ -60,7 +57,6 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  /*max-width: 80%;*/
   margin: 0 auto;
   background-color: var(--gray);
 }
@@ -78,7 +74,6 @@ body {
   color: var(--black);
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
-
 }
 
 .parrafo1-inicio p:hover {
@@ -100,4 +95,75 @@ body {
 
 .parrafo1-inicio img:hover {
   transform: rotate(3deg) scale(1.1);
+}
+
+/* Sección del párrafo de "Casa de Respiro" en inicio.tsx */
+.casaRespiro-inicio {
+  display: flex;
+  align-items: flex-start;
+  padding: 45px;
+  background-color: var(--gray);
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.casaRespiro-inicio-image {
+  width: 550px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.casaRespiro-inicio img {
+  width: 550px;
+  height: auto;
+  border-style: dashed;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+}
+
+.casaRespiro-inicio img:hover {
+  transform: rotate(3deg) scale(1.1);
+}
+
+.cta-casaRespiro {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.2em;
+  border-radius: 10px;
+  transition: background-color ease 0.3s;
+}
+
+.cta-casaRespiro:hover {
+  background-color: var(--orange);
+}
+
+.casaRespiro-parrafo1 {
+  flex: 1;
+  font-family: 'Readex Pro', sans-serif;
+  text-align: justify;
+  font-size: 1.3em;
+  border-style: dotted;
+  background-color: var(--white);
+  padding: 20px;
+  color: var(--black);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.casaRespiro-parrafo1:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: bold;
+  border-style: groove;
+  padding: 20px;
+  border-radius: 5px;
 }
