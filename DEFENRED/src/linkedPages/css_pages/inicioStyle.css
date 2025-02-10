@@ -59,21 +59,31 @@ body {
   gap: 30px;
   margin: 0 auto;
 }
-.parrafo1-inicio {
-  padding: 45px;
+
+.street-defenred-image {
+  width: 550px;
+  height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  margin: 0 auto;
-  background-color: var(--gray);
+  margin-right: 20px;
 }
 
-.parrafo1-inicio p {
+.secciones-inicio img {
+  width: 550px;
+  height: auto;
+  border-style: dashed;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+}
+
+.secciones-inicio img:hover {
+  transform: rotate(3deg) scale(1.1);
+}
+
+.secciones-parrafo1 {
   flex: 1;
   font-family: 'Readex Pro', sans-serif;
-  width: 140px;
-  height: auto;
   text-align: justify;
   font-size: 1.3em;
   border-style: dotted;
@@ -84,31 +94,13 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.parrafo1-inicio p:hover {
+.secciones-parrafo1:hover {
   background-color: var(--orange);
   color: var(--white);
   font-weight: bold;
   border-style: groove;
   padding: 20px;
   border-radius: 5px;
-}
-.street-defenred-image {
-  width: 550px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 20px;
-}
-.secciones-inicio img {
-  width: 550px;
-  height: auto;
-  border-style: dashed;
-  transition: transform 0.5s ease;
-  object-fit: cover;
-}
-.secciones-inicio img:hover {
-  transform: rotate(3deg) scale(1.1);
 }
 
 /* Sección del párrafo de "Casa de Respiro" en inicio.tsx */
