@@ -17,9 +17,11 @@ const Inicio = () => {
             <div className="cta-container" ref={parallax.ref}>
                 <button className="cta-unete">Únete a la red!</button>
             </div>
-            <div className="parrafo1-inicio">
+            <div className="secciones-inicio">
+            <div className="street-defenred-image">
                 <img src={streetImage} alt="Vistas de Defenred" />
-                <p>
+                </div>
+                <p className="secciones-parrafo1">
                     <span className="keywords">Defenred</span> es una organización comprometida con el apoyo y la protección de defensores de <span className="keywords">Defenred</span> que enfrentan riesgos en sus países de origen. A través de programas de
                     refugio, formación, autocuidado y redes de apoyo, Defenred brinda a estos activistas un espacio
                     seguro para recuperar fuerzas, adquirir nuevas herramientas y conectarse con aliados
@@ -44,6 +46,7 @@ const Inicio = () => {
             </div>
             <Footer />
         </div>
+
     );
 };
 

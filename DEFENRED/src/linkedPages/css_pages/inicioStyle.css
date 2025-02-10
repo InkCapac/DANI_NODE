@@ -50,7 +50,15 @@ body {
 .cta-unete:hover {
   background-color: var(--orange);
 }
-
+/*Sección de introducción a Defenred*/
+.secciones-inicio {
+  display: flex;
+  align-items: flex-start;
+  padding: 45px;
+  background-color: var(--gray);
+  gap: 30px;
+  margin: 0 auto;
+}
 .parrafo1-inicio {
   padding: 45px;
   display: flex;
@@ -84,16 +92,22 @@ body {
   padding: 20px;
   border-radius: 5px;
 }
-
-.parrafo1-inicio img {
+.street-defenred-image {
+  width: 550px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+.secciones-inicio img {
   width: 550px;
   height: auto;
   border-style: dashed;
   transition: transform 0.5s ease;
   object-fit: cover;
 }
-
-.parrafo1-inicio img:hover {
+.secciones-inicio img:hover {
   transform: rotate(3deg) scale(1.1);
 }
 
