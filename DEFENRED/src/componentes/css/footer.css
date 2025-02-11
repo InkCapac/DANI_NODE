@@ -5,22 +5,12 @@
     --black: rgb(34, 34, 34);
     --blue: rgb(12, 53, 67);
     --gray: rgb(217, 217, 217);
-  }
-  
-footer {
+}
+.footerContainer {
     text-align: center;
     padding: 20px;
+    background-color: #f8f9fa;
 }
-
-.footer-p {
-    font-size: larger;
-}
-
-.footerContainer {
-    width: 100%;
-    padding: 70px 30px 20px;
-}
-
 .socialIcons {
     display: flex;
     justify-content: center;
@@ -50,4 +40,24 @@ footer {
 .socialIcons a:hover i {
     color: var(--white);
     transition: 0.5s;
+}
+/*Sección de enlaces*/
+.footerLinks {
+    margin-bottom: 20px;
+}
+
+.footerLinks li {
+    margin: 0 15px;
+    color: var(--black);
+    font-size: 16px;
+}
+
+.footerLinks li:hover {
+    color: var(--blue);
+}
+
+.footer-p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--black);
 }

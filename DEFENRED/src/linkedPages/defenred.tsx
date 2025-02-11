@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import Sections from "../componentes/Sections"
-import PorqueProyecto from "../linkedPages/subLinked/porqueProyecto"
-import Footer from "../componentes/Footer"
+import Sections from "../componentes/Sections";
+import PorqueProyecto from "../linkedPages/subLinked/porqueProyecto";
+import Footer from "../componentes/Footer";
 
 const Defenred = () => {
     return (

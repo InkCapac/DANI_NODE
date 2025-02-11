@@ -1,6 +1,5 @@
 import Footer from "../componentes/Footer"
 import "../linkedPages/css_pages/inicioStyle.css";
-import "./css_pages/inicioStyle.css";
 import streetImage from "../assets/img/street_defenred.jpg";
 import streetImage2 from "../assets/img/street2_defenred.jpg";
 import casaRespiro from "../assets/img/señoraLeyendo_defenred.jpg";

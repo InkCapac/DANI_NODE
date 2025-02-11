@@ -38,7 +38,7 @@ const Navtab = () => {
           <Link to="/queHacemos">¿Qué hacemos?</Link>
         </li>
         <li>
-          <Link to="/Defensoras">Defensoras</Link>
+          <Link to="/defensoras">Defensoras</Link>
         </li>
         <li>
           <Link to="/contacto">Contacto</Link>

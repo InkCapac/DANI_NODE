@@ -1,4 +1,6 @@
+import { useState, useEffect } from "react";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./css/footer.css"
 const Footer = () => {
     return (
@@ -19,6 +21,27 @@ const Footer = () => {
                             <i className="fa-brands fa-youtube"></i>
                         </a>
                     </div>
+                    {/* Nueva sección de enlaces */}
+                    <div className="footerLinks">
+                        <ul>
+                        <li>
+                            <Link to="/inicio">Inicio</Link>
+                        </li>
+                        <li>
+                            <Link to="/defenred">Defenred</Link>
+                        </li>                        
+                        <li>
+                            <Link to="/queHacemos">¿Qué hacemos?</Link>
+                        </li>
+                        <li>
+                            <Link to="/defensoras">Defensoras</Link>
+                        </li>
+                        <li>
+                            <Link to="/contacto">Contacto</Link>
+                        </li>
+                        </ul>
+                    </div>
+
                     <p className="footer-p">© 2024 | Defenred. All rights reserved.</p>
                 </div>
             </footer>
