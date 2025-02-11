@@ -4,21 +4,26 @@ import streetImage from "../assets/img/street_defenred.jpg";
 import streetImage2 from "../assets/img/street2_defenred.jpg";
 import casaRespiro from "../assets/img/señoraLeyendo_defenred.jpg";
 import { useParallax } from "react-scroll-parallax";
+import { useNavigate } from "react-router-dom";
+import altaUsuario from "./subLinked/altaUsuario";
 
 const Inicio = () => {
     const parallax = useParallax<HTMLDivElement>({
         speed: 50
     });
+    const navigate = useNavigate();
     return (
         <div>
             {/*<h2 className="title-inicio">DEFENRED</h2>*/}
             {/*METATÍTULO DE LA PÁGINA => "Defenred-Red de Apoyo para Defensores de Derechos Humanos"*/}
             <div className="cta-container" ref={parallax.ref}>
-                <button className="cta-unete">Únete a la red!</button>
+                <button className="cta-unete" onClick={() => navigate("/altaUsuario")}>
+                    Únete a la red!
+                </button>
             </div>
             <div className="secciones-inicio">
-            <div className="street-defenred-image">
-                <img src={streetImage} alt="Vistas de Defenred" />
+                <div className="street-defenred-image">
+                    <img src={streetImage} alt="Vistas de Defenred" />
                 </div>
                 <p className="secciones-parrafo1">
                     <span className="keywords">Defenred</span> es una organización comprometida con el apoyo y la protección de defensores de <span className="keywords">Defenred</span> que enfrentan riesgos en sus países de origen. A través de programas de

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./css/formulario.css";
 
-const Formulario: React.FC = () => {
+const altaUsuario: React.FC = () => {
     const nombre = useRef<HTMLInputElement>(null);
     const apellido = useRef<HTMLInputElement>(null);
     const apellido2 = useRef<HTMLInputElement>(null);
@@ -87,4 +87,4 @@ const Formulario: React.FC = () => {
     );
 };
 
-export default Formulario;
+export default altaUsuario;

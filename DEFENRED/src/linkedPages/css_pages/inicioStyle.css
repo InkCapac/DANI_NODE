@@ -27,7 +27,6 @@ body {
 .keywords {
   color: var(--blue);
 }
-
 .cta-container {
   display: flex;
   justify-content: center;
@@ -45,10 +44,14 @@ body {
   padding: 15px 25px;
   transition: background-color ease 0.3s;
   cursor: pointer;
+  text-decoration: none; /* Elimina el subrayado */
+  display: inline-block; /* Asegura que el enlace se comporte como un bloque */
+  border: none; /* Elimina bordes si los hay */
 }
 
 .cta-unete:hover {
   background-color: var(--orange);
+  text-decoration: none; /* Asegura que no haya subrayado al hacer hover */
 }
 /*Sección de introducción a Defenred*/
 .secciones-inicio {

@@ -6,7 +6,7 @@ const Formulario: React.FC = () => {
   const apellido = useRef<HTMLInputElement>(null);
   const apellido2 = useRef<HTMLInputElement>(null);
   const correo = useRef<HTMLInputElement>(null);
-  const donativo = useRef<HTMLInputElement>(null);
+  const caridad = useRef<HTMLInputElement>(null);
   const telefono = useRef<HTMLInputElement>(null);
   const observacion = useRef<HTMLTextAreaElement>(null);
   const consentimiento = useRef<HTMLInputElement>(null);
@@ -14,25 +14,25 @@ const Formulario: React.FC = () => {
   const enviar = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const usuario = {
+    const Donativo = {
       nombre: nombre.current?.value || "",
       apellido: apellido.current?.value || "",
       apellido2: apellido2.current?.value || "",
       correo: correo.current?.value || "",
-      donativo: donativo.current?.value ? parseFloat(donativo.current.value) : null,
+      caridad: caridad.current?.value ? parseFloat(caridad.current.value) : null,
       telefono: telefono.current?.value ? telefono.current.value.trim() : "",
       observacion: observacion.current?.value || "",
       consentimiento: consentimiento.current?.checked ? "true" : "false",
     };
 
-    console.log("Datos a enviar:", JSON.stringify(usuario));
+    console.log("Datos a enviar:", JSON.stringify(Donativo));
 
-    fetch("http://localhost:8080/insertarUsuario", {
+    fetch("http://localhost:8080/enviarDonativo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(usuario),
+      body: JSON.stringify(Donativo),
     })
       .then(async (response) => {
         const data = await response.json();
@@ -40,9 +40,9 @@ const Formulario: React.FC = () => {
           console.error("Error en respuesta del servidor:", data);
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
-        console.log("Usuario insertado:", data);
+        console.log("Monto enviado!:", data);
       })
-      .catch((error) => console.error("Error al insertar usuario:", error));
+      .catch((error) => console.error("Error al enviar donativo:", error));
   };
 
   return (
@@ -69,7 +69,7 @@ const Formulario: React.FC = () => {
 
       <div className="form-group">
         <label htmlFor="donativo">Cantidad a donar</label>
-        <input id="donativo" type="number" ref={donativo} min="0" step="0.01" required />
+        <input id="donativo" type="number" ref={caridad} min="0" step="0.01" required />
       </div>
 
       <div className="form-group">

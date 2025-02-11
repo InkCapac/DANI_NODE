@@ -61,7 +61,7 @@ app.post("/insertarUsuario", (req, res) => {
 app.post("/enviarDonativo", (req, res) => {
   const datos = req.body;
   //Formulario de donativo
-  if (!datos.nombre || !datos.apellido || !datos.correo || datos.donativo || datos.consentimiento === undefined) {
+  if (!datos.nombre || !datos.apellido || !datos.correo || datos.caridad || datos.consentimiento === undefined) {
     return res.status(400).json({ error: "Faltan campos obligatorios" });
   }
 
@@ -71,7 +71,7 @@ app.post("/enviarDonativo", (req, res) => {
     apellido2: datos.apellido2 || "",  // Puede ser vacío
     correo: datos.correo,
     //donativo: datos.donativo || 0,   Si no hay donativo, se asigna 0
-    donativo: datos.donativo,
+    caridad: datos.caridad,
     telefono: datos.telefono || "",  // Si no hay teléfono, se asigna vacío
     observacion: datos.observacion || "",  // Si no hay observación, se asigna vacío
     consentimiento: datos.consentimiento === "true",  // Convertir el consentimiento a booleano
@@ -93,11 +93,11 @@ nuevoUsuario
 enviarDonativo
   .save()
   .then((usuario) => {
-    console.log("Usuario creado correctamente:", usuario);
-    res.json({ message: "Usuario creado correctamente", data: usuario });
+    console.log("Gracias por su apoyo de:", donativo);
+    res.json({ message: "Usuario creado correctamente", data: donativo });
   })
   .catch((error) => {
-    console.error("Error al crear el usuario:", error);
+    console.error("Error al enviar el monto:", error);
     res.status(500).json({ error: "Error al crear el usuario" });
   });
 // 404 Handler
