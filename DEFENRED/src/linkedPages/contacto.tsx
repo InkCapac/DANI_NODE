@@ -3,6 +3,7 @@ import Formulario from "../componentes/Formulario";
 import Footer from "../componentes/Footer"
 import "./css_pages/contacto.css"
 import { useParallax } from "react-scroll-parallax";
+import {useRef} from 'react';
 const Contacto = () => {
     //AVERIGUAR MÁS EN LA PÁGINA OFICIAL DE PARALLAX (React Scroll Parallax)
     const parallax = useParallax<HTMLDivElement>({

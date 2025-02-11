@@ -12,8 +12,9 @@ export const userSchema = new mongoose.Schema({
       apellido: { type: String, required: true },
       apellido2: { type: String, default: "" },  // Puede ser vacío
       correo: { type: String, required: true },
-      birthDate: { type: Number, default: 0 },  // Si no hay donativo, se asigna 0
+      donativo: { type: Number, default: 0 },  // Si no hay donativo, se asigna 0
       telefono: { type: String, default: "" },  // Si no hay teléfono, se asigna vacío
+      observacion: { type: String, default: "" },  // Si no hay observación, se asigna vacío
       consentimiento: { type: Boolean, required: true },  // Convertir el consentimiento a booleano
     });
     

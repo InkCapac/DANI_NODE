@@ -1,0 +1,128 @@
+:root {
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+  }
+/*Sección de introducción a Defenred*/
+.secciones-inicio {
+    display: flex;
+    align-items: flex-start;
+    padding: 45px;
+    background-color: var(--gray);
+    gap: 30px;
+    margin: 0 auto;
+  }
+  
+  .street-defenred-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .secciones-inicio img {
+    height: 330px;
+    width: auto;
+    border-style: dashed;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+  }
+  
+  .secciones-inicio img:hover {
+    transform: rotate(-3deg) scale(1.1);
+  }
+  
+  .secciones-parrafo1 {
+    flex: 1;
+    font-family: 'Readex Pro', sans-serif;
+    text-align: justify;
+    font-size: 1.3em;
+    border-style: dotted;
+    background-color: var(--white);
+    padding: 20px;
+    color: var(--black);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .secciones-parrafo1:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: bold;
+    border-style: groove;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Sección del párrafo de "Casa de Respiro" en inicio.tsx */
+  .casaRespiro-inicio {
+    display: flex;
+    align-items: flex-start;
+    padding: 45px;
+    background-color: var(--gray);
+    gap: 30px;
+    margin: 0 auto;
+  }
+  
+  .casaRespiro-inicio-image {
+    width: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .casaRespiro-inicio img {
+    width: 550px;
+    height: auto;
+    border-style: dashed;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+  }
+  
+  .casaRespiro-inicio img:hover {
+    transform: rotate(3deg) scale(1.1);
+  }
+  
+  .cta-casaRespiro {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: background-color ease 0.3s;
+  }
+  
+  .cta-casaRespiro:hover {
+    background-color: var(--orange);
+  }
+  
+  .casaRespiro-parrafo1 {
+    flex: 1;
+    font-family: 'Readex Pro', sans-serif;
+    text-align: justify;
+    font-size: 1.3em;
+    border-style: dotted;
+    background-color: var(--white);
+    padding: 20px;
+    color: var(--black);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .casaRespiro-parrafo1:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: bold;
+    border-style: groove;
+    padding: 20px;
+    border-radius: 5px;
+  }
