@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Form } from "react-router-dom";
 import React from "react";
 import Navtab from "./componentes/navTab";
 import Index from "./index";
@@ -6,6 +6,9 @@ import Defenred from "./linkedPages/defenred";
 import Contacto from "./linkedPages/contacto";
 import QueHacemos from "./linkedPages/queHacemos";
 import Defensoras from "./linkedPages/defensoras";
+import AltaUsuario from "./linkedPages/subLinked/altaUsuario"; // Asegúrate de tener este componente
+import Formulario from "./componentes/Formulario";
+
 import { ParallaxProvider } from "react-scroll-parallax";
 
 const App: React.FC = () => {
@@ -24,6 +27,8 @@ const App: React.FC = () => {
           <Route path="/queHacemos" element={<QueHacemos />} />
           <Route path="/Defensoras" element={<Defensoras />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/altaUsuario" element={<AltaUsuario />} /> {/* Agregando la ruta faltante */}
+          <Route path="/formulario" element={<Formulario />} />
         </Routes>
       </BrowserRouter>
     </section>

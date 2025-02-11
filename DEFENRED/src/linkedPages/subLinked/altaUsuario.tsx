@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./css/formulario.css";
+import "./css_sub/altaUsuario.css";
 
 const altaUsuario: React.FC = () => {
     const nombre = useRef<HTMLInputElement>(null);
