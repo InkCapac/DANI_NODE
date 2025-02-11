@@ -4,22 +4,21 @@ import streetImage from "../assets/img/street_defenred.jpg";
 import streetImage2 from "../assets/img/street2_defenred.jpg";
 import casaRespiro from "../assets/img/señoraLeyendo_defenred.jpg";
 import { useParallax } from "react-scroll-parallax";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import altaUsuario from "./subLinked/altaUsuario";
 
 const Inicio = () => {
     const parallax = useParallax<HTMLDivElement>({
         speed: 50
     });
-    const navigate = useNavigate();
     return (
         <div>
             {/*<h2 className="title-inicio">DEFENRED</h2>*/}
             {/*METATÍTULO DE LA PÁGINA => "Defenred-Red de Apoyo para Defensores de Derechos Humanos"*/}
             <div className="cta-container" ref={parallax.ref}>
-                <button className="cta-unete" onClick={() => navigate("/altaUsuario")}>
+                <Link to="/altaUsuario" className="cta-unete">
                     Únete a la red!
-                </button>
+                </Link>
             </div>
             <div className="secciones-inicio">
                 <div className="street-defenred-image">
