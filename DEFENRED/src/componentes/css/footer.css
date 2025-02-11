@@ -50,6 +50,7 @@
     margin: 0 15px;
     color: var(--black);
     font-size: 16px;
+    list-style-type: none;
 }
 
 .footerLinks li:hover {
