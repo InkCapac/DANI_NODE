@@ -43,7 +43,7 @@ app.post("/insertarUsuario", (req, res) => {
 
   // Validar campos obligatorios
   //Alta de Usuario
-  if (!datos.nombre || !datos.apellido || !datos.correo || datos.consentimiento === undefined) {
+  if (!datos.nombre || !datos.apellido || !datos.correo || datos.birthDate || datos.consentimiento === undefined) {
     return res.status(400).json({ error: "Faltan campos obligatorios" });
   }
 
@@ -89,7 +89,6 @@ nuevoUsuario
     console.error("Error al crear el usuario:", error);
     res.status(500).json({ error: "Error al crear el usuario" });
   });
-});
 //Formulario de donativo
 enviarDonativo
   .save()
