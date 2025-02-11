@@ -78,7 +78,7 @@ body {
 }
 
 .secciones-inicio img:hover {
-  transform: rotate(3deg) scale(1.1);
+  transform: rotate(-3deg) scale(1.1);
 }
 
 .secciones-parrafo1 {
