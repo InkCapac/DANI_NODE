@@ -29,7 +29,30 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-
+/*CTA de ¿Por qué?*/
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cta-porque {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 15px 25px;
+    transition: background-color ease 0.3s;
+    cursor: pointer;
+  }
+  
+  .cta-porque:hover {
+    background-color: var(--orange);
+  }
+/*Sección de la imagen de incio*/
 .defenred-gallery {
     position: relative;
     overflow: hidden;
