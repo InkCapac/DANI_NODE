@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import './css/Navtab.css';
 
 const Navtab = () => {
-  // Especifica el tipo de activeMenu
-  const [activeMenu, setActiveMenu] = useState<string | null>(null); 
+  const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [scrolling, setScrolling] = useState(false);
-  const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Estado para el menú móvil
 
-  // Corregido: tipo explícito para `menu`
-  const handleMouseEnter = (menu: string) => { 
+  const handleMouseEnter = (menu: string) => {
     setActiveMenu(menu);
   };
 
@@ -25,6 +22,14 @@ const Navtab = () => {
     }
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen); // Alternar la visibilidad del menú móvil
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false); // Cerrar el menú móvil después de hacer clic en un enlace
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -32,36 +37,30 @@ const Navtab = () => {
     };
   }, []);
 
-  useEffect(() => {
-    if (location.pathname === '/') {
-      setActiveMenu(null);
-    }
-  }, [location.pathname]);
-
   const menuItems = [
-    { label: 'Inicio', link: '/' },
+    { label: 'Inicio', link: '/inicio' }, // Enlace a la sección "inicio"
     { 
       label: 'Defenred',
-      link: '/defenred',
+      link: '/defenred', // Enlace a la sección "defenred"
       submenu: [
-        { label: '¿Quíenes somos?', link: '/somos#vision' },
-        { label: '¿Por qué este proyecto?', link: '/somos#mision' },
+        { label: '¿Quiénes somos?', link: '#quienesSomos' }, // Enlace a la sección "quienesSomos"
+        { label: '¿Por qué este proyecto?', link: '#porqueProyecto' }, // Enlace a la sección "porqueProyecto"
       ],
     },
     { 
       label: '¿Qué hacemos?',
-      link: '/queHacemos',
+      link: '#queHacemos', // Enlace a la sección "queHacemos"
       submenu: [
-        { label: 'Casa de Respiro', link: '/casaRespiro' },
-        { label: 'En-redados', link: '/enRedados' },
-        { label: 'Publicaciones', link: '/publicaciones' },
+        { label: 'Casa de Respiro', link: '#casaRespiro' }, // Enlace a la sección "casaRespiro"
+        { label: 'En-redados', link: '#enRedados' }, // Enlace a la sección "enRedados"
+        { label: 'Publicaciones', link: '#publicaciones' }, // Enlace a la sección "publicaciones"
       ],
     },
     { 
       label: 'Defensoras',
-      link: '/defensoras',
+      link: '#defensoras', // Enlace a la sección "defensoras"
     },
-    { label: 'Contacto', link: '/contacto' },
+    { label: 'Contacto', link: '#contacto' }, // Enlace a la sección "contacto"
   ];
 
   return (
@@ -69,7 +68,12 @@ const Navtab = () => {
       <div className="navbar-logo">
         <img src="./src/assets/logo/logo_blackOrange.png" alt="Logo Defenred" />
       </div>
-      <ul className="navbar-menu">
+      {/* Usamos <a> en lugar de <Link> 
+      <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+        ☰
+      </button>
+        */}
+      <ul className={`navbar-menu ${isMobileMenuOpen ? 'open' : ''}`}>
         {menuItems.map((item, index) => (
           <li
             key={index}
@@ -77,12 +81,12 @@ const Navtab = () => {
             onMouseLeave={handleMouseLeave}
             className="navbar-item"
           >
-            <Link to={item.link}>{item.label}</Link>
+            <a href={item.link} onClick={closeMobileMenu}>{item.label}</a> {/* Usamos <a> en lugar de <Link> */}
             {activeMenu === item.label && item.submenu && item.submenu.length > 0 && (
               <ul className="dropdown-menu">
                 {item.submenu.map((subItem, subIndex) => (
                   <li key={subIndex} className="dropdown-item">
-                    <Link to={subItem.link}>{subItem.label}</Link>
+                    <a href={subItem.link} onClick={closeMobileMenu}>{subItem.label}</a> {/* Usamos <a> en lugar de <Link> */}
                   </li>
                 ))}
               </ul>

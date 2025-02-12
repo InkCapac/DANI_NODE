@@ -1,6 +1,9 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import PorqueProyecto from "../linkedPages/subLinked/porqueProyecto";
+/*Debe iniciar con mayúscula el tsx "sempre"*/
+import PorqueProyecto from "./subLinked/porqueProyecto";
+/*Debe iniciar con mayúscula el tsx "sempre"*/
+import QuienesSomos from "./subLinked/quienesSomos";
 import Footer from "../componentes/Footer";
 import fountainDefenred from "../assets/img/fountain_defenred.jpg";
 import "./css_pages/defenred.css";
@@ -20,16 +23,8 @@ const Defenred = () => {
       <div className="cta-container" ref={parallax.ref}>
         <button className="cta-porque">¿Por qué elegimos este proyecto?</button>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="PorqueProyecto">Porque este proyecto</Link>
-          </li>
-          <li>
-            <Link to="quienes-somos">Quienes somos</Link>
-          </li>
-        </ul>
-      </nav>
+      <QuienesSomos />
+      <PorqueProyecto />
       <Footer />
     </section>
   );

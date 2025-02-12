@@ -21,13 +21,19 @@ const App: React.FC = () => {
         <Navtab /> {/* Incluye la barra de navegación en todas las páginas */}
         <Routes>
           {/* Rutas de las páginas */}
-          <Route path="/" element={<Index />} />
+          <Route path="/inicio" element={<Index />} />
+          {/* Páginas anidadas a inicio */}
+          <Route path="/altaUsuario" element={<AltaUsuario />} />
           <Route path="/Defenred" element={<Defenred />} />
-          {/* Nested routes for Defenred */}
+          {/* Rutas anidadas a Defenred */}
+          <Route path="/quienesSomos" element={<Defensoras />} />
+          <Route path="/porqueProyecto" element={<Defensoras />} />
+          {/* Sección de ¿Qué hacemos? */}
           <Route path="/queHacemos" element={<QueHacemos />} />
+          {/* Rutas anidadas a ¿Qué hacemos? */}
           <Route path="/Defensoras" element={<Defensoras />} />
+          {/* Nested routes for ¿Qué hacemos? */}
           <Route path="/contacto" element={<Contacto />} />
-          <Route path="/altaUsuario" element={<AltaUsuario />} /> {/* Agregando la ruta faltante */}
           <Route path="/formulario" element={<Formulario />} />
         </Routes>
       </BrowserRouter>
