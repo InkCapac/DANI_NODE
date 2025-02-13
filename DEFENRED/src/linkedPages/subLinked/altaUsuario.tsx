@@ -21,7 +21,7 @@ const altaUsuario: React.FC = () => {
             // Añade la fecha de nacimiento
             birthDate: birthDate.current?.value || "", 
             telefono: telefono.current?.value ? telefono.current.value.trim() : "",
-            consentimiento: consentimiento.current?.checked ? "true" : "false",
+            consentimiento: consentimiento.current?.checked || false,
         };
 
         console.log("Datos a enviar:", JSON.stringify(usuario));
