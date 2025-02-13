@@ -49,7 +49,7 @@ const Navtab = () => {
     },
     { 
       label: '¿Qué hacemos?',
-      link: '#queHacemos', // Enlace a la sección "queHacemos"
+      link: '/queHacemos', // Enlace a la sección "queHacemos"
       submenu: [
         { label: 'Casa de Respiro', link: '#casaRespiro' }, // Enlace a la sección "casaRespiro"
         { label: 'En-redados', link: '#enRedados' }, // Enlace a la sección "enRedados"
@@ -58,9 +58,9 @@ const Navtab = () => {
     },
     { 
       label: 'Defensoras',
-      link: '#defensoras', // Enlace a la sección "defensoras"
+      link: '/defensoras', // Enlace a la sección "defensoras"
     },
-    { label: 'Contacto', link: '#contacto' }, // Enlace a la sección "contacto"
+    { label: 'Contacto', link: '/contacto' }, // Enlace a la sección "contacto"
   ];
 
   return (

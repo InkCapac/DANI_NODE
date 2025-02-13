@@ -21,7 +21,7 @@ mongoose
   });
 
 const Usuario = mongoose.model("usuario", userSchema);
-const Donativo = mongoose.model("donativo", userSchema);
+const Donativo = mongoose.model("donativo", donativoSchema); // Corregido
 
 // Middleware
 app.use(express.json());
@@ -37,69 +37,72 @@ app.get("/", (req, res) => {
 app.get("/contacto", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "contacto.html"));
 });
-//APP DE ALTA DE USUARIO
+
+// Alta de Usuario
 app.post("/insertarUsuario", (req, res) => {
   const datos = req.body;
 
   // Validar campos obligatorios
-  //Alta de Usuario
-  if (!datos.nombre || !datos.apellido || !datos.correo || datos.birthDate || datos.consentimiento === undefined) {
+  if (!datos.nombre || !datos.apellido || !datos.correo || !datos.birthDate || datos.consentimiento === undefined) {
     return res.status(400).json({ error: "Faltan campos obligatorios" });
   }
 
   const nuevoUsuario = new Usuario({
     nombre: datos.nombre,
     apellido: datos.apellido,
-    apellido2: datos.apellido2 || "",  // Puede ser vacío
+    apellido2: datos.apellido2 || "", // Puede ser vacío
     birthDate: datos.birthDate,
     correo: datos.correo,
-    telefono: datos.telefono || "",  // Si no hay teléfono, se asigna vacío
-    consentimiento: datos.consentimiento === "true",  // Convertir el consentimiento a booleano
+    telefono: datos.telefono || "", // Si no hay teléfono, se asigna vacío
+    consentimiento: datos.consentimiento === "true", // Convertir el consentimiento a booleano
   });
+
+  // Guardar en la base de datos
+  nuevoUsuario
+    .save()
+    .then((usuario) => {
+      console.log("Usuario creado correctamente:", usuario);
+      res.json({ message: "Usuario creado correctamente", data: usuario });
+    })
+    .catch((error) => {
+      console.error("Error al crear el usuario:", error);
+      res.status(500).json({ error: "Error al crear el usuario" });
+    });
 });
-//APP DE ENVIAR DONATIVO
+
+// Enviar Donativo
 app.post("/enviarDonativo", (req, res) => {
   const datos = req.body;
-  //Formulario de donativo
-  if (!datos.nombre || !datos.apellido || !datos.correo || datos.caridad || datos.consentimiento === undefined) {
+
+  // Validar campos obligatorios
+  if (!datos.nombre || !datos.apellido || !datos.correo || !datos.caridad || datos.consentimiento === undefined) {
     return res.status(400).json({ error: "Faltan campos obligatorios" });
   }
 
-  const enviarDonativo = new Donativo({
+  const nuevoDonativo = new Donativo({
     nombre: datos.nombre,
     apellido: datos.apellido,
-    apellido2: datos.apellido2 || "",  // Puede ser vacío
+    apellido2: datos.apellido2 || "", // Puede ser vacío
     correo: datos.correo,
-    //donativo: datos.donativo || 0,   Si no hay donativo, se asigna 0
     caridad: datos.caridad,
-    telefono: datos.telefono || "",  // Si no hay teléfono, se asigna vacío
-    observacion: datos.observacion || "",  // Si no hay observación, se asigna vacío
-    consentimiento: datos.consentimiento === "true",  // Convertir el consentimiento a booleano
+    telefono: datos.telefono || "", // Si no hay teléfono, se asigna vacío
+    observacion: datos.observacion || "", // Si no hay observación, se asigna vacío
+    consentimiento: datos.consentimiento === "true", // Convertir el consentimiento a booleano
   });
+
+  // Guardar en la base de datos
+  nuevoDonativo
+    .save()
+    .then((donativo) => {
+      console.log("Donativo enviado correctamente:", donativo);
+      res.json({ message: "Donativo enviado correctamente", data: donativo });
+    })
+    .catch((error) => {
+      console.error("Error al enviar el donativo:", error);
+      res.status(500).json({ error: "Error al enviar el donativo" });
+    });
 });
-// GUARDAR LOS DATOS INGRESADOS EN LA BASE DE DATOS (mongoDB)
-//Alta de Usuario
-nuevoUsuario
-  .save()
-  .then((usuario) => {
-    console.log("Usuario creado correctamente:", usuario);
-    res.json({ message: "Usuario creado correctamente", data: usuario });
-  })
-  .catch((error) => {
-    console.error("Error al crear el usuario:", error);
-    res.status(500).json({ error: "Error al crear el usuario" });
-  });
-//Formulario de donativo
-enviarDonativo
-  .save()
-  .then((usuario) => {
-    console.log("Gracias por su apoyo de:", donativo);
-    res.json({ message: "Usuario creado correctamente", data: donativo });
-  })
-  .catch((error) => {
-    console.error("Error al enviar el monto:", error);
-    res.status(500).json({ error: "Error al crear el usuario" });
-  });
+
 // 404 Handler
 app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
