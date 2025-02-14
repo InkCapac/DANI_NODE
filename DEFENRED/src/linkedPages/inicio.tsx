@@ -1,8 +1,10 @@
 import Footer from "../componentes/Footer"
 import "../linkedPages/css_pages/inicioStyle.css";
-import streetImage from "../assets/img/street_defenred.jpg";
+/*import streetImage from "../assets/img/street_defenred.jpg";*/
+import streetImage from "../assets/img/street_defenred.webp";
 import streetImage2 from "../assets/img/street2_defenred.jpg";
-import casaRespiro from "../assets/img/señoraLeyendo_defenred.jpg";
+/*import casaRespiro from "../assets/img/señoraLeyendo_defenred.jpg";*/
+import casaRespiro from "../assets/img/señoraLeyendo_defenred.webp";
 import { useParallax } from "react-scroll-parallax";
 import { Link } from "react-router-dom";
 import altaUsuario from "./subLinked/altaUsuario";
