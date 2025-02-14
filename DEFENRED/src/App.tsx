@@ -21,6 +21,7 @@ const App: React.FC = () => {
         <Navtab /> {/* Incluye la barra de navegación en todas las páginas */}
         <Routes>
           {/* Rutas de las páginas */}
+          <Route path="/" element={<Index />} />
           <Route path="/inicio" element={<Index />} />
           {/* Páginas anidadas a inicio */}
           <Route path="/altaUsuario" element={<AltaUsuario />} />
