@@ -7,18 +7,30 @@
 }
 body{
     background-color: var(--white);
-}
-.contact-title {
-    /*El 80% va para el top/bottom y el 20% va para el left/right*/
-    margin: 100px 20px;
-    font-size: xx-large;
-}
-.meta-contact-title{
-    margin: 20px;
-}
-.keywords {
-    color: var(--blue);
-}
-.contact-info{
-    margin: 20px;
-}
+}   
+    .contact-title {
+        margin: 100px 20px 20px;
+        font-size: xx-large;
+        color: var(--white);
+    }
+    
+    .meta-contact-title {
+        margin: 20px;
+        font-size: 1.2rem;
+    }
+    
+    .keywords {
+        color: var(--blue);
+    }
+    
+    .contact-info {
+        margin: 20px;
+        line-height: 1.6; /* Mejor legibilidad */
+        max-width: 800px; /* Evita líneas muy largas */
+    }
+    
+    .donative-container {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+        border-radius: 8px; /* Bordes redondeados */
+    }

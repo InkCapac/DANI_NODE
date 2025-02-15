@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Logo from '../assets/logo/logo_blackOrange.webp'
 import './css/Navtab.css';
 
 const Navtab = () => {
@@ -66,7 +67,7 @@ const Navtab = () => {
   return (
     <nav className={`navbar ${scrolling ? 'scrolled' : ''}`}>
       <div className="navbar-logo">
-        <img src="./src/assets/logo/logo_blackOrange.png" alt="Logo Defenred" />
+        <img src={Logo} alt="Logo Defenred" />
       </div>
       {/* Usamos <a> en lugar de <Link> 
       <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>

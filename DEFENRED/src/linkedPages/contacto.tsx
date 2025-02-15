@@ -10,11 +10,14 @@ const Contacto = () => {
         rotate: [0, 200],
         speed: 10
       });
+      //En caso de no usar un const parallax, eliminarlo
+      /*
       const parallax2 = useParallax<HTMLDivElement>({
         rotate: [0, -360],
-      });
+      });*/
     return (
         <div>
+            <div className="background">
 
             <h2 className="contact-title">Formulario de Defenred</h2>
             <div ref={parallax.ref}>
@@ -28,10 +31,11 @@ const Contacto = () => {
                 humanos. ¡Estamos aquí para escucharte! Ponte en contacto con nosotros y únete a nuestra
                 causa.
             </p>
+            <div className="donative-container">
                 <Formulario />
-            <div ref={parallax2.ref}>
-                <Footer />
             </div>
+            </div>
+                <Footer />
         </div>
     );
 };

@@ -1,8 +1,10 @@
 import Footer from "../componentes/Footer"
 import "../linkedPages/css_pages/inicioStyle.css";
-import streetImage from "../assets/img/street_defenred.jpg";
+/*import streetImage from "../assets/img/street_defenred.jpg";*/
+import streetImage from "../assets/img/street_defenred.webp";
 import streetImage2 from "../assets/img/street2_defenred.jpg";
-import casaRespiro from "../assets/img/señoraLeyendo_defenred.jpg";
+/*import casaRespiro from "../assets/img/señoraLeyendo_defenred.jpg";*/
+import casaRespiro from "../assets/img/señoraLeyendo_defenred.webp";
 import { useParallax } from "react-scroll-parallax";
 import { Link } from "react-router-dom";
 import altaUsuario from "./subLinked/altaUsuario";
@@ -12,13 +14,15 @@ const Inicio = () => {
         speed: 50
     });
     return (
-        <div>
+        <div className="background-imagen">
             {/*<h2 className="title-inicio">DEFENRED</h2>*/}
             {/*METATÍTULO DE LA PÁGINA => "Defenred-Red de Apoyo para Defensores de Derechos Humanos"*/}
             <div className="cta-container" ref={parallax.ref}>
                 <Link to="/altaUsuario" className="cta-unete">
                     Únete a la red!
                 </Link>
+            </div>
+            <div className="space-between">SS
             </div>
             <div className="secciones-inicio">
                 <div className="street-defenred-image">
