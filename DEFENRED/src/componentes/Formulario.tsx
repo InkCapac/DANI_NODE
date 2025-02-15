@@ -85,7 +85,7 @@ const Formulario: React.FC = () => {
       <div className="form-group">
         <label htmlFor="consentimiento">
           <input id="consentimiento" type="checkbox" ref={consentimiento} required />
-          I consent to the terms and conditions
+          Doy mi consentimiento a los términos y condiciones.
         </label>
       </div>
 
