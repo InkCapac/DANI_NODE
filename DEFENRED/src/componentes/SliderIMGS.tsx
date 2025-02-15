@@ -20,20 +20,18 @@ const images = [
 class MyGallery extends React.Component {
   render() {
     return (
-      <div style={{ width: "100vw", height: "100vh" }}>
-        <ImageGallery
-          items={images}
-          showBullets={true}
-          autoPlay={true}
-          renderItem={(item) => (
-            <img
-              src={item.original}
-              alt=""
-              style={{ width: "100%", height: "100vh" }}
-            />
-          )}
-        />
-      </div>
+      <ImageGallery
+        items={images}
+        showBullets={true}
+        autoPlay={true}
+        renderItem={(item) => (
+          <img
+            src={item.original}
+            alt=""
+            style={{ width: "100%", height: "100vh" }}
+          />
+        )}
+      />
     );
   }
 }
