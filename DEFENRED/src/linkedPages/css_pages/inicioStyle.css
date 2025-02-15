@@ -22,6 +22,9 @@
 
 .cta-unete {
   font-size: clamp(2rem, 8vw, 6rem);
+  font-family: 'Montserrat', sans-serif;
+  /*Montserrat ExtraBold */
+  font-weight: 800; 
   padding: clamp(10px, 2vw, 20px) clamp(15px, 3vw, 30px);
   margin: 2vw;
   text-align: center;
@@ -34,16 +37,15 @@
 }
 .cta-unete:hover {
   background-color: var(--orange);
-  font-weight: bold;
   text-decoration: none; /* Asegura que no haya subrayado al hacer hover */
 }
-/* Secciones principales - Mobile First */
+/* Secciones principales - Tamaño móviles*/
 .secciones-inicio, 
 .casaRespiro-inicio {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5%;
+  padding: 3%;
   gap: 30px;
   background-color: var(--gray);
 }
@@ -77,6 +79,9 @@
 /* Contenido textual */
 .secciones-parrafo1,
 .casaRespiro-parrafo1 {
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
   width: 100%;
   font-size: clamp(1rem, 2vw, 1.3rem);
   padding: 20px;
@@ -108,26 +113,27 @@
   background-color: var(--orange);
 }
 
-/* Desktop Layout */
+/* Desktop Layout - Tamaño escritorio */
 @media (min-width: 992px) {
   .secciones-inicio,
   .casaRespiro-inicio { /* Corregir nombre de clase */
     flex-direction: row;
     align-items: flex-start;
-    padding: 45px 10%;
+    padding: 30px 5%;
   }
 
   .street-defenred-image,
   .casaRespiro-inicio-image { /* Corregir nombre de clase */
-    width: 50%;
-    max-width: none;
+    width: 40%;
+    max-width: 90%;
     order: 0; /* Restablecer orden natural */
   }
 
   .secciones-parrafo1,
   .casaRespiro-parrafo1 {
-    width: 50%;
+    width: 60%;
     font-size: 1.2rem;
+    margin-top: 30px;
   }
 
   /* Invertir orden para variación visual */
