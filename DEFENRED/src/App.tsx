@@ -8,14 +8,12 @@ import QueHacemos from "./linkedPages/queHacemos";
 import Defensoras from "./linkedPages/defensoras";
 import AltaUsuario from "./linkedPages/subLinked/altaUsuario"; // Asegúrate de tener este componente
 import Formulario from "./componentes/Formulario";
-import MyGallery from "./componentes/SliderIMGS";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 
 const App: React.FC = () => {
   return (
     <>
-      <MyGallery />
       <ParallaxProvider>
         <section>
           {/* Barra de navegación */}

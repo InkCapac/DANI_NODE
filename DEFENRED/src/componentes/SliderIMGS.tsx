@@ -4,16 +4,16 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 const images = [
   {
-    original: "src/assets/img/reunion_defenred.jpg",
-    thumbnail: "src/assets/img/reunion_defenred.jpg",
+    original: "src/assets/img/reunion_defenred.webp",
+    thumbnail: "src/assets/img/reunion_defenred.webp",
   },
   {
-    original: "src/assets/img/señoraLeyendo_defenred.jpg",
-    thumbnail: "src/assets/img/señoraLeyendo_defenred.jpg",
+    original: "src/assets/img/señoraLeyendo_defenred.webp",
+    thumbnail: "src/assets/img/señoraLeyendo_defenred.webp",
   },
   {
-    original: "src/assets/img/salón_defenred.jpg",
-    thumbnail: "src/assets/img/salón_defenred.jpg",
+    original: "src/assets/img/salón_defenred.webp",
+    thumbnail: "src/assets/img/salón_defenred.webp",
   },
 ];
 class MyGallery extends React.Component {
