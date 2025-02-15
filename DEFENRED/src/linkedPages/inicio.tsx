@@ -14,13 +14,15 @@ const Inicio = () => {
         speed: 50
     });
     return (
-        <div>
+        <div className="background-imagen">
             {/*<h2 className="title-inicio">DEFENRED</h2>*/}
             {/*METATÍTULO DE LA PÁGINA => "Defenred-Red de Apoyo para Defensores de Derechos Humanos"*/}
             <div className="cta-container" ref={parallax.ref}>
                 <Link to="/altaUsuario" className="cta-unete">
                     Únete a la red!
                 </Link>
+            </div>
+            <div className="space-between">SS
             </div>
             <div className="secciones-inicio">
                 <div className="street-defenred-image">

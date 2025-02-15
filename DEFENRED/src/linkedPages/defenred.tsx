@@ -25,7 +25,9 @@ const Defenred = () => {
       </div>
       <QuienesSomos />
       <PorqueProyecto />
+      <div>
       <Footer />
+      </div>
     </section>
   );
 };

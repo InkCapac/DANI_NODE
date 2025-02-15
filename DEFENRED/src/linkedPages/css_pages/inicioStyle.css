@@ -12,7 +12,9 @@
   padding: 1rem 0;
   text-align: center;
 }
-
+.background-imagen{
+  background-image: url(/src/assets/img/spain_sunrise.jpg);
+}
 /* Contenedor CTA mejorado */
 .cta-container {
   display: flex;
@@ -39,6 +41,17 @@
   background-color: var(--orange);
   text-decoration: none; /* Asegura que no haya subrayado al hacer hover */
 }
+.space-between{
+  height: 50px;
+  background-color: var(--white);
+  width: 100%;
+}
+/*Palabras clave*/
+.keywords{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: var(--blue);
+}
 /* Secciones principales - Tamaño móviles*/
 .secciones-inicio, 
 .casaRespiro-inicio {
@@ -47,7 +60,8 @@
   align-items: center;
   padding: 3%;
   gap: 30px;
-  background-color: var(--gray);
+  /*background-color: var(--gray);*/
+  background-image: url(/src/assets/img/grayFlower_background.jpg);
 }
 
 /* Contenedor de imagen */
