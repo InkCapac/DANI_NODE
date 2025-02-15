@@ -5,7 +5,7 @@ import PorqueProyecto from "./subLinked/porqueProyecto";
 /*Debe iniciar con mayúscula el tsx "sempre"*/
 import QuienesSomos from "./subLinked/quienesSomos";
 import Footer from "../componentes/Footer";
-import fountainDefenred from "../assets/img/fountain_defenred.jpg";
+import fountainDefenred from "../assets/img/fountain_defenred.webp";
 import "./css_pages/defenred.css";
 import { useParallax } from "react-scroll-parallax";
 

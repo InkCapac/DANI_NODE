@@ -1,4 +1,4 @@
-import reunionImage from "../assets/img/reunion_defenred.jpg"
+import reunionImage from "../assets/img/reunion_defenred.webp"
 
 import '../componentes/css/section.css'
 function Sections() {
