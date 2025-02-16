@@ -1,0 +1,55 @@
+:root {
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+  }
+.quienesSomos-content{
+
+}
+.keywords{
+    color: var(--blue);
+}
+.quienesSomos{
+    display: flex;
+    justify-content: center;
+    background-image: url(/src//assets/img/grayFlower_background.jpg);
+}
+.quienes-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px 25px;
+    transition: background-color ease 0.3s;
+    cursor: pointer;
+}
+.quienes-title:hover{
+    background-color: var(--orange);
+}
+.quienes-parrafo1{
+    flex: 1;
+    font-family: 'Readex Pro', sans-serif;
+    text-align: justify;
+    font-size: 1.3em;
+    border-style: dashed;
+    background-color: var(--white);
+    padding: 20px;
+    margin: 40px;
+    color: var(--black);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .quienes-parrafo1:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: bold;
+    border-style: groove;
+    padding: 20px;
+    border-radius: 5px;
+  }

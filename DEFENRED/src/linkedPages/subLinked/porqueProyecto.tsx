@@ -4,11 +4,12 @@ const PorqueProyecto: React.FC = () => {
     <div>
     {/*<h2 className="title-inicio">DEFENRED</h2>*/}
     {/*METATÍTULO DE LA PÁGINA => "Defenred-Red de Apoyo para Defensores de Derechos Humanos"*/}
-    <div className="secciones-inicio">
+    <div className="porque-inicio">
     <div className="street-defenred-image">
+        <div>
         <img src="" alt="Vistas de Defenred" />
         </div>
-        <p className="secciones-parrafo1">
+        <p className="porque-parrafo1">
             <span className="keywords">Defenred</span> es una organización comprometida con el apoyo y la protección de defensores de <span className="keywords">Defenred</span> que enfrentan riesgos en sus países de origen. A través de programas de
             refugio, formación, autocuidado y redes de apoyo, Defenred brinda a estos activistas un espacio
             seguro para recuperar fuerzas, adquirir nuevas herramientas y conectarse con aliados
@@ -17,6 +18,7 @@ const PorqueProyecto: React.FC = () => {
             justicia y los derechos humanos en contextos de alta vulnerabilidad, ofreciéndoles el respaldo
             necesario para que puedan continuar con su labor esencial.
         </p>
+    </div>
     </div>
     <div className="casaRespiro-inicio">
         <p className="casaRespiro-parrafo1">

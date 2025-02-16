@@ -6,7 +6,7 @@
     --gray: rgb(217, 217, 217);
   }
 /*Sección de introducción a Defenred*/
-.secciones-inicio {
+.porque-inicio {
     display: flex;
     align-items: flex-start;
     padding: 45px;
@@ -22,7 +22,7 @@
     margin-right: 20px;
   }
   
-  .secciones-inicio img {
+  .porque-inicio img {
     height: 330px;
     width: auto;
     border-style: dashed;
@@ -34,7 +34,7 @@
     transform: rotate(-3deg) scale(1.1);
   }
   
-  .secciones-parrafo1 {
+  .porque-parrafo1 {
     flex: 1;
     font-family: 'Readex Pro', sans-serif;
     text-align: justify;
@@ -61,7 +61,7 @@
     display: flex;
     align-items: flex-start;
     padding: 45px;
-    background-color: var(--gray);
+    background-image: url(src/assets/img/grayFlower_background.jpg);
     gap: 30px;
     margin: 0 auto;
   }

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-/*Debe iniciar con mayúscula el tsx "sempre"*/
 import PorqueProyecto from "./subLinked/porqueProyecto";
-/*Debe iniciar con mayúscula el tsx "sempre"*/
 import QuienesSomos from "./subLinked/quienesSomos";
 import Footer from "../componentes/Footer";
 import fountainDefenred from "../assets/img/fountain_defenred.webp";
@@ -10,9 +8,11 @@ import "./css_pages/defenred.css";
 import { useParallax } from "react-scroll-parallax";
 
 const Defenred = () => {
-  const parallax = useParallax<HTMLDivElement>({
-    speed: 50
+  // Crear dos instancias separadas de useParallax
+  const parallax1 = useParallax<HTMLDivElement>({
+    speed: 50,
   });
+
   return (
     <section className="seccion-defenred-inicio">
       <div className="defenred-gallery">
@@ -20,18 +20,15 @@ const Defenred = () => {
           <img className="gallery-item active" src={fountainDefenred} alt="Imagen" />
         </div>
       </div>
-      {/*
-      <div className="cta-container" ref={parallax.ref}>
+
+      {/* Asignar cada ref a un elemento único */}
+      <div className="cta-container" ref={parallax1.ref}>
         <button className="cta-porque">¿Por qué elegimos este proyecto?</button>
-      </div>
-      */}
-      <div className="cta-container" ref={parallax.ref}>
-        <button className="cta-porque">¿Quiénes somos?</button>
       </div>
       <QuienesSomos />
       <PorqueProyecto />
       <div>
-      <Footer />
+        <Footer />
       </div>
     </section>
   );
