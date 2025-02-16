@@ -1,18 +1,14 @@
 import { Link } from "react-router-dom"; // Import Link and Outlet
+import { useParallax } from "react-scroll-parallax";
 
 const quienesSomos = () => {
+  const parallax = useParallax<HTMLDivElement>({
+    speed: 20
+  })
     return (
         <section id="quienesSomos">
-            <h2>¿QUIÉNES SOMOS?</h2>
+            <p>¿QUIÉNES SOMOS?</p>
             <nav>
-        <ul>
-          <li>
-            <Link to="porqueProyecto">Porque este proyecto</Link>
-          </li>
-          <li>
-            <Link to="quienesSomos">Quienes somos</Link>
-          </li>
-        </ul>
       </nav>
         </section>
     );

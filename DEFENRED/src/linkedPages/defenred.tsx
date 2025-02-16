@@ -20,8 +20,13 @@ const Defenred = () => {
           <img className="gallery-item active" src={fountainDefenred} alt="Imagen" />
         </div>
       </div>
+      {/*
       <div className="cta-container" ref={parallax.ref}>
         <button className="cta-porque">¿Por qué elegimos este proyecto?</button>
+      </div>
+      */}
+      <div className="cta-container" ref={parallax.ref}>
+        <button className="cta-porque">¿Quiénes somos?</button>
       </div>
       <QuienesSomos />
       <PorqueProyecto />
