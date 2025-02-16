@@ -4,7 +4,6 @@ import streetImage from "../assets/img/street_defenred.webp";
 import casaRespiro from "../assets/img/señoraLeyendo_defenred.webp";
 import { useParallax } from "react-scroll-parallax";
 import { Link } from "react-router-dom";
-import altaUsuario from "./subLinked/altaUsuario";
 import MyGallery from "../componentes/SliderIMGS";
 
 const Inicio = () => {

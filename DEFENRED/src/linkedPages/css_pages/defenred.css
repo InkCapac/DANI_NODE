@@ -6,7 +6,7 @@
     --gray: rgb(217, 217, 217);
 }
 
-h2 {
+.colorDF {
     display: flex;
     margin: 120px 500px;
     border-radius: 50px;
@@ -17,7 +17,7 @@ h2 {
     transition: background-color ease 0.5s;
 }
 
-h2:hover {
+.colorDF:hover {
     background-color: var(--orange);
 }
 

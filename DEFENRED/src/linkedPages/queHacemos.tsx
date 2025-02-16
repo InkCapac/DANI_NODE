@@ -1,12 +1,11 @@
-import Sections from "../componentes/Sections"
+import "./css_pages/queHacemos.css";
 
 const QueHacemos = () => {
-    return (
-        <div>
-           <Sections />
-            <h2>DEFENRED</h2>
-        </div>
-    );
+  return (
+    <div>
+      <h2 className="colorTexto">DEFENRED</h2>
+    </div>
+  );
 };
 
 export default QueHacemos;
