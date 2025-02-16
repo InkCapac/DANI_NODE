@@ -14,7 +14,8 @@ import { ParallaxProvider } from "react-scroll-parallax";
 const App: React.FC = () => {
   return (
     <>
-      <ParallaxProvider>
+    <div id="root">
+    <ParallaxProvider>
         <section>
           {/* Barra de navegación */}
           <BrowserRouter>
@@ -41,6 +42,8 @@ const App: React.FC = () => {
           </BrowserRouter>
         </section>
       </ParallaxProvider>
+    </div>
+      
     </>
   );
 };

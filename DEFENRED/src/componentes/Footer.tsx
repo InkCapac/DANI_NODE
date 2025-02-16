@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import React from "react";
+
 import { Link } from "react-router-dom";
 import "./css/footer.css"
 const Footer = () => {
