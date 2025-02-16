@@ -23,13 +23,16 @@
     background-color: var(--blue);
     color: var(--white);
     border-radius: 20px;
-    margin: 20px;
+    margin: 20px 30px;
     padding: 10px 25px;
     transition: background-color ease 0.3s;
     cursor: pointer;
 }
 .quienes-title:hover{
     background-color: var(--orange);
+}
+.space-between{
+    margin: 40px;
 }
 .quienes-parrafo1{
     flex: 1;

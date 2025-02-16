@@ -29,14 +29,15 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+
 /*CTA de ¿Por qué?*/
 .cta-container {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .cta-porque {
+}
+
+.cta-porque {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 60px;
@@ -47,17 +48,20 @@ body {
     padding: 15px 25px;
     transition: background-color ease 0.3s;
     cursor: pointer;
-  }
-  
-  .cta-porque:hover {
+}
+
+.cta-porque:hover {
     background-color: var(--orange);
-  }
+}
+
 /*Sección de la imagen de incio*/
 .defenred-gallery {
     position: relative;
     overflow: hidden;
-    width: 100vw; /* Ancho completo de la ventana gráfica */
-    height: 100vh; /* Altura completa de la ventana gráfica */
+    width: 100vw;
+    /* Ancho completo de la ventana gráfica */
+    height: 100vh;
+    /* Altura completa de la ventana gráfica */
 }
 
 .defenred-gallery-container {
@@ -93,5 +97,32 @@ body {
     /* Hacerla visible cuando está activa */
     visibility: visible;
     /* Aplicar efecto de zoom-out */
-    transform: scale(1.0); /* Escala normal (sin zoom) */
+    transform: scale(1.0);
+    /* Escala normal (sin zoom) */
+}
+/*Sección de los textos sobre la imagen*/
+.image-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-style: italic;
+    color: var(--white);
+    z-index: 2;
+}
+.image-text:hover{
+    color: var(--orange);
+}
+.image-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.image-text p {
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
 }

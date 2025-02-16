@@ -5,7 +5,11 @@
   --blue: rgb(12, 53, 67);
   --gray: rgb(217, 217, 217);
 }
-
+/*Sección del color del texto cuando es subrayado*/
+::selection{
+  color: var(--white);
+  background-color: var(--blue);
+}
 /*RECORDAR CAMBIAR LOS COLORES DEL BACKGROUND CON LOS DE ARRIBA COHERENTEMENTE*/
 /*
 USO DE LOS COLORES.

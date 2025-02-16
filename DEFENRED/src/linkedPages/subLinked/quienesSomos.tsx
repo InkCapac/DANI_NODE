@@ -3,13 +3,11 @@ import "./css_sub/quienesSomos.css"
 import { useParallax } from "react-scroll-parallax";
 
 const QuienesSomos = () => {
-  const parallaxd = useParallax<HTMLDivElement>({
-    speed: 20,
-  });
 
   return (
-    <section id="quienesSomos-section">
-      <div ref={parallaxd.ref}>
+    <section id="quienesSomos">
+      <div>
+      <p className="space-between"></p>
       <p className="quienes-title">¿QUIÉNES SOMOS?</p>
       </div>
       <div className="quienesSomos">
