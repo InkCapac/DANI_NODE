@@ -12,8 +12,12 @@
   padding: 1rem 0;
   text-align: center;
 }
-.background-imagen{
+.background-imagen {
   background-image: url(/src/assets/img/spain_sunrise.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 /* Contenedor CTA mejorado */
 .cta-container {
