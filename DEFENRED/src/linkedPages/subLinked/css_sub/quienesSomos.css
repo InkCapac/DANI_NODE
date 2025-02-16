@@ -5,9 +5,6 @@
     --blue: rgb(12, 53, 67);
     --gray: rgb(217, 217, 217);
   }
-.quienesSomos-content{
-
-}
 .keywords{
     color: var(--blue);
 }
