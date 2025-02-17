@@ -93,6 +93,8 @@ app.get("/obtenerUsuarios", async (req, res) => {
   }
 });
 
+/*Averiguar que es PUT PATCH*/
+
 // Enviar Donativo
 app.post("/enviarDonativo", (req, res) => {
   const datos = req.body;
