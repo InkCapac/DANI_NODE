@@ -10,8 +10,7 @@ html{
 }
 /*ARREGLAR LA PUTA BARRA*/
 .navbar {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
+
 position: sticky;
   top: 0;
   left: 0;
