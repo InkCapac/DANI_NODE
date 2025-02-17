@@ -1,3 +1,31 @@
-.colorTexto {
-    color: red;
+:root {
+  --orange: rgb(240, 101, 0);
+  --white: rgb(230, 229, 229);
+  --black: rgb(34, 34, 34);
+  --blue: rgb(12, 53, 67);
+  --gray: rgb(217, 217, 217);
+}
+.casaRespiro {
+  width: 100%;
+  height: 60vh;
+  padding: 0;
+  object-fit: cover;
+}
+.textoNaranja {
+  color: var(--orange);
+  position: relative;
+  z-index: 1;
+  left: 35%;
+  bottom: 550px;
+  font-size: 4em;
+  text-shadow: 2px 2px 2px rgb(105, 44, 0);
+}
+.textoBlanco {
+  color: var(--white);
+  font-size: 30px;
+  text-shadow: 2px 2px 2px var(--black);
+  position: relative;
+  z-index: 1;
+  left: 30%;
+  bottom: 600px;
 }
