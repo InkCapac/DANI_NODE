@@ -1,8 +1,9 @@
-import './css_sub/publicaciones'
+import './css_sub/publicaciones.css'
 
 function Publicaciones() {
-    <section>
-        <p>PUBLICACIONES</p>
+    return (
+        <section className='publicaciones-container'>
+        <p className='publicaciones-title'>PUBLICACIONES</p>
         <p>Conoce y aprende sobre nuestra labor.</p>
         <p>: En Defenred creemos que la información es algo esencial para la defensa de
             los derechos humanos. A través de nuestras publicaciones, buscamos informar y ayudar a la
@@ -20,5 +21,7 @@ function Publicaciones() {
             compromiso con la justicia social.
         </p>
     </section>
+    )
+    
 }
 export default Publicaciones;

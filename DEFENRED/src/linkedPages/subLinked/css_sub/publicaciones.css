@@ -1,0 +1,14 @@
+:root {
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+  }
+.keywords{
+    color: var(--blue);
+}
+.publicaciones-title{
+    background-color: var(--blue);
+    color: var(--white);
+}
