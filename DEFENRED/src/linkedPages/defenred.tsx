@@ -1,6 +1,7 @@
 
 import PorqueProyecto from "./subLinked/porqueProyecto";
 import QuienesSomos from "./subLinked/quienesSomos";
+import CasaRespiro from "./subLinked/casaRespiro";
 import Footer from "../componentes/Footer";
 import fountainDefenred from "../assets/img/fountain_defenred.webp";
 import "./css_pages/defenred.css";
@@ -33,6 +34,7 @@ const Defenred = () => {
       </div>
         */}
       <QuienesSomos />
+      <CasaRespiro />
       <PorqueProyecto />
       <div>
         <Footer />

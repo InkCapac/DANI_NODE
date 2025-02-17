@@ -9,18 +9,20 @@
     color: var(--blue);
 }
 .quienesSomos{
-    display: flex;
+    /*display: flex;*/
+    padding: 15px;
     justify-content: center;
     background-image: url(/src//assets/img/grayFlower_background.jpg);
 }
 .quienes-title{
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 60px;
     background-color: var(--blue);
     color: var(--white);
     border-radius: 20px;
-    margin: 20px 30px;
+    margin: 20px 250px;
     padding: 10px 25px;
     transition: background-color ease 0.3s;
     cursor: pointer;
@@ -28,8 +30,8 @@
 .quienes-title:hover{
     background-color: var(--orange);
 }
-.space-between{
-    margin: 40px;
+.space-between-quienes{
+    margin: 20px;
 }
 .quienes-parrafo1{
     flex: 1;
@@ -52,4 +54,23 @@
     border-style: groove;
     padding: 20px;
     border-radius: 5px;
+  }
+  .quienes-parrafo1-quote{
+    font-family: 'Readex Pro', sans-serif;
+    text-align: justify;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border-style: groove;
+    background-color: var(--gray)   ;
+    padding: 10px;
+    margin: 10px 60px;
+    color: var(--black);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .quienes-parrafo1-quote:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    border-style: groove;
   }
