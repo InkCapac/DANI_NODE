@@ -44,6 +44,10 @@ class MyGallery extends React.Component {
         items={images}
         showBullets={true}
         autoPlay={true}
+        showPlayButton={false}
+        showFullscreenButton={false}
+        showNav={false}
+        showThumbnails={false} 
         renderItem={(item) => {
           const customItem = item as CustomImageGalleryItem; // Type casting
           return (
