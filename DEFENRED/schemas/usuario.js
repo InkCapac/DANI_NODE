@@ -10,11 +10,16 @@ export const userSchema = new mongoose.Schema({
     const usuarioSchema = new mongoose.Schema({
       nombre: { type: String, required: true },
       apellido: { type: String, required: true },
-      apellido2: { type: String, default: "" },  // Puede ser vacío
+      // Puede ser vacío
+      apellido2: { type: String, default: "" },  
       correo: { type: String, required: true },
-      birthDate: { type: String, required: true },  // Si no hay donativo, se asigna 0
-      telefono: { type: String, default: "" },  // Si no hay teléfono, se asigna vacío
-      consentimiento: { type: Boolean, required: true },  // Convertir el consentimiento a booleano
+      birthDate: { type: String, required: true },  
+      // Si no hay teléfono, se asigna vacío
+      telefono: { type: String, default: "" },  
+      // La contraseña es obligatoria
+      pass: {type: String, required: true },
+      // Convertir el consentimiento a booleano
+      consentimiento: { type: Boolean, required: true },  
     });
     
     module.exports = usuarioSchema;

@@ -4,6 +4,8 @@ const cors = require("cors");
 const puerto = 8080;
 const app = express();
 const mongoose = require("mongoose");
+
+// Schemas
 const userSchema = require("./schemas/usuario");
 const donativoSchema = require("./schemas/donativo");
 
@@ -20,8 +22,9 @@ mongoose
     console.error("Error connecting to MongoDB:", error);
   });
 
-const Usuario = mongoose.model("usuario", userSchema);
-const Donativo = mongoose.model("donativo", donativoSchema); // Corregido
+// Models
+const Usuario = mongoose.model("Usuario", userSchema);
+const Donativo = mongoose.model("Donativo", donativoSchema);
 
 // Middleware
 app.use(express.json());
@@ -43,18 +46,26 @@ app.post("/insertarUsuario", (req, res) => {
   const datos = req.body;
 
   // Validar campos obligatorios
-  if (!datos.nombre || !datos.apellido || !datos.correo || !datos.birthDate || datos.consentimiento === undefined) {
+  if (
+    !datos.nombre ||
+    !datos.apellido ||
+    !datos.correo ||
+    !datos.birthDate ||
+    !datos.pass ||
+    datos.consentimiento === undefined
+  ) {
     return res.status(400).json({ error: "Faltan campos obligatorios" });
   }
 
   const nuevoUsuario = new Usuario({
     nombre: datos.nombre,
     apellido: datos.apellido,
-    apellido2: datos.apellido2 || "", // Puede ser vacío
+    apellido2: datos.apellido2 || "",
     birthDate: datos.birthDate,
     correo: datos.correo,
-    telefono: datos.telefono || "", // Si no hay teléfono, se asigna vacío
-    consentimiento: datos.consentimiento === "true", // Convertir el consentimiento a booleano
+    telefono: datos.telefono || "",
+    pass: datos.pass,
+    consentimiento: datos.consentimiento === true || datos.consentimiento === "true",
   });
 
   // Guardar en la base de datos
@@ -66,8 +77,20 @@ app.post("/insertarUsuario", (req, res) => {
     })
     .catch((error) => {
       console.error("Error al crear el usuario:", error);
-      res.status(500).json({ error: "Error al crear el usuario" });
+      res.status(500).json({ error: "Error al crear el usuario", details: error.message });
     });
+});
+
+// Obtener los usuarios creados
+app.get("/obtenerUsuarios", async (req, res) => {
+  try {
+    const usuarios = await Usuario.find();
+    res.json(usuarios);
+  } catch (error) {
+    res.status(500).json({
+      error: "Error al obtener los datos",
+    });
+  }
 });
 
 // Enviar Donativo
@@ -75,19 +98,25 @@ app.post("/enviarDonativo", (req, res) => {
   const datos = req.body;
 
   // Validar campos obligatorios
-  if (!datos.nombre || !datos.apellido || !datos.correo || !datos.caridad || datos.consentimiento === undefined) {
+  if (
+    !datos.nombre ||
+    !datos.apellido ||
+    !datos.correo ||
+    !datos.caridad ||
+    datos.consentimiento === undefined
+  ) {
     return res.status(400).json({ error: "Faltan campos obligatorios" });
   }
 
   const nuevoDonativo = new Donativo({
     nombre: datos.nombre,
     apellido: datos.apellido,
-    apellido2: datos.apellido2 || "", // Puede ser vacío
+    apellido2: datos.apellido2 || "",
     correo: datos.correo,
     caridad: datos.caridad,
-    telefono: datos.telefono || "", // Si no hay teléfono, se asigna vacío
-    observacion: datos.observacion || "", // Si no hay observación, se asigna vacío
-    consentimiento: datos.consentimiento === "true", // Convertir el consentimiento a booleano
+    telefono: datos.telefono || "",
+    observacion: datos.observacion || "",
+    consentimiento: datos.consentimiento === true || datos.consentimiento === "true",
   });
 
   // Guardar en la base de datos
@@ -99,7 +128,7 @@ app.post("/enviarDonativo", (req, res) => {
     })
     .catch((error) => {
       console.error("Error al enviar el donativo:", error);
-      res.status(500).json({ error: "Error al enviar el donativo" });
+      res.status(500).json({ error: "Error al enviar el donativo", details: error.message });
     });
 });
 

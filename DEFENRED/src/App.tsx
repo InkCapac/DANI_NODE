@@ -11,6 +11,10 @@ import Formulario from "./componentes/Formulario";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 
+/*Ver los datos de la bbdd*/
+/*Apuntar que es useRef y useEffect*/
+/*useEffect es para ver peticiones en la base de datos*/
+
 const App: React.FC = () => {
   return (
     <>

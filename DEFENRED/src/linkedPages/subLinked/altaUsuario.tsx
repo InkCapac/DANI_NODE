@@ -8,6 +8,7 @@ const altaUsuario: React.FC = () => {
     const correo = useRef<HTMLInputElement>(null);
     const birthDate = useRef<HTMLInputElement>(null);
     const telefono = useRef<HTMLInputElement>(null);
+    const pass = useRef<HTMLInputElement>(null);
     const consentimiento = useRef<HTMLInputElement>(null);
 
     const enviar = (event: React.FormEvent<HTMLFormElement>) => {
@@ -19,7 +20,8 @@ const altaUsuario: React.FC = () => {
             apellido2: apellido2.current?.value || "",
             correo: correo.current?.value || "",
             // Añade la fecha de nacimiento
-            birthDate: birthDate.current?.value || "", 
+            birthDate: birthDate.current?.value || "",
+            pass: pass.current?.value || "", 
             telefono: telefono.current?.value ? telefono.current.value.trim() : "",
             consentimiento: consentimiento.current?.checked || false,
         };
@@ -69,6 +71,11 @@ const altaUsuario: React.FC = () => {
             <div className="form-group">
                 <label htmlFor="birthDate">Fecha de nacimiento</label>
                 <input type="date" ref={birthDate} />
+            </div>
+
+            <div className="form-group">
+                <label htmlFor="pass">Contraseña</label>
+                <input id="pass" type="password" ref={pass} required />
             </div>
 
             <div className="form-group">
