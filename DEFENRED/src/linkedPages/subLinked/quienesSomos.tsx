@@ -5,6 +5,7 @@ import { useParallax } from "react-scroll-parallax";
 const QuienesSomos = () => {
 
   return (
+    /*DARLE EL CSS DE sections.tsx*/
     <section id="quienesSomos">
       <div>
       <p className="space-between-quienes"></p>

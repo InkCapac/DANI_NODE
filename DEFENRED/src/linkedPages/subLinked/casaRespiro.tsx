@@ -4,6 +4,7 @@ import "./css_sub/casaRespiro.css"
 const casaRespiro = () => {
 
   return (
+    /*Darle el css de section.tsx*/
     <section id="casaRespiro">
       <div>
       <p className="space-between-respiro"></p>
