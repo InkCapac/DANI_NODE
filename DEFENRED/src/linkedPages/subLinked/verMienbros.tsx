@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
-import Articulo from "../../Usuario";
+import Usuario from "../../Usuario";
+import "./css_sub/verMienbros.css";
 
 const verMienbros = () => {
     const nombre = useRef<HTMLInputElement>(null);
@@ -40,14 +41,15 @@ return(
     <section className="grid tres">{
         data.map(articulo => {
             return (
-                <div>
-                    <p>{articulo._id}</p>
-                    <p>{articulo.nombre}</p>
-                    <p>{articulo.apellido}</p>
-                    <p>{articulo.apellido2}</p>
-                    <p>{articulo.birthdate}</p>
-                    <p>{articulo.correo}</p>
-                    <p>{articulo.telefono}</p>
+                <div className="user-data-container">
+                    <p className="user-id">{articulo._id}</p>
+                    <p></p>
+                    <p className="user-name">{articulo.nombre}</p>
+                    <p className="user-apellido1">{articulo.apellido}</p>
+                    <p className="user-apellido2">{articulo.apellido2}</p>
+                    <p className="user-birthdate">{articulo.birthdate}</p>
+                    <p className="user-correo">{articulo.correo}</p>
+                    <p className="user-phone">{articulo.telefono}</p>
                 </div>
             )
 
