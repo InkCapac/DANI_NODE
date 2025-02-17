@@ -8,7 +8,7 @@ import QueHacemos from "./linkedPages/queHacemos";
 import Defensoras from "./linkedPages/defensoras";
 import AltaUsuario from "./linkedPages/subLinked/altaUsuario"; // Asegúrate de tener este componente
 import Formulario from "./componentes/Formulario";
-import VerMienbros from "./linkedPages/subLinked/verMienbros";
+import VerMienbros from "./linkedPages/verMienbros";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 

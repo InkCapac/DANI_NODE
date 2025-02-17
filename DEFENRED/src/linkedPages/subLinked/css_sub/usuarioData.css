@@ -1,0 +1,31 @@
+:root {
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+  }
+  .usuario-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .usuario-container h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.5em;
+  }
+  
+  .usuario-container p {
+    margin: 4px 0;
+  }
+  
+  .usuario-container span {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #666;
+  }
