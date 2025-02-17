@@ -26,7 +26,7 @@ const verMienbros = () => {
 
     }
     useEffect(() => {
-        fetch("localhost:8080/obtenerUsuarios")
+        fetch("http://localhost:8080/obtenerUsuarios")
         .then((datos)=>{
             return datos.json();
         })

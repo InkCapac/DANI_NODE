@@ -8,6 +8,7 @@ import QueHacemos from "./linkedPages/queHacemos";
 import Defensoras from "./linkedPages/defensoras";
 import AltaUsuario from "./linkedPages/subLinked/altaUsuario"; // Asegúrate de tener este componente
 import Formulario from "./componentes/Formulario";
+import VerMienbros from "./linkedPages/subLinked/verMienbros";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 
@@ -42,6 +43,8 @@ const App: React.FC = () => {
               {/* Nested routes for ¿Qué hacemos? */}
               <Route path="/contacto" element={<Contacto />} />
               <Route path="/formulario" element={<Formulario />} />
+              {/* Página para ver usuarios */}
+              <Route path="/verMienbros" element={<VerMienbros />} />
             </Routes>
           </BrowserRouter>
         </section>
