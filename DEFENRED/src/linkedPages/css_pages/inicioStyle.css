@@ -12,6 +12,7 @@
   padding: 1rem 0;
   text-align: center;
 }
+
 .background-imagen {
   background-image: url(/src/assets/img/spain_sunrise.jpg);
   background-repeat: no-repeat;
@@ -19,6 +20,7 @@
   background-position: center;
   height: 100vh;
 }
+
 /* Contenedor CTA mejorado */
 .cta-container {
   display: flex;
@@ -30,7 +32,7 @@
   font-size: clamp(2rem, 8vw, 6rem);
   font-family: 'Montserrat', sans-serif;
   /*Montserrat ExtraBold */
-  font-weight: 800; 
+  font-weight: 800;
   padding: clamp(10px, 2vw, 20px) clamp(15px, 3vw, 30px);
   margin: 2vw;
   text-align: center;
@@ -41,24 +43,29 @@
   border-radius: 20px;
   transition: background-color ease 0.5s;
 }
+
 .cta-unete:hover {
   background-color: var(--orange);
-  text-decoration: none; /* Asegura que no haya subrayado al hacer hover */
+  text-decoration: none;
+  /* Asegura que no haya subrayado al hacer hover */
 }
-.space-between{
+
+.space-between {
   height: 50px;
   background-color: var(--white);
   width: 100%;
 }
+
 /*Palabras clave*/
-.keywords{
+.keywords {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   color: var(--blue);
 }
+
 /* Secciones principales - Tamaño móviles*/
-.secciones-inicio, 
-.casaRespiro-inicio {
+.secciones-inicio-index,
+.casaRespiro-inicio-index {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,10 +77,11 @@
 
 /* Contenedor de imagen */
 .street-defenred-image,
-.casaRespiro-inicio-image {
+.casaRespiro-index-image {
   width: 100%;
   max-width: 600px;
-  order: -1; /* Imagen arriba en móvil */
+  order: -1;
+  /* Imagen arriba en móvil */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,94 +89,107 @@
 }
 
 /* Imágenes responsivas */
-.secciones-inicio img,
-.casaRespiro-inicio img {
+.secciones-inicio-index img,
+.casaRespiro-inicio-index img {
   width: 100%;
-  height: auto;
-  border: 3px dashed var(--blue);
+  height: 320px;
+  border: 5px groove var(--white);
   transition: all 0.3s ease;
 }
 
-.secciones-inicio img:hover,
-.casaRespiro-inicio img:hover {
+.secciones-inicio-index img:hover {
   transform: rotate(-3deg) scale(1.05);
 }
 
+.casaRespiro-inicio-index img:hover {
+  transform: rotate(3deg) scale(1.05);
+}
+
 /* Contenido textual */
-.secciones-parrafo1,
-.casaRespiro-parrafo1 {
+.secciones-parrafo1-index,
+.casaRespiro-parrafo1-index {
   font-family: 'Readex Pro', sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
   width: 100%;
+  /*Línea para el tamaña de espacio antes del incio del texto*/
+  text-indent: 20px;
+  /*Línea para específicar el tamaño de espacio entre líneas*/
+  line-height: 30px;
   font-size: clamp(1rem, 2vw, 1.3rem);
   padding: 20px;
   background-color: var(--white);
-  border-style: dashed;
+  border-style: groove;
   transition: background-color ease 0.5s;
 }
-.secciones-parrafo1:hover,
-.casaRespiro-parrafo1:hover {
+
+.secciones-parrafo1-index:hover,
+.casaRespiro-parrafo1-index:hover {
   background-color: var(--orange);
   color: var(--white);
 }
+
 /*Botón Casa de Respiro*/
-.cta-casaRespiro {
+.cta-casaRespiro-index {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
   margin-top: 10px;
   padding: 10px 20px;
   background-color: var(--blue);
   color: var(--white);
   border: none;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
   font-size: 1.2em;
   border-radius: 10px;
   transition: background-color ease 0.3s;
 }
 
-.cta-casaRespiro:hover {
+.cta-casaRespiro-index:hover {
   background-color: var(--orange);
 }
 
 /* Desktop Layout - Tamaño escritorio */
 @media (min-width: 992px) {
-  .secciones-inicio,
-  .casaRespiro-inicio { /* Corregir nombre de clase */
+
+  .secciones-inicio-index,
+  .casaRespiro-inicio-index {
+    /* Corregir nombre de clase */
     flex-direction: row;
     align-items: flex-start;
     padding: 30px 5%;
   }
 
   .street-defenred-image,
-  .casaRespiro-inicio-image { /* Corregir nombre de clase */
+  .casaRespiro-index-image {
+    /* Corregir nombre de clase */
     width: 40%;
     max-width: 90%;
-    order: 0; /* Restablecer orden natural */
+    order: 0;
+    /* Restablecer orden natural */
   }
 
-  .secciones-parrafo1,
-  .casaRespiro-parrafo1 {
+  .secciones-parrafo1-index,
+  .casaRespiro-parrafo1-index {
     width: 60%;
-    font-size: 1.2rem;
+    height: 40%;
+    font-size: 1.3rem;
     margin-top: 30px;
   }
 
   /* Invertir orden para variación visual */
-  .casaRespiro-inicio {
+  .casaRespiro-inicio-index {
     flex-direction: row;
   }
 }
 
-/* Ajustes móviles */
+/* Ajustes para el tamaño de móviles */
 @media (max-width: 480px) {
   .cta-unete {
     font-size: 1.8rem;
     padding: 10px 15px;
   }
-  
-  .secciones-parrafo1,
-  .casaRespiro-parrafo1 {
+
+  .secciones-parrafo1-index,
+  .casaRespiro-parrafo1-index {
     font-size: 1rem;
     padding: 15px;
   }

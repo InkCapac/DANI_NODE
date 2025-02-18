@@ -1,10 +1,10 @@
-import Footer from "../componentes/Footer";
 import "../linkedPages/css_pages/inicioStyle.css";
 import streetImage from "../assets/img/street_defenred.webp";
 import casaRespiro from "../assets/img/señoraLeyendo_defenred.webp";
 import { useParallax } from "react-scroll-parallax";
 import { Link } from "react-router-dom";
 import MyGallery from "../componentes/SliderIMGS";
+import Footer from "../componentes/Footer";
 
 const Inicio = () => {
   const parallax = useParallax<HTMLDivElement>({
@@ -19,11 +19,11 @@ const Inicio = () => {
             Únete a la red!
           </Link>
         </div>
-        <div className="secciones-inicio">
+        <div className="secciones-inicio-index">
           <div className="street-defenred-image">
             <img src={streetImage} alt="Vistas de Defenred" />
           </div>
-          <p className="secciones-parrafo1">
+          <p className="secciones-parrafo1-index">
             <span className="keywords">Defenred</span> es una organización
             comprometida con el apoyo y la protección de defensores de{" "}
             <span className="keywords">Defenred</span> que enfrentan riesgos en
@@ -37,8 +37,8 @@ const Inicio = () => {
             continuar con su labor esencial.
           </p>
         </div>
-        <div className="casaRespiro-inicio">
-          <p className="casaRespiro-parrafo1">
+        <div className="casaRespiro-inicio-index">
+          <p className="casaRespiro-parrafo1-index">
             <span className="keywords">Defenred</span> lanza{" "}
             <span className="keywords">“Casa de Respiro”</span>, un programa en
             La Cabrera, Madrid, que brinda a defensores de{" "}
@@ -51,9 +51,9 @@ const Inicio = () => {
             <span className="keywords">bienestar</span> y sostenibilidad en su
             labor activista.
           </p>
-          <div className="casaRespiro-inicio-image">
+          <div className="casaRespiro-index-image">
             <img src={casaRespiro} alt="Casa de Respiro" />
-            <button className="cta-casaRespiro">Casa de Respiro</button>
+            <button className="cta-casaRespiro-index">Casa de Respiro</button>
           </div>
         </div>
         <Footer />

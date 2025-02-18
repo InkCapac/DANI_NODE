@@ -6,9 +6,14 @@
     --gray: rgb(217, 217, 217);
   }
 .keywords{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     color: var(--blue);
 }
 .publicaciones-title{
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    padding: 1rem 0;
+    text-align: center;
     background-color: var(--blue);
     color: var(--white);
 }
