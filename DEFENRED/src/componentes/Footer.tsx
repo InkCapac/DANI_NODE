@@ -6,16 +6,16 @@ const Footer = () => {
             <footer>
                 <div className="footerContainer">
                     <div className="socialIcons">
-                        <a href="https://www.facebook.com/Defenred/?locale=es_ES">
+                        <a href="https://www.facebook.com/Defenred/?locale=es_ES" aria-label="Facebook">
                             <i className="fa-brands fa-facebook"></i>
                         </a>
-                        <a href="https://www.instagram.com/pbi_ee?igsh=MXhnaTFxbG4wZHoxNg==">
+                        <a href="https://www.instagram.com/pbi_ee?igsh=MXhnaTFxbG4wZHoxNg==" aria-label="Instagram">
                             <i className="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://x.com/defenred?t=sQtzzxouuO91MNuNcM0Elw&s=03">
+                        <a href="https://x.com/defenred?t=sQtzzxouuO91MNuNcM0Elw&s=03" aria-label="Twitter">
                             <i className="fa-brands fa-twitter"></i>
                         </a>
-                        <a href="https://www.youtube.com/@DEFENRED">
+                        <a href="https://www.youtube.com/@DEFENRED" aria-label="Youtube">
                             <i className="fa-brands fa-youtube"></i>
                         </a>
                     </div>
