@@ -19,6 +19,10 @@ const Inicio = () => {
             Únete a la red!
           </Link>
         </div>
+        <div className="inicio-index">
+          <div className="title-quienesSomos-index">
+            <p>¿Quiénes somos?</p>
+            </div>
         <div className="secciones-inicio-index">
           <div className="street-defenred-image">
             <img src={streetImage} alt="Vistas de Defenred" />
@@ -37,6 +41,9 @@ const Inicio = () => {
             continuar con su labor esencial.
           </p>
         </div>
+        <div className="title-casaRespiro-index">
+            <p>Casa de Respiro</p>
+            </div>
         <div className="casaRespiro-inicio-index">
           <p className="casaRespiro-parrafo1-index">
             <span className="keywords">Defenred</span> lanza{" "}
@@ -55,6 +62,7 @@ const Inicio = () => {
             <img src={casaRespiro} alt="Casa de Respiro" />
             <button className="cta-casaRespiro-index">Casa de Respiro</button>
           </div>
+        </div>
         </div>
         <Footer />
       </div>

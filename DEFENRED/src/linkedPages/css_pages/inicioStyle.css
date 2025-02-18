@@ -62,7 +62,11 @@
   font-weight: 800;
   color: var(--blue);
 }
-
+/*Contenedor del contenido de inicio.tsx*/
+.inicio-index{
+  padding: 1px;
+  background-image: url(/src/assets/img/grayFlower_background.jpg);
+}
 /* Secciones principales - Tamaño móviles*/
 .secciones-inicio-index,
 .casaRespiro-inicio-index {
@@ -71,8 +75,19 @@
   align-items: center;
   padding: 3%;
   gap: 30px;
-  /*background-color: var(--gray);*/
-  background-image: url(/src/assets/img/grayFlower_background.jpg);
+}
+
+/*Subtítulos de las secciones*/
+.title-quienesSomos-index, .title-casaRespiro-index{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  margin: 60px 550px;
+  text-align: center;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 20px;
+  border-style: groove;
 }
 
 /* Contenedor de imagen */
