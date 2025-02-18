@@ -24,7 +24,8 @@ const Navtab = () => {
   };
 
   const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false); // Cerrar el menú móvil después de hacer clic en un enlace
+    // Cerrar el menú móvil después de hacer clic en un enlace
+    setIsMobileMenuOpen(false); 
   };
 
   useEffect(() => {
@@ -35,13 +36,17 @@ const Navtab = () => {
   }, []);
 
   const menuItems = [
-    { label: "Inicio", link: "/inicio" }, // Enlace a la sección "inicio"
+    // Enlace a la sección "inicio"
+    { label: "Inicio", link: "/inicio" }, 
     {
       label: "Defenred",
-      link: "/defenred", // Enlace a la sección "defenred"
+      // Enlace a la sección "defenred"
+      link: "/defenred", 
       submenu: [
-        { label: "¿Quiénes somos?", link: "#quienesSomos" }, // Enlace a la sección "quienesSomos"
-        { label: "¿Por qué este proyecto?", link: "#porqueProyecto" }, // Enlace a la sección "porqueProyecto"
+        // Enlace a la sección "quienesSomos"
+        { label: "¿Quiénes somos?", link: "#quienesSomos" }, 
+        // Enlace a la sección "porqueProyecto"
+        { label: "¿Por qué este proyecto?", link: "#porqueProyecto" }, 
       ],
     },
     {
