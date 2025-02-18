@@ -4,11 +4,14 @@ import Navtab from "./componentes/navTab";
 import Index from "./index";
 import Defenred from "./linkedPages/defenred";
 import Contacto from "./linkedPages/contacto";
+import Formulario from "./componentes/Formulario";
 import QueHacemos from "./linkedPages/queHacemos";
 import Defensoras from "./linkedPages/defensoras";
-import AltaUsuario from "./linkedPages/subLinked/altaUsuario"; // Asegúrate de tener este componente
-import Formulario from "./componentes/Formulario";
+// Componentes 'admin'
+import AltaUsuario from "./linkedPages/subLinked/altaUsuario"; 
 import VerMienbros from "./linkedPages/verMienbros";
+
+import NotFound from "./404";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 
@@ -45,6 +48,8 @@ const App: React.FC = () => {
               <Route path="/formulario" element={<Formulario />} />
               {/* Página para ver usuarios */}
               <Route path="/verMienbros" element={<VerMienbros />} />
+              {/* Página de error 404*/}
+              <Route path="/404" element={<NotFound/>}/>
             </Routes>
           </BrowserRouter>
         </section>
