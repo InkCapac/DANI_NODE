@@ -8,7 +8,7 @@ const QuienesSomos = () => {
     /*DARLE EL CSS DE sections.tsx*/
     <section id="quienesSomos">
       <div>
-      <p className="space-between-quienes"></p>
+      <p className="space-between-defenred"></p>
       </div>
       <div className="quienesSomos-defenred">
       <p className="quienes-title-defenred">¿QUIÉNES SOMOS?</p>

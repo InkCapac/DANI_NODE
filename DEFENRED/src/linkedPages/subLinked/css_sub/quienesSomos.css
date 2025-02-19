@@ -30,12 +30,13 @@
 .quienes-title-defenred:hover{
     background-color: var(--orange);
 }
-.space-between-quienes{
+.space-between-defenred{
     margin: 20px;
 }
 .quienes-parrafo1-defenred{
     flex: 1;
     font-family: 'Readex Pro', sans-serif;
+    font-weight: 400;
     text-align: justify;
     font-size: 1.3em;
     border-style: groove;

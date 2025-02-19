@@ -1,6 +1,6 @@
 import React from 'react';
 import NavTab from './componentes/navTab';
-import defenredGirl from "./assets/img/defenred_notFound.webp";
+/*import defenredGirl from "./assets/img/defenred_notFound.webp";*/
 
 const NotFound: React.FC = () => {
   return (
