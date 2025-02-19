@@ -126,3 +126,9 @@ body {
     font-weight: 400;
     font-size: 2rem;
 }
+.olas-defenred{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    bottom: 150px;
+}

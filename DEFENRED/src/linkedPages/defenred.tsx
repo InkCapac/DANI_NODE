@@ -35,6 +35,7 @@ const Defenred = () => {
               <p>Red de apoyo para la defensa de los derechos humanos</p>
             </div>
           </div>
+              <img className="olas-defenred" src="src/assets/img/descarga.svg" alt="WAVES :)" />
         </div>
 
         {/* Asignar cada ref a un elemento único 
