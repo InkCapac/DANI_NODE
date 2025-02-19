@@ -60,6 +60,9 @@ const Inicio = () => {
               <button className="cta-casaRespiro-index">Casa de Respiro</button>
             </div>
           </div>
+            <Link to="/contacto" className="title-contacto-index">
+            Contácta con nosotros!
+          </Link>
         </div>
         <Footer />
       </div>
