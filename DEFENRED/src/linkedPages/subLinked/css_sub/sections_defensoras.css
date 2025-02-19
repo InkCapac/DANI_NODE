@@ -1,0 +1,134 @@
+/* Estilos generales */
+:root {
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+}
+
+.quote-defensoras-sections {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1,6;
+    font-style: italic;
+    border-style: groove;
+    background-color: var(--gray);
+    color: var(--blue);
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sections-defensoras {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-image: url(/src/assets/img/grayFlower_background.jpg);
+}
+
+/*Palabras resaltantes*/
+.keywords-defensoras {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: var(--blue);
+}
+
+.title-inicio-defensoras {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin: 10px 140px;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border-style: groove;
+    transition: all ease 0.5s;
+}
+
+.title-inicio-defensoras:hover {
+    background-color: var(--orange);
+}
+
+.section-defensoras {
+    display: flex;
+    align-items: center;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 400;
+    gap: 30px;
+    padding: 20px;
+    background-color: var(--gray);
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: var(--black);
+    border-radius: 10px;
+    border-style: groove;
+    transition: all 0.3s ease;
+}
+.section-defensoras-quote{
+    color: var(--white);
+    background-color: var(--orange);
+    font-style: italic;
+}
+.section-defensoras:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+.section-defensoras img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px groove var(--white);
+    transition: all 0.5s ease;
+}
+
+.section-defensoras img:hover {
+    transform: rotate(3deg) scale(1.1);
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+
+    .section-who,
+    .section-house {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-who img,
+    .section-house img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .title-who,
+    .title-house {
+        font-size: 2em;
+    }
+
+    .quote-defensoras {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .title-who,
+    .title-house {
+        font-size: 1.8em;
+    }
+
+    .section-who p,
+    .section-house p {
+        font-size: 1em;
+    }
+
+    .quote-defensoras {
+        font-size: 1em;
+    }
+}

@@ -1,7 +1,6 @@
 import React from "react";
-import Sections from "../componentes/Sections";
-import Publicaciones from "./subLinked/publicaciones";
 import Footer from "../componentes/Footer";
+import SeccionDefensoras from "./subLinked/sections_defensoras";
 import defensorasMain from "../assets/img/defensoras_defenred.webp";
 import "./css_pages/defensoras.css";
 
@@ -10,7 +9,7 @@ const Defensoras = () => {
     <>
       {/* Encabezado */}
       <head>
-        <title>Defensoras de Derechos Humanos | Apoyo y Resiliencia con Defenred</title>
+        <title>Defensoras de Derechos Humanos | Apoyo y Resiliencia con Defenred | Defensoras</title>
         <meta
           name="description"
           content="Descubre cómo Defenred apoya a personas defensoras de los derechos humanos, y la protección de las libertades fundamentales. Conoce sus historias, los desafíos que enfrentan. Infórmate sobre cómo contribuimos a su seguridad y visibilidad internacional."
@@ -39,10 +38,9 @@ const Defensoras = () => {
 
       {/* Contenido adicional */}
       <div className="defensoras-content">
-        <Sections />
-        <Publicaciones />
-        <Footer />
+      <SeccionDefensoras/>
       </div>
+        <Footer />
     </>
   );
 };

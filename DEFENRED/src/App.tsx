@@ -7,6 +7,7 @@ import Contacto from "./linkedPages/contacto";
 import Formulario from "./componentes/Formulario";
 import QueHacemos from "./linkedPages/queHacemos";
 import Defensoras from "./linkedPages/defensoras";
+import SectionDefensoras from "./linkedPages/subLinked/sections_defensoras";
 // Componentes 'admin'
 import AltaUsuario from "./linkedPages/subLinked/altaUsuario"; 
 import VerMienbros from "./linkedPages/verMienbros";
@@ -41,8 +42,10 @@ const App: React.FC = () => {
               <Route path="/porqueProyecto" element={<Defensoras />} />
               {/* Sección de ¿Qué hacemos? */}
               <Route path="/queHacemos" element={<QueHacemos />} />
-              {/* Rutas anidadas a ¿Qué hacemos? */}
+              {/* Rutas anidadas a Defensoras */}
               <Route path="/Defensoras" element={<Defensoras />} />
+              {/* Rutas anidadas a Defensoras */}
+              <Route path="/section_defensoras" element={<Contacto />} />
               {/* Nested routes for ¿Qué hacemos? */}
               <Route path="/contacto" element={<Contacto />} />
               <Route path="/formulario" element={<Formulario />} />

@@ -65,8 +65,9 @@
     font-size: 2rem;
 }
 
-/* Contenedor del contenido adicional */
+/* Contenido adicional */
 .defensoras-content {
+    background-image: url(/src/assets/img/grayFlower_background.jpg);
     position: relative;
     z-index: 3;
     padding: 2rem;

@@ -4,7 +4,7 @@ const PorqueProyecto: React.FC = () => {
     <div>
     {/*<h2 className="title-inicio">DEFENRED</h2>*/}
     {/*METATÍTULO DE LA PÁGINA => "Defenred-Red de Apoyo para Defensores de Derechos Humanos"*/}
-    <div className="porque-inicio">
+    <div className="porque-inicio-defenred">
     <div className="street-defenred-image">
         <div>
         <img src="" alt="Vistas de Defenred" />
