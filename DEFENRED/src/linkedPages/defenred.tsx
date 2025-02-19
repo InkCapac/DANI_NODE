@@ -35,7 +35,7 @@ const Defenred = () => {
               <p>Red de apoyo para la defensa de los derechos humanos</p>
             </div>
           </div>
-              <img className="olas-defenred" src="src/assets/img/descarga.svg" alt="WAVES :)" />
+          <img className="olas-defenred" src="src/assets/img/descarga.svg" alt="WAVES :)" />
         </div>
 
         {/* Asignar cada ref a un elemento único 
@@ -43,9 +43,12 @@ const Defenred = () => {
       <button className="cta-porque">¿Por qué elegimos este proyecto?</button>
       </div>
       */}
-        <QuienesSomos />
-        <CasaRespiro />
-        <PorqueProyecto />
+        <div className="sections-background-defenred">
+          <QuienesSomos />
+          <CasaRespiro />
+          
+          <PorqueProyecto />
+        </div>
         <div>
           <Footer />
         </div>

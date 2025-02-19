@@ -132,3 +132,6 @@ body {
     z-index: 1;
     bottom: 150px;
 }
+.sections-background-defenred{
+    background-image: url(/src/assets/img/grayFlower_background.jpg);
+}

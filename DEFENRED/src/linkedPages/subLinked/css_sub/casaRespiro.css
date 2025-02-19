@@ -18,12 +18,12 @@
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 60px;
-    text-align: center;
-    margin: 20px 20px;
+    justify-content: center;
+    margin: 20px 220px;
     padding: 10px;
     background-color: var(--blue);
-    text-align: center;
+    border-radius: 20px;
+    border-style: groove;
     font-size: 2.5em;
     color: var(--white);
 }
@@ -38,7 +38,8 @@
     font-family: 'Readex Pro', sans-serif;
     text-align: justify;
     font-size: 1.3em;
-    border-style: dashed;
+    margin: 10px 40px;
+    border-style: groove;
     align-items: center;
     gap: 30px;
     padding: 20px;
@@ -51,10 +52,6 @@
   .casaRespiro-parrafo1:hover {
     background-color: var(--orange);
     color: var(--white);
-    font-weight: bold;
-    border-style: groove;
-    padding: 20px;
-    border-radius: 5px;
   }
   .casaRespiro-parrafo1-quote{
     font-family: 'Readex Pro', sans-serif;

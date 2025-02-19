@@ -7,13 +7,13 @@ const casaRespiro = () => {
     /*Darle el css de section.tsx*/
     <section id="casaRespiro">
       <div>
-      <p className="space-between-respiro"></p>
+        <p className="space-between-respiro"></p>
       </div>
       <div className="casaRespiro">
-      <p className="casaRespiro-title">Casa de Respiro</p>
-      <p className="casaRespiro-parrafo1"><span className="keywords">Defenred</span> es una red de apoyo para <span className="keywords">activistas</span> defensores de los <span className="keywords">derechos humanos</span>, fundada en 2013, que buscan un lugar en el que <span className="keywords">descansar</span> y recuperarse de las duras experiencias que han vivido. Nos dedicamos a proporcionar un espacio seguro donde puedan encontrar <span className="keywords">ayuda</span> y 
-restablecer tanto física como emocionalmente. Contamos con un equipo de voluntarios encargados de ofrecer <span className="keywords">ayuda</span> y de hacer que la experiencia de los inquilinos sea lo más cómoda posible.</p>
-<p className="casaRespiro-parrafo1-quote"></p>
+        <p className="casaRespiro-title">Casa de Respiro</p>
+        <p className="casaRespiro-parrafo1">La casa del respiro es el corazón de<span className="keywords">Defenred</span>un lugar para que aquellos <span className="keywords">activistas</span>  que quieran<span className="keywords">descansar</span> y tomarse un pequeño<span className="keywords">descanso</span>de su actividad principal. A través de este espacio y de las actividades que ofrecemos, nuestro equipo es capaz de<span className="keywords"> ayudar </span>generando un estado de relajación y de recuperación del desgaste tanto físico como mental generado por sus diferentes situaciones sociales.
+        </p>
+        <p className="casaRespiro-parrafo1-quote"></p>
       </div>
     </section>
   );
