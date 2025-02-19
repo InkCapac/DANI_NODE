@@ -61,9 +61,14 @@
 .footerLinks li:hover {
     color: var(--blue);
 }
-
+.footer-disclaimer{
+    margin: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-style: italic;
+}
 .footer-p {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
     color: var(--black);
 }
