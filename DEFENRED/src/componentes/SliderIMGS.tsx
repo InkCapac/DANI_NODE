@@ -75,6 +75,7 @@ class MyGallery extends React.Component {
               >
                 <h1>{customItem.text.title}</h1>
                 <p>{customItem.text.description}</p>
+                
               </div>
             </div>
           );
