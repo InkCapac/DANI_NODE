@@ -19,10 +19,10 @@ const Formulario: React.FC = () => {
       apellido: apellido.current?.value || "",
       apellido2: apellido2.current?.value || "",
       correo: correo.current?.value || "",
-      caridad: caridad.current?.value ? parseFloat(caridad.current.value) : null,
+      caridad: caridad.current?.value ? parseFloat(caridad.current.value) : null,  // Cambiado a "caridad"
       telefono: telefono.current?.value ? telefono.current.value.trim() : "",
       observacion: observacion.current?.value || "",
-      consentimiento: consentimiento.current?.checked ? "true" : "false",
+      consentimiento: consentimiento.current?.checked || false,  // Enviar como booleano
     };
 
     console.log("Datos a enviar:", JSON.stringify(Donativo));
@@ -68,8 +68,8 @@ const Formulario: React.FC = () => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="donativo">Cantidad a donar</label>
-        <input id="donativo" type="number" ref={caridad} min="0" step="0.01" required />
+        <label htmlFor="caridad">Cantidad a donar</label>
+        <input id="caridad" type="number" ref={caridad} min="0" step="0.01" required />
       </div>
 
       <div className="form-group">
