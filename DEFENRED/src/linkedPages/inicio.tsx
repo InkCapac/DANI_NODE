@@ -61,7 +61,7 @@ const Inicio = () => {
             </div>
           </div>
             <Link to="/contacto" className="title-contacto-index">
-            Contácta con nosotros!
+            Contacta con nosotros!
           </Link>
         </div>
         <Footer />
