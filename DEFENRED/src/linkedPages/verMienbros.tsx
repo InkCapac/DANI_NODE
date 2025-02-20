@@ -31,6 +31,7 @@ const VerMienbros = () => {
     <>
       <header></header>
       <section className="grid tres">
+        <h1 className="title-mienbros-data">Usuarios afiliados a Defenred</h1>
         {data.map((usuario) => (
           <Usuario
             key={usuario._id}

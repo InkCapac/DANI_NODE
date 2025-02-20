@@ -1,31 +1,59 @@
 :root {
-    --orange: rgb(240, 101, 0);
-    --white: rgb(230, 229, 229);
-    --black: rgb(34, 34, 34);
-    --blue: rgb(12, 53, 67);
-    --gray: rgb(217, 217, 217);
-  }
-  .usuario-container {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 8px;
-    background-color: #f9f9f9;
-    cursor: pointer;
-  }
-  
-  .usuario-container h2 {
-    margin: 0 0 8px 0;
-    font-size: 1.5em;
-  }
-  
-  .usuario-container p {
-    margin: 4px 0;
-  }
-  
-  .usuario-container span {
-    display: block;
-    margin-top: 8px;
-    font-size: 0.9em;
-    color: #666;
-  }
+  --orange: rgb(240, 101, 0);
+  --white: rgb(230, 229, 229);
+  --black: rgb(34, 34, 34);
+  --blue: rgb(12, 53, 67);
+  --gray: rgb(217, 217, 217);
+}
+
+.title-mienbros-data {
+  display: flex;
+  margin: 20px 400px;
+  padding: 20px;
+  justify-content: center;
+  border-radius: 20px;
+  border-style: groove;
+  font-size: 2.5rem;
+  font-style: italic;
+  color: var(--blue);
+  background-color: var(--gray);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  transition: all 0.5s ease;
+}
+
+.title-mienbros-data:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.usuario-container {
+  border-radius: 10px;
+  padding: 16px;
+  margin: 20px 40px;
+  color: var(--white);
+  letter-spacing: 1.5px;
+  background-color: var(--blue);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.usuario-container:hover {
+  background-color: var(--orange);
+}
+
+.usuario-container h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.5em;
+}
+
+.usuario-container p {
+  margin: 4px 0;
+}
+
+.usuario-container span {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: var(--white);
+}
