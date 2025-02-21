@@ -104,7 +104,7 @@ app.post("/enviarDonativo", (req, res) => {
     !datos.nombre ||
     !datos.apellido ||
     !datos.correo ||
-    !datos.caridad ||  // Cambiado a "caridad"
+    !datos.caridad ||  
     datos.consentimiento === undefined
   ) {
     return res.status(400).json({ error: "Faltan campos obligatorios" });
@@ -115,10 +115,10 @@ app.post("/enviarDonativo", (req, res) => {
     apellido: datos.apellido,
     apellido2: datos.apellido2 || "",
     correo: datos.correo,
-    caridad: datos.caridad,  // Cambiado a "caridad"
+    caridad: datos.caridad,  
     telefono: datos.telefono || "",
     observacion: datos.observacion || "",
-    consentimiento: datos.consentimiento,  // Ya es booleano
+    consentimiento: datos.consentimiento, 
   });
 
   // Guardar en la base de datos
