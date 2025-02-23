@@ -15,7 +15,8 @@ const QuienesSomos = () => {
           </div>
           <p className="quienes-parrafo1-quote">
           Nuestra historia salió de una simple idea: <span className="quienes-idea-quote">
-          Crear un lugar donde la gente que <span className="keywords-parrafo1">defendiese</span>  nuestros <span className="keywords-parrafo1">derechos</span> pudiese <span className="keywords-parrafo1">descansar</span> en un lugar de paz, ahí es donde entra la Casa del Respiro</span>, un hogar para aquellos que desean relajarse y escapar de la realidad de sus paises dirigidos por gobiernos autoritarios en contra de los <span className="keywords-parrafo1">derechos humanos</span> y opresores de los que los <span className="keywords-parrafo1">defienden</span>.</p></p>
+          Crear un lugar donde la gente que <span className="keywords-parrafo1-quote">defendiese</span>  nuestros <span className="keywords-parrafo1-quote">derechos</span> pudiese <span className="keywords-parrafo1-quote">descansar</span> en un lugar de paz, ahí es donde entra la <span className="keywords-parrafo1-quote">Casa del Respiro</span></span>, un hogar para aquellos que desean relajarse y escapar de la realidad de sus paises dirigidos por gobiernos autoritarios en contra de los derechos humanos y opresores de los que los defienden.</p>
+          </p>
         <div>
         </div>
       </div>

@@ -6,7 +6,8 @@
     --gray: rgb(217, 217, 217);
   }
 .keywords-parrafo1{
-    color: var(--orange);
+    color: var(--blue);
+    font-weight: bold;
 }
 .quienesSomos-defenred{
     padding: 15px;
@@ -36,6 +37,7 @@
     font-weight: 400;
     text-align: justify;
     font-size: 1.4em;
+    text-indent: 10px;
     border-style: groove;
     background-color: var(--white);
     padding: 20px;
@@ -68,8 +70,9 @@
     font-family: 'Readex Pro', sans-serif;
     font-weight: 400;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1.1em;
     border-radius: 10px;
+    border-style: groove;
     background-color: var(--gray)   ;
     padding: 10px;
     margin: 10px 60px;
@@ -87,6 +90,7 @@
     color: var(--white);
     background-color: var(--orange);
   }
-  .quienes-idea-quote:hover{
+  .keywords-parrafo1-quote{
+    color: var(--blue);
     font-weight: bold;
   }
