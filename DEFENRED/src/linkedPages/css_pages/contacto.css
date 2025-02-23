@@ -5,32 +5,59 @@
     --blue: rgb(12, 53, 67);
     --gray: rgb(217, 217, 217);
 }
-body{
-    background-color: var(--white);
+.background-contacto{
+    background-image: url(/src/assets/img/grayFlower_background.jpg);
+    padding: 20px;
 }   
     .contact-title {
-        margin: 100px 20px 20px;
-        font-size: xx-large;
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        justify-content: center;
+        margin: 20px 420px;
+        font-size: 2rem;
         color: var(--white);
+        background-color: var(--blue);
+        transition: all ease 0.5s;
+        border-style: groove;
+        border-radius: 20px;
+        padding: 10px;
     }
-    
+    .contact-title:hover {
+        background-color: var(--orange);
+    }
+
+    /*
     .meta-contact-title {
         margin: 20px;
         font-size: 1.2rem;
     }
-    
+    */
     .keywords {
         color: var(--blue);
     }
     
     .contact-info {
-        margin: 20px;
-        line-height: 1.6; /* Mejor legibilidad */
-        max-width: 800px; /* Evita líneas muy largas */
+        display: flex;
+        font-family: 'Readex Pro', sans-serif;
+        font-weight: 400;
+        margin: 10px;
+        line-height: 1.6;
+        background-color: var(--gray);
+        color: var(--black);
+        border-style: groove;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px 40px;
+        font-style: italic;
+        transition: all ease 0.5s;
+    }
+    .contact-info:hover {
+        background-color: var(--orange);
+        color: var(--white);
     }
     
     .donative-container {
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
-        border-radius: 8px; /* Bordes redondeados */
+        padding: 20px; 
+        border-radius: 8px;
     }

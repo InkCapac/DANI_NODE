@@ -53,8 +53,8 @@ const Formulario: React.FC = () => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="apellido">Apellido</label>
-        <input id="apellido" type="text" ref={apellido} required />
+        <label htmlFor="apellido">Primer Apellido</label>
+        <input id="apellido" type="text" ref={apellido} required /> 
       </div>
 
       <div className="form-group">
