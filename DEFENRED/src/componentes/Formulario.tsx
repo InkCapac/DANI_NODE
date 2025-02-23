@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import EnvioDonativoModal from "../linkedPages/subLinked/contactoModal"; // Corregir nombre del componente
+import EnvioDonativoModal from "../linkedPages/subLinked/contactoModal";
 import "./css/formulario.css";
 
 const Formulario: React.FC = () => {
