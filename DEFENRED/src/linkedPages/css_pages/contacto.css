@@ -5,59 +5,99 @@
     --blue: rgb(12, 53, 67);
     --gray: rgb(217, 217, 217);
 }
-.background-contacto{
+
+.background-contacto {
     background-image: url(/src/assets/img/grayFlower_background.jpg);
     padding: 20px;
-}   
+}
+
+.contact-title {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--blue);
+    transition: all ease 0.5s;
+    border-style: groove;
+    border-radius: 20px;
+    padding: 10px;
+    width: 90%;
+}
+
+.contact-title:hover {
+    background-color: var(--orange);
+}
+
+.keywords {
+    color: var(--blue);
+}
+
+.contact-info {
+    display: flex;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-indent: 10px;
+    line-height: 1.6;
+    background-color: var(--gray);
+    color: var(--black);
+    border-style: groove;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    font-style: italic;
+    transition: all ease 0.5s;
+    width: 90%;
+}
+
+.contact-info:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.donative-container {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
     .contact-title {
-        display: flex;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        justify-content: center;
-        margin: 20px 420px;
-        font-size: 2rem;
-        color: var(--white);
-        background-color: var(--blue);
-        transition: all ease 0.5s;
-        border-style: groove;
-        border-radius: 20px;
-        padding: 10px;
-    }
-    .contact-title:hover {
-        background-color: var(--orange);
+        font-size: 1.5rem;
+        margin: 20px auto; 
+        width: 90%; 
     }
 
-    /*
-    .meta-contact-title {
-        margin: 20px;
-        font-size: 1.2rem;
-    }
-    */
-    .keywords {
-        color: var(--blue);
-    }
-    
     .contact-info {
-        display: flex;
-        font-family: 'Readex Pro', sans-serif;
-        font-weight: 400;
-        margin: 10px;
-        line-height: 1.6;
-        background-color: var(--gray);
-        color: var(--black);
-        border-style: groove;
-        border-radius: 10px;
-        padding: 10px;
-        margin: 20px 40px;
-        font-style: italic;
-        transition: all ease 0.5s;
+        font-size: 0.9rem; 
+        margin: 20px auto; 
+        width: 90%;
     }
-    .contact-info:hover {
-        background-color: var(--orange);
-        color: var(--white);
-    }
-    
+
     .donative-container {
-        padding: 20px; 
-        border-radius: 8px;
+        padding: 10px;
     }
+}
+
+/* Media queries para dispositivos muy pequeños (ej. smartphones pequeños) */
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 1.2rem;
+        margin: 10px auto;
+        width: 95%;
+    }
+
+    .contact-info {
+        font-size: 0.8rem;
+        margin: 10px auto;
+        width: 95%;
+    }
+
+    .donative-container {
+        padding: 5px;
+    }
+}

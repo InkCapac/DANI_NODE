@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import "../linkedPages/css_pages/inicioStyle.css";
 import streetImage from "../assets/img/street_defenred.webp";
 import casaRespiro from "../assets/img/señoraLeyendo_defenred.webp";
@@ -12,14 +13,14 @@ const Inicio = () => {
   });
   return (
     <>
-      <head>
+      <Helmet>
         {/*Meta título*/}
         <title>Defenred-Red de Apoyo para Defensores de Derechos Humanos /Inicio</title>
         {/*Meta descripción*/}
         <meta name="description" content="Bienvenido a Defenred, una organización comprometida con la defensa de los derechos humanos. Descubre nuestras iniciativas tanto a nivel nacional como internacional para promover la inclusión social y el desarrollo sostenible y favorable hacia las comunidades de todo el mundo."/>
         {/*Lista de keywords*/}
         <meta name="keywords" content="defenred, derechos humanos, bienestar, casa de Respiro"/>
-      </head>
+      </Helmet>
       <MyGallery />
       <div className="background-imagen">
         <div className="cta-container" ref={parallax.ref}>

@@ -19,7 +19,7 @@ const PorqueProyecto: React.FC = () => {
                         <img src={EquipoDefenred} alt="Defenred" />
                     </div>
                     <p className="porque-parrafo2">
-                        Si bien muchos <span className="keywords">defensores de los derechos humanos</span> están desarrollando sus propias estrategias de promoción, el alto costo que su trabajo supone para su <span className="keywords">salud</span> requiere un mayor apoyo. Su profundo conocimiento de las realidades locales y su impacto positivo en las comunidades los convierte en agentes importantes para un cambio ambiental equitativo y duradero.<span className="porque-defenred-quotes">Apoyarlos y ampliar su trabajo no sólo protege a los <span className="keywords">defensores</span> sino que también a
+                        Si bien muchos <span className="keywords">defensores de los derechos humanos</span> están desarrollando sus propias estrategias de promoción, el alto costo que su trabajo supone para su <span className="keywords">salud</span> requiere un mayor apoyo. Su profundo conocimiento de las realidades locales y su impacto positivo en las comunidades los convierte en agentes importantes para un cambio ambiental equitativo y duradero. <span className="porque-defenred-quotes">Apoyarlos y ampliar su trabajo no sólo protege a los <span className="keywords">defensores</span> sino que también a
                         su <span className="keywords">autocuidado</span> en los <span className="keywords">derechos humanos</span> y el desarrollo de sus comunidades, beneficiando a todos los que se preocupan por su trabajo.</span>
                     </p>
                     <div className="team-porque-defenred">

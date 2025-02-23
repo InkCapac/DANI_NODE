@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import React from "react";
 import Footer from "../componentes/Footer";
 import SeccionDefensoras from "./subLinked/sections_defensoras";
@@ -8,7 +9,7 @@ const Defensoras = () => {
   return (
     <>
       {/* Encabezado */}
-      <head>
+      <Helmet>
         <title>Defensoras de Derechos Humanos | Apoyo y Resiliencia con Defenred | Defensoras</title>
         <meta
           name="description"
@@ -18,7 +19,7 @@ const Defensoras = () => {
           name="keywords"
           content="La casa de Respiro, Defensores, Defensoras, Derechos"
         />
-      </head>
+      </Helmet>
 
       {/* Sección principal */}
       <section className="defensoras-gallery">

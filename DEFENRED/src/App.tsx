@@ -1,5 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
+/*Biblioteca especializada 'react-helmet' */
+/*Instalar con 'npm install react-helmet-async' */
+import { HelmetProvider } from "react-helmet-async";
 import Navtab from "./componentes/navTab";
 import Index from "./index";
 import Defenred from "./linkedPages/defenred";
@@ -22,7 +25,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 const App: React.FC = () => {
   return (
-    <>
+    <HelmetProvider>
     <div id="root">
     <ParallaxProvider>
         <section>
@@ -58,8 +61,7 @@ const App: React.FC = () => {
         </section>
       </ParallaxProvider>
     </div>
-      
-    </>
+    </HelmetProvider>
   );
 };
 
