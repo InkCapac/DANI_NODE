@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Footer from "./Footer";
-import ConfirmationModal from "./altaModal_cuadro"; // Importa el modal
+import ConfirmationModal from "./altaModal_cuadro";
 import "./css_sub/altaUsuario.css";
 
 const AltaUsuario: React.FC = () => {
@@ -12,6 +12,7 @@ const AltaUsuario: React.FC = () => {
     const telefono = useRef<HTMLInputElement>(null);
     const pass = useRef<HTMLInputElement>(null);
     const consentimiento = useRef<HTMLInputElement>(null);
+    const formRef = useRef<HTMLFormElement>(null);
 
     const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar el modal
 
@@ -45,7 +46,10 @@ const AltaUsuario: React.FC = () => {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
                 console.log("Usuario insertado:", data);
-                setIsModalOpen(true); // Abre el modal si la solicitud es exitosa
+                //Muestra un cuadro de confirmación al enviar los datos
+                setIsModalOpen(true); 
+                //Limpia los campos de entrada de datos
+                formRef.current?.reset();
             })
             .catch((error) => {
                 console.error("Error al insertar usuario:", error);
@@ -54,7 +58,8 @@ const AltaUsuario: React.FC = () => {
     };
 
     const handleCloseModal = () => {
-        setIsModalOpen(false); // Cierra el modal
+        //Cierra el cuadro
+        setIsModalOpen(false); 
     };
 
     return (
@@ -63,7 +68,7 @@ const AltaUsuario: React.FC = () => {
                 <p className="title-altaUsuario">
                     Únete a Defenred!
                 </p>
-                <form onSubmit={enviar} className="form-container-altaUsuario">
+                <form onSubmit={enviar} className="form-container-altaUsuario" ref={formRef}>
                     {/* Campos del formulario */}
                     <div className="form-group-alta">
                         <label htmlFor="nombre">Nombre</label>

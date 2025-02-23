@@ -7,12 +7,14 @@
 }
 .form-container {
     display: flex;
+    justify-content: center;
     font-family: 'Readex Pro', sans-serif;
     font-weight: 400;
     flex-direction: column;
     gap: 1rem;
     max-width: 400px;
-    margin: 20px;
+    background-color: var(--gray);
+    margin: 20px auto;
     padding: 40px 20px;
     border: 1px solid;
     border-radius: 8px;
