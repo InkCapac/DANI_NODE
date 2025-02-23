@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Footer from "./Footer";
 import "./css_sub/altaUsuario.css";
 
 const altaUsuario: React.FC = () => {
@@ -47,50 +48,57 @@ const altaUsuario: React.FC = () => {
     };
 
     return (
-        <form onSubmit={enviar} className="form-container">
-            <div className="form-group">
+        <div className="background-container-altaUsuario">
+        <div className="container-altaUsuario">
+        <p className="title-altaUsuario">
+            Únete a Defenred!
+        </p>
+        <form onSubmit={enviar} className="form-container-altaUsuario">
+            <div className="form-group-alta">
                 <label htmlFor="nombre">Nombre</label>
                 <input id="nombre" type="text" ref={nombre} required />
             </div>
 
-            <div className="form-group">
+            <div className="form-group-alta">
                 <label htmlFor="apellido">Apellido</label>
                 <input id="apellido" type="text" ref={apellido} required />
             </div>
 
-            <div className="form-group">
+            <div className="form-group-alta">
                 <label htmlFor="apellido2">Segundo Apellido</label>
                 <input id="apellido2" type="text" ref={apellido2} />
             </div>
 
-            <div className="form-group">
+            <div className="form-group-alta">
                 <label htmlFor="correo">Correo</label>
                 <input id="correo" type="email" ref={correo} required />
             </div>
 
-            <div className="form-group">
+            <div className="form-group-alta">
                 <label htmlFor="birthDate">Fecha de nacimiento</label>
                 <input type="date" ref={birthDate} />
             </div>
 
-            <div className="form-group">
+            <div className="form-group-alta">
                 <label htmlFor="pass">Contraseña</label>
                 <input id="pass" type="password" ref={pass} required />
             </div>
 
-            <div className="form-group">
+            <div className="form-group-alta">
                 <label htmlFor="telefono">Número de teléfono</label>
                 <input id="telefono" type="tel" ref={telefono} pattern="[0-9]{10}" required />
             </div>
-            <div className="form-group">
+            <div className="form-group-alta">
                 <label htmlFor="consentimiento">
                     <input id="consentimiento" type="checkbox" ref={consentimiento} required />
                     I consent to the terms and conditions
                 </label>
             </div>
-
             <button type="submit" className="submit-button">Enviar</button>
         </form>
+        </div>
+        <Footer />
+        </div>
     );
 };
 
