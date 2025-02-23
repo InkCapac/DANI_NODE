@@ -1,128 +1,103 @@
 :root {
-    --orange: rgb(240, 101, 0);
-    --white: rgb(230, 229, 229);
-    --black: rgb(34, 34, 34);
-    --blue: rgb(12, 53, 67);
-    --gray: rgb(217, 217, 217);
-  }
+  --orange: rgb(240, 101, 0);
+  --white: rgb(230, 229, 229);
+  --black: rgb(34, 34, 34);
+  --blue: rgb(12, 53, 67);
+  --gray: rgb(217, 217, 217);
+}
+
 /*Sección de introducción a Defenred*/
-.porque-inicio {
-    display: flex;
-    align-items: flex-start;
-    padding: 45px;
-    background-color: var(--gray);
-    gap: 30px;
-    margin: 0 auto;
-  }
-  
-  .street-defenred-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .porque-inicio img {
-    height: 330px;
-    width: auto;
-    border-style: dashed;
-    transition: transform 0.5s ease;
-    object-fit: cover;
-  }
-  
-  .secciones-inicio img:hover {
-    transform: rotate(-3deg) scale(1.1);
-  }
-  
-  .porque-parrafo1 {
-    flex: 1;
-    font-family: 'Readex Pro', sans-serif;
-    text-align: justify;
-    font-size: 1.3em;
-    border-style: dotted;
-    background-color: var(--white);
-    padding: 20px;
-    color: var(--black);
-    line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .secciones-parrafo1:hover {
-    background-color: var(--orange);
-    color: var(--white);
-    font-weight: bold;
-    border-style: groove;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  /* Sección del párrafo de "Casa de Respiro" en inicio.tsx */
-  .casaRespiro-inicio {
-    display: flex;
-    align-items: flex-start;
-    padding: 45px;
-    background-image: url(src/assets/img/grayFlower_background.jpg);
-    gap: 30px;
-    margin: 0 auto;
-  }
-  
-  .casaRespiro-inicio-image {
-    width: 550px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .casaRespiro-inicio img {
-    width: 550px;
-    height: auto;
-    border-style: dashed;
-    transition: transform 0.5s ease;
-    object-fit: cover;
-  }
-  
-  .casaRespiro-inicio img:hover {
-    transform: rotate(3deg) scale(1.1);
-  }
-  
-  .cta-casaRespiro {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: var(--blue);
-    color: var(--white);
-    border: none;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 1.2em;
-    border-radius: 10px;
-    transition: background-color ease 0.3s;
-  }
-  
-  .cta-casaRespiro:hover {
-    background-color: var(--orange);
-  }
-  
-  .casaRespiro-parrafo1 {
-    flex: 1;
-    font-family: 'Readex Pro', sans-serif;
-    text-align: justify;
-    font-size: 1.3em;
-    border-style: dotted;
-    background-color: var(--white);
-    padding: 20px;
-    color: var(--black);
-    line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .casaRespiro-parrafo1:hover {
-    background-color: var(--orange);
-    color: var(--white);
-    font-weight: bold;
-    border-style: groove;
-    padding: 20px;
-    border-radius: 5px;
-  }
+.porque-inicio-defenred {
+  display: flex;
+  align-items: flex-start;
+  padding: 45px;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.title-porque-parrafo1 {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  padding: 20px;
+  margin: 20px 300px;
+  font-style: italic;
+  font-size: 3rem;
+  justify-content: center;
+  border-radius: 20px;
+  border: groove;
+  background-color: var(--blue);
+  color: var(--white);
+  transition: all ease 0.5s;
+}
+
+.title-porque-parrafo1:hover {
+  background-color: var(--orange);
+}
+
+.porque-parrafo1 {
+  flex: 1;
+  text-indent: 10px;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  font-size: 1.5em;
+  border-style: groove;
+  color: var(--black);
+  background-color: var(--white);
+  padding: 20px;
+  color: var(--black);
+  line-height: 1.6;
+  transition: all ease 0.5s;
+}
+
+.porque-parrafo1:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  border-style: groove;
+  padding: 20px;
+  border-radius: 5px;
+}
+.porque-parrafo2 {
+  flex: 1;
+  text-indent: 10px;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  font-size: 1.4em;
+  border-style: groove;
+  background-color: var(--white);
+  padding: 20px;
+  color: var(--black);
+  line-height: 1.6;
+  transition: all ease 0.5s;
+}
+
+.porque-parrafo2:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  border-style: groove;
+  padding: 20px;
+  border-radius: 5px;
+}
+.porque-defenred-quotes {
+  color: var(--white);
+  font-style: oblique;
+  background-color: var(--orange);
+  border-radius: 5px;
+}
+.team-porque-defenred {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.team-porque-defenred img {
+  max-width: 800px;
+  border-style: groove;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+.team-porque-defenred img:hover {
+  transform: scale(1.05);
+}

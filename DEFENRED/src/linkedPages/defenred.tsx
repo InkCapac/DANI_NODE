@@ -45,8 +45,6 @@ const Defenred = () => {
       */}
         <div className="sections-background-defenred">
           <QuienesSomos />
-          <CasaRespiro />
-          
           <PorqueProyecto />
         </div>
         <div>

@@ -5,11 +5,10 @@
     --blue: rgb(12, 53, 67);
     --gray: rgb(217, 217, 217);
   }
-.keywords{
-    color: var(--blue);
+.keywords-parrafo1{
+    color: var(--orange);
 }
 .quienesSomos-defenred{
-    /*display: flex;*/
     padding: 15px;
     justify-content: center;
     background-image: url(/src//assets/img/grayFlower_background.jpg);
@@ -19,48 +18,58 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 60px;
+    font-style: italic;
     background-color: var(--blue);
     color: var(--white);
     border-radius: 20px;
     border-style: groove;
     margin: 20px 250px;
     padding: 10px 25px;
-    transition: background-color ease 0.3s;
+    transition: all ease 0.5s;
 }
 .quienes-title-defenred:hover{
     background-color: var(--orange);
-}
-.space-between-defenred{
-    margin: 20px;
 }
 .quienes-parrafo1-defenred{
     flex: 1;
     font-family: 'Readex Pro', sans-serif;
     font-weight: 400;
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 1.4em;
     border-style: groove;
     background-color: var(--white);
     padding: 20px;
     margin: 40px;
     color: var(--black);
     line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all ease 0.5s;
   }
   
   .quienes-parrafo1-defenred:hover {
     background-color: var(--orange);
     color: var(--white);
-    font-weight: bold;
     padding: 20px;
     border-radius: 5px;
   }
+  .terraza-image-quienes{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .terraza-image-quienes img{
+    border-radius: 20px;
+    border-style: groove;
+    transition: all ease 0.5s;
+  }
+  .terraza-image-quienes img:hover{
+    transform: scale(1.05);
+  }
   .quienes-parrafo1-quote{
     font-family: 'Readex Pro', sans-serif;
+    font-weight: 400;
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 1.2em;
     border-radius: 10px;
-    border-style: groove;
     background-color: var(--gray)   ;
     padding: 10px;
     margin: 10px 60px;
@@ -70,7 +79,14 @@
   }
   
   .quienes-parrafo1-quote:hover {
-    background-color: var(--orange);
+    background-color: var(--blue);
     color: var(--white);
-    border-style: groove;
+  }
+  .quienes-idea-quote{
+    font-style: italic;
+    color: var(--white);
+    background-color: var(--orange);
+  }
+  .quienes-idea-quote:hover{
+    font-weight: bold;
   }
