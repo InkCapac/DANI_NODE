@@ -14,6 +14,7 @@ const VerDonativos = () => {
     correo: string;
     caridad: string;
     telefono: string;
+    observacion: string;
     consentimiento: boolean;
   }
 
@@ -31,7 +32,7 @@ const VerDonativos = () => {
   return (
       <section>
         <div className="donativo-data-container">
-          <h1 className="title-mienbros-data">donativos afiliados a Defenred</h1>
+          <h1 className="title-mienbros-data">Donativos hechos a Defenred</h1>
           {data.map((donativo) => (
             <Donativo
               key={donativo._id}
@@ -40,8 +41,9 @@ const VerDonativos = () => {
               apellido={donativo.apellido}
               apellido2={donativo.apellido2}
               correo={donativo.correo}
-              caridad={donativo.ca}
+              caridad={donativo.caridad}
               telefono={donativo.telefono}
+              observacion={donativo.observacion}
               consentimiento={donativo.consentimiento}
             />
           ))}

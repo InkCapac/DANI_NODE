@@ -14,6 +14,7 @@ import SectionDefensoras from "./linkedPages/subLinked/sections_defensoras";
 // Componentes 'admin'
 import AltaUsuario from "./linkedPages/subLinked/altaUsuario"; 
 import VerMienbros from "./linkedPages/verMienbros";
+import VerDonativos from "./linkedPages/verDonativos";
 
 import NotFound from "./404";
 
@@ -54,6 +55,8 @@ const App: React.FC = () => {
               <Route path="/formulario" element={<Formulario />} />
               {/* Página para ver usuarios */}
               <Route path="/verMienbros" element={<VerMienbros />} />
+              {/* Página para ver donativos */}
+              <Route path="/verDonativos" element={<VerDonativos />} />
               {/* Página de error 404*/}
               <Route path="/404" element={<NotFound/>}/>
             </Routes>
