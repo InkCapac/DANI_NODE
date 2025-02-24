@@ -15,7 +15,7 @@ const Inicio = () => {
     <>
       <Helmet>
         {/*Meta título*/}
-        <title>Defenred-Red de Apoyo para Defensores de Derechos Humanos /Inicio</title>
+        <title>Defenred - Red de Apoyo para Defensores de Derechos Humanos</title>
         {/*Meta descripción*/}
         <meta name="description" content="Bienvenido a Defenred, una organización comprometida con la defensa de los derechos humanos. Descubre nuestras iniciativas tanto a nivel nacional como internacional para promover la inclusión social y el desarrollo sostenible y favorable hacia las comunidades de todo el mundo."/>
         {/*Lista de keywords*/}

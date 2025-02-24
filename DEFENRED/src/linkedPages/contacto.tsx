@@ -19,14 +19,6 @@ const Contacto = () => {
       <main>
         <div className="background-contacto">
           <h2 className="contact-title">Formulario de Defenred</h2>
-          {/*
-            <div>
-              <h3 className="meta-contact-title">
-                Contacta con Nosotras | Asistencia Personalizada y Atención al
-                Cliente
-              </h3>
-            </div>
-          */}
           <p className="contact-info">
             Si deseas saber más sobre nuestras iniciativas y cómo colaborar con
             nosotros, por favor comunícate con el equipo de Defenred. Estamos

@@ -14,7 +14,7 @@ const Defenred = () => {
     <>
       <Helmet>
         {/*Meta título*/}
-        <title>Quiénes somos- red de apoyo a defensores de los derechos humanos | Defenred</title>
+        <title>Quiénes somos - red de apoyo a defensores de los derechos humanos | Defenred</title>
         {/*Meta descripción*/}
         <meta name="Conoce a Defenred, una organización que trabaja incansablemente por la promoción de los derechos humanos y la justicia social. Aprende sobre nuestra misión, visión y valores, y descubre cómo buscamos mejorar la vida de las personas a través de proyectos de cooperación internacional, inclusión social y empoderamiento comunitario. Descubre quiénes somos y por qué existimos." />
         {/*Lista de keywords*/}
