@@ -58,7 +58,7 @@ const App: React.FC = () => {
               {/* Página para ver donativos */}
               <Route path="/verDonativos" element={<VerDonativos />} />
               {/* Página de error 404*/}
-              <Route path="/404" element={<NotFound/>}/>
+              <Route path="*" element={<NotFound/>}/>
             </Routes>
           </BrowserRouter>
         </section>
