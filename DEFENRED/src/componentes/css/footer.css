@@ -6,8 +6,6 @@
     --blue: rgb(12, 53, 67);
     --gray: rgb(217, 217, 217);
 }
-
-/* Contenedor principal del footer */
 .footerContainer {
     width: 100%;
     padding: 20px;
@@ -16,20 +14,17 @@
     background-color: var(--blue);
     color: var(--white);
 }
-
-/* Contenedor para la imagen y el contenido */
 .footerContent {
     display: flex;
-    flex-direction: row; /* Imagen y contenido en fila por defecto */
+    flex-direction: row;
     align-items: center;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Estilos para la imagen */
 .footerImage img {
-    width: 300px; /* Tamaño de la imagen */
+    width: 300px;  
     height: auto;
     border-radius: 10px;
     border: 2px solid var(--white);
@@ -40,7 +35,6 @@
     transform: scale(1.05);
 }
 
-/* Contenedor para el texto y los iconos */
 .footerText {
     flex: 1;
     display: flex;
@@ -48,7 +42,6 @@
     gap: 15px;
 }
 
-/* Estilos para los iconos sociales */
 .socialIcons {
     display: flex;
     gap: 15px;
@@ -64,8 +57,6 @@
 .socialIcons a:hover {
     color: var(--orange);
 }
-
-/* Estilos para el texto del footer */
 .footer-disclaimer {
     font-size: 0.9rem;
     line-height: 1.6;
@@ -100,19 +91,19 @@
 .footer-links2:hover{
     color: var(--orange);
 }
-/* Estilos responsivos para móviles */
+
 @media (max-width: 768px) {
     .footerContent {
-        flex-direction: column; /* Apila imagen y contenido en móviles */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .footerImage img {
-        width: 300px; /* Ajusta el tamaño de la imagen para móviles */
+        width: 300px;
     }
 
     .socialIcons {
-        justify-content: center; /* Centra los iconos en móviles */
+        justify-content: center;
     }
 }

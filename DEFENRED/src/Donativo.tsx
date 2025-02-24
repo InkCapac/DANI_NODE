@@ -1,17 +1,18 @@
 import { useState } from "react";
 import "./linkedPages/subLinked/css_sub/usuarioData.css";
 
-const Usuario = (props: {
+const Donativo = (props: {
   id: string;
   nombre: string;
   apellido: string;
   apellido2: string;
-  birthdate: string;
   correo: string;
+  caridad: string;
   telefono: string;
+  observacion: string;
   consentimiento: boolean;
 }) => {
-  const { id, nombre, apellido, apellido2, birthdate, correo, telefono } = props;
+  const { id, nombre, apellido, apellido2, correo, caridad, telefono, observacion } = props;
 
   return (
     <article className="usuario-container">
@@ -20,12 +21,13 @@ const Usuario = (props: {
       <p><strong>ID:</strong> {id}</p>
       <p><strong>Apellido:</strong> {apellido}</p>
       <p><strong>Apellido 2:</strong> {apellido2}</p>
-      <p><strong>Fecha de nacimiento:</strong> {birthdate}</p>
       <p><strong>Correo:</strong> {correo}</p>
+      <p><strong>Monto recibido:</strong> {caridad}</p>
       <p><strong>Teléfono:</strong> {telefono}</p>
+      <p><strong>Comentarios:</strong> {observacion}</p>
       </div>
     </article>
   );
 };
 
-export default Usuario;
+export default Donativo;

@@ -20,7 +20,7 @@
 /* Contenedor para la imagen y el contenido */
 .footerContent {
     display: flex;
-    flex-direction: row; /* Imagen y contenido en fila por defecto */
+    flex-direction: row;
     align-items: center;
     gap: 20px;
     max-width: 1200px;
@@ -29,7 +29,7 @@
 
 /* Estilos para la imagen */
 .footerImage img {
-    width: 300px; /* Tamaño de la imagen */
+    width: 300px; 
     height: auto;
     border-radius: 10px;
     border: 2px solid var(--white);
@@ -71,6 +71,7 @@
     line-height: 1.6;
     text-align: center;
     font-style: italic;
+    font-weight: bold;
 }
 .footer-disclaimer:hover{
     color: var(--orange);
@@ -103,16 +104,16 @@
 /* Estilos responsivos para móviles */
 @media (max-width: 768px) {
     .footerContent {
-        flex-direction: column; /* Apila imagen y contenido en móviles */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .footerImage img {
-        width: 300px; /* Ajusta el tamaño de la imagen para móviles */
+        width: 300px;
     }
 
     .socialIcons {
-        justify-content: center; /* Centra los iconos en móviles */
+        justify-content: center;
     }
 }

@@ -1,96 +1,164 @@
 :root {
-    --orange: rgb(240, 101, 0);
-    --white: rgb(230, 229, 229);
-    --black: rgb(34, 34, 34);
-    --blue: rgb(12, 53, 67);
-    --gray: rgb(217, 217, 217);
-  }
-.keywords-parrafo1{
-    color: var(--blue);
-    font-weight: bold;
+  --orange: rgb(240, 101, 0);
+  --white: rgb(230, 229, 229);
+  --black: rgb(34, 34, 34);
+  --blue: rgb(12, 53, 67);
+  --gray: rgb(217, 217, 217);
 }
-.quienesSomos-defenred{
+
+.keywords-parrafo1 {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.quienesSomos-defenred {
+  padding: 15px;
+  justify-content: center;
+  background-image: url(/src/assets/img/grayFlower_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.quienes-title-defenred {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  font-style: italic;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 20px;
+  border-style: groove;
+  margin: 20px auto;
+  padding: 10px 25px;
+  transition: all ease 0.5s;
+  max-width: 800px;
+}
+
+.quienes-title-defenred:hover {
+  background-color: var(--orange);
+}
+
+.quienes-parrafo1-defenred {
+  flex: 1;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  font-size: 1.3em;
+  text-indent: 10px;
+  border-style: groove;
+  border-radius: 10px;
+  background-color: var(--white);
+  padding: 20px;
+  margin: 40px auto;
+  color: var(--black);
+  line-height: 1.6;
+  transition: all ease 0.5s;
+  max-width: 1200px;
+}
+
+.quienes-parrafo1-defenred:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.terraza-image-quienes {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.terraza-image-quienes img {
+  border-radius: 20px;
+  border-style: groove;
+  transition: all ease 0.5s;
+  max-width: 80%;
+  height: auto;
+}
+
+.terraza-image-quienes img:hover {
+  transform: scale(1.05);
+}
+
+.quienes-parrafo1-quote {
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.1em;
+  border-radius: 10px;
+  border-style: groove;
+  background-color: var(--gray);
+  padding: 10px;
+  margin: 10px auto;
+  color: var(--black);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  max-width: 1000px;
+}
+
+.quienes-parrafo1-quote:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.quienes-idea-quote {
+  font-style: italic;
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.keywords-parrafo1-quote {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+/* Diseño para móviles */
+@media (max-width: 768px) {
+  .quienes-title-defenred {
+    font-size: 2.5rem;
+    margin: 20px 10px;
+    padding: 10px 15px;
+  }
+
+  .quienes-parrafo1-defenred {
+    font-size: 1.2em;
+    margin: 20px 10px;
     padding: 15px;
-    justify-content: center;
-    background-image: url(/src//assets/img/grayFlower_background.jpg);
-}
-.quienes-title-defenred{
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 60px;
-    font-style: italic;
-    background-color: var(--blue);
-    color: var(--white);
-    border-radius: 20px;
-    border-style: groove;
-    margin: 20px 250px;
-    padding: 10px 25px;
-    transition: all ease 0.5s;
-}
-.quienes-title-defenred:hover{
-    background-color: var(--orange);
-}
-.quienes-parrafo1-defenred{
-    flex: 1;
-    font-family: 'Readex Pro', sans-serif;
-    font-weight: 400;
-    text-align: justify;
-    font-size: 1.4em;
-    text-indent: 10px;
-    border-style: groove;
-    background-color: var(--white);
-    padding: 20px;
-    margin: 40px;
-    color: var(--black);
-    line-height: 1.6;
-    transition: all ease 0.5s;
   }
-  
-  .quienes-parrafo1-defenred:hover {
-    background-color: var(--orange);
-    color: var(--white);
-    padding: 20px;
-    border-radius: 5px;
+
+  .quienes-parrafo1-quote {
+    font-size: 1em;
+    margin: 10px;
+    padding: 8px;
   }
-  .terraza-image-quienes{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  .terraza-image-quienes img{
-    border-radius: 20px;
-    border-style: groove;
-    transition: all ease 0.5s;
-  }
-  .terraza-image-quienes img:hover{
-    transform: scale(1.05);
-  }
-  .quienes-parrafo1-quote{
-    font-family: 'Readex Pro', sans-serif;
-    font-weight: 400;
-    text-align: justify;
-    font-size: 1.1em;
-    border-radius: 10px;
-    border-style: groove;
-    background-color: var(--gray)   ;
+
+  .terraza-image-quienes {
     padding: 10px;
-    margin: 10px 60px;
-    color: var(--black);
-    line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
   }
-  
-  .quienes-parrafo1-quote:hover {
-    background-color: var(--blue);
-    color: var(--white);
+}
+
+@media (max-width: 480px) {
+  .quienes-title-defenred {
+    font-size: 2rem;
+    margin: 15px 5px;
+    padding: 8px 10px;
   }
-  .quienes-idea-quote{
-    font-style: italic;
-    color: var(--white);
-    background-color: var(--orange);
+
+  .quienes-parrafo1-defenred {
+    font-size: 1em;
+    margin: 15px 5px;
+    padding: 10px;
   }
-  .keywords-parrafo1-quote{
-    color: var(--blue);
-    font-weight: bold;
+
+  .quienes-parrafo1-quote {
+    font-size: 0.9em;
+    margin: 5px;
+    padding: 5px;
   }
+
+  .terraza-image-quienes {
+    padding: 5px;
+  }
+}
