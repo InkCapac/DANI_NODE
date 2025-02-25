@@ -1,0 +1,135 @@
+:root {
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+  }
+  
+  .donativo-data-container {
+    background-image: url(/src/assets/img/grayFlower_background.jpg);
+    width: 100%;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  
+  .title-mienbros-data {
+    display: flex;
+    margin: 40px auto;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    border-style: groove;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: var(--blue);
+    background-color: var(--gray);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    transition: all 0.5s ease;
+    max-width: 800px;
+  }
+  
+  .title-mienbros-data:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+  
+  .donativo-container {
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    line-height: 1.6;
+    font-style: italic;
+    padding: 16px;
+    margin: 20px auto;
+    color: var(--white);
+    letter-spacing: 1.5px;
+    background-color: var(--white);
+    transition: all 0.5s ease;
+    max-width: 800px;
+  }
+  
+  .donativo-container:hover {
+    background-color: var(--orange);
+  }
+  
+  .donativo-background {
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .donativo-background:hover {
+    color: var(--white);
+    background-color: var(--blue);
+  }
+  
+  .donativo-container h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.5em;
+  }
+  
+  .donativo-container p {
+    margin: 4px 0;
+  }
+  
+  .donativo-container span {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: var(--white);
+  }
+  
+  /* Media Queries para móviles */
+  @media (max-width: 768px) {
+    .title-mienbros-data {
+      margin: 20px 10px;
+      font-size: 1.8rem;
+      padding: 15px;
+    }
+  
+    .donativo-container {
+      margin: 20px 10px;
+      padding: 12px;
+    }
+  
+    .donativo-container h2 {
+      font-size: 1.3em;
+    }
+  
+    .donativo-container p {
+      font-size: 0.9em;
+    }
+  
+    .donativo-container span {
+      font-size: 0.8em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title-mienbros-data {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+  
+    .donativo-container {
+      margin: 15px 5px;
+      padding: 10px;
+    }
+  
+    .donativo-container h2 {
+      font-size: 1.2em;
+    }
+  
+    .donativo-container p {
+      font-size: 0.8em;
+    }
+  
+    .donativo-container span {
+      font-size: 0.7em;
+    }
+  }

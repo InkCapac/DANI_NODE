@@ -1,0 +1,52 @@
+:root {
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-contenido {
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 400;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .modal-contenido h2 {
+    margin-bottom: 10px;
+    color: var(--blue);
+  }
+  
+  .modal-contenido p {
+    margin-bottom: 20px;
+    color: var(--black);
+  }
+  
+  .modal-contenido button {
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-style: groove;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  
+  .modal-contenido button:hover {
+    background-color: var(--orange);
+  }

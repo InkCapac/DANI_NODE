@@ -133,6 +133,17 @@ app.post("/enviarDonativo", (req, res) => {
       res.status(500).json({ error: "Error al enviar el donativo", details: error.message });
     });
 });
+// Obtener los donativos enviados
+app.get("/obtenerDonativos", async (req, res) => {
+  try {
+    const donativos = await Donativo.find();
+    res.json(donativos);
+  } catch (error) {
+    res.status(500).json({
+      error: "Error al obtener los datos",
+    });
+  }
+});
 
 // 404 Handler
 app.use((req, res) => {

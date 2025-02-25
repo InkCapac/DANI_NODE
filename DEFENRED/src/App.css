@@ -7,8 +7,8 @@
 }
 /*Sección del color del texto cuando es subrayado*/
 ::selection{
-  color: var(--white);
-  background-color: var(--blue);
+  color: var(--black);
+  background-color: var(--gray);
 }
 body, html {
   height: 100%;

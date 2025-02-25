@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import EnvioDonativoModal from "../linkedPages/subLinked/contactoModal";
 import "./css/formulario.css";
 
 const Formulario: React.FC = () => {
@@ -10,6 +11,9 @@ const Formulario: React.FC = () => {
   const telefono = useRef<HTMLInputElement>(null);
   const observacion = useRef<HTMLTextAreaElement>(null);
   const consentimiento = useRef<HTMLInputElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const [modalAbierto, setmodalAbierto] = useState(false);
 
   const enviar = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -19,10 +23,10 @@ const Formulario: React.FC = () => {
       apellido: apellido.current?.value || "",
       apellido2: apellido2.current?.value || "",
       correo: correo.current?.value || "",
-      caridad: caridad.current?.value ? parseFloat(caridad.current.value) : null,  // Cambiado a "caridad"
+      caridad: caridad.current?.value ? parseFloat(caridad.current.value) : null,
       telefono: telefono.current?.value ? telefono.current.value.trim() : "",
       observacion: observacion.current?.value || "",
-      consentimiento: consentimiento.current?.checked || false,  // Enviar como booleano
+      consentimiento: consentimiento.current?.checked || false,
     };
 
     console.log("Datos a enviar:", JSON.stringify(Donativo));
@@ -41,56 +45,69 @@ const Formulario: React.FC = () => {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         console.log("Monto enviado!:", data);
+        setmodalAbierto(true); // Abre el modal si la solicitud es exitosa
+        formRef.current?.reset(); // Resetea el formulario
       })
-      .catch((error) => console.error("Error al enviar donativo:", error));
+      .catch((error) => {
+        console.error("Error al enviar donativo:", error);
+        alert("Hubo un error al enviar el donativo. Por favor, intenta de nuevo.");
+      });
+  };
+
+  const modalCerrar = () => {
+    setmodalAbierto(false); // Cierra el modal
   };
 
   return (
-    <form onSubmit={enviar} className="form-container">
-      <div className="form-group">
-        <label htmlFor="nombre">Nombre</label>
-        <input id="nombre" type="text" ref={nombre} required />
-      </div>
+    <div>
+      <form onSubmit={enviar} className="form-container" ref={formRef}>
+        <div className="form-group">
+          <label htmlFor="nombre">Nombre</label>
+          <input id="nombre" type="text" ref={nombre} required />
+        </div>
 
-      <div className="form-group">
-        <label htmlFor="apellido">Apellido</label>
-        <input id="apellido" type="text" ref={apellido} required />
-      </div>
+        <div className="form-group">
+          <label htmlFor="apellido">Primer Apellido</label>
+          <input id="apellido" type="text" ref={apellido} required />
+        </div>
 
-      <div className="form-group">
-        <label htmlFor="apellido2">Segundo Apellido</label>
-        <input id="apellido2" type="text" ref={apellido2} />
-      </div>
+        <div className="form-group">
+          <label htmlFor="apellido2">Segundo Apellido</label>
+          <input id="apellido2" type="text" ref={apellido2} />
+        </div>
 
-      <div className="form-group">
-        <label htmlFor="correo">Correo</label>
-        <input id="correo" type="email" ref={correo} required />
-      </div>
+        <div className="form-group">
+          <label htmlFor="correo">Correo</label>
+          <input id="correo" type="email" ref={correo} required />
+        </div>
 
-      <div className="form-group">
-        <label htmlFor="caridad">Cantidad a donar</label>
-        <input id="caridad" type="number" ref={caridad} min="0" step="0.01" required />
-      </div>
+        <div className="form-group">
+          <label htmlFor="caridad">Cantidad a donar</label>
+          <input id="caridad" type="number" ref={caridad} min="0" step="0.01" required />
+        </div>
 
-      <div className="form-group">
-        <label htmlFor="telefono">Número de teléfono</label>
-        <input id="telefono" type="tel" ref={telefono} pattern="[0-9]{10}" required />
-      </div>
+        <div className="form-group">
+          <label htmlFor="telefono">Número de teléfono</label>
+          <input id="telefono" type="tel" ref={telefono} pattern="[0-9]{10}" required />
+        </div>
 
-      <div className="form-group">
-        <label htmlFor="observacion">Observación</label>
-        <textarea id="observacion" ref={observacion}></textarea>
-      </div>
+        <div className="form-group">
+          <label htmlFor="observacion">Observación</label>
+          <textarea id="observacion" ref={observacion}></textarea>
+        </div>
 
-      <div className="form-group">
-        <label htmlFor="consentimiento">
-          <input id="consentimiento" type="checkbox" ref={consentimiento} required />
-          Doy mi consentimiento a los términos y condiciones.
-        </label>
-      </div>
+        <div className="form-group">
+          <label htmlFor="consentimiento">
+            <input id="consentimiento" type="checkbox" ref={consentimiento} required />
+            Doy mi consentimiento a los términos y condiciones.
+          </label>
+        </div>
 
-      <button type="submit" className="submit-button">Enviar</button>
-    </form>
+        <button type="submit" className="submit-button">Enviar</button>
+      </form>
+
+      <EnvioDonativoModal isOpen={modalAbierto} onClose={modalCerrar} />
+    </div>
   );
 };
 

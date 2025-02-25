@@ -59,9 +59,7 @@ body {
     position: relative;
     overflow: hidden;
     width: 100vw;
-    /* Ancho completo de la ventana gráfica */
     height: 100vh;
-    /* Altura completa de la ventana gráfica */
 }
 
 .defenred-gallery-container {
@@ -72,33 +70,23 @@ body {
 
 /* Configuración de las imágenes individuales de la galería */
 .gallery-item {
-    /* Mantener la relación de aspecto y cubrir el espacio */
     object-fit: cover;
-    /* Posicionar imágenes absolutamente */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* Asegurar que las imágenes estén detrás de los controles */
     z-index: 1;
     opacity: 0;
-    /* Iniciar con un ligero zoom-in */
     transform: scale(2.0);
-    /* Transiciones suaves para opacidad y zoom-out */
     transition: opacity 3s ease, transform 2s ease;
-    /* Ocultar imágenes inicialmente */
     visibility: hidden;
 }
 
 .gallery-item.active {
-    /* Totalmente visible */
     opacity: 1;
-    /* Hacerla visible cuando está activa */
     visibility: visible;
-    /* Aplicar efecto de zoom-out */
     transform: scale(1.0);
-    /* Escala normal (sin zoom) */
 }
 /*Sección de los textos sobre la imagen*/
 .image-text {

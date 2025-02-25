@@ -6,6 +6,8 @@
     --blue: rgb(12, 53, 67);
     --gray: rgb(217, 217, 217);
 }
+
+/* Contenedor principal del footer */
 .footerContainer {
     width: 100%;
     padding: 20px;
@@ -14,6 +16,8 @@
     background-color: var(--blue);
     color: var(--white);
 }
+
+/* Contenedor para la imagen y el contenido */
 .footerContent {
     display: flex;
     flex-direction: row;
@@ -23,8 +27,9 @@
     margin: 0 auto;
 }
 
+/* Estilos para la imagen */
 .footerImage img {
-    width: 300px;  
+    width: 300px; 
     height: auto;
     border-radius: 10px;
     border: 2px solid var(--white);
@@ -35,6 +40,7 @@
     transform: scale(1.05);
 }
 
+/* Contenedor para el texto y los iconos */
 .footerText {
     flex: 1;
     display: flex;
@@ -42,6 +48,7 @@
     gap: 15px;
 }
 
+/* Estilos para los iconos sociales */
 .socialIcons {
     display: flex;
     gap: 15px;
@@ -57,11 +64,14 @@
 .socialIcons a:hover {
     color: var(--orange);
 }
+
+/* Estilos para el texto del footer */
 .footer-disclaimer {
     font-size: 0.9rem;
     line-height: 1.6;
     text-align: center;
     font-style: italic;
+    font-weight: bold;
 }
 .footer-disclaimer:hover{
     color: var(--orange);
@@ -91,7 +101,7 @@
 .footer-links2:hover{
     color: var(--orange);
 }
-
+/* Estilos responsivos para móviles */
 @media (max-width: 768px) {
     .footerContent {
         flex-direction: column;

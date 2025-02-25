@@ -10,7 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*ARREGLAR LA PUTA BARRA*/
 .navbar {
   display: flex;
   position: sticky;
@@ -24,7 +23,8 @@ html {
   align-items: center;
   background-color: var(--blue);
   z-index: 1000;
-  transition: background-color 0.3s ease, opacity 0.3s ease;
+  transition: all ease 0.3s;
+  padding: 0 20px;
 }
 
 .navbar.scrolled {
@@ -97,4 +97,82 @@ html {
   background-color: var(--orange);
   color: var(--white);
   font-weight: bold;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 24px;
+  cursor: pointer;
+}
+/*Tamaño de móvil*/
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar-logo img {
+    width: 120px;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    background-color: var(--blue);
+    padding: 10px 0;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-item a {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: none;
+  }
+
+  .dropdown-item a {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo img {
+    width: 100px;
+  }
+
+  .navbar-item a {
+    font-size: 18px;
+  }
+
+  .dropdown-item a {
+    font-size: 14px;
+  }
 }

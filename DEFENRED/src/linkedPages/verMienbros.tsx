@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Usuario from "../Usuario";
+import Footer from "./subLinked/Footer";
 import "./subLinked/css_sub/usuarioData.css";
 
 const VerMienbros = () => {
@@ -25,28 +26,28 @@ const VerMienbros = () => {
       .catch((error) => {
         console.error("Error al obtener los usuarios:", error);
       });
-  }, []); // Ejecutar solo una vez al montar el componente
+  }, []);
 
   return (
-    <>
-      <header></header>
-      <section className="grid tres">
-        <h1 className="title-mienbros-data">Usuarios afiliados a Defenred</h1>
-        {data.map((usuario) => (
-          <Usuario
-            key={usuario._id}
-            id={usuario._id}
-            nombre={usuario.nombre}
-            apellido={usuario.apellido}
-            apellido2={usuario.apellido2}
-            birthdate={usuario.birthdate}
-            correo={usuario.correo}
-            telefono={usuario.telefono}
-            consentimiento={usuario.consentimiento}
-          />
-        ))}
+      <section>
+        <div className="usuario-data-container">
+          <h1 className="title-mienbros-data">Usuarios afiliados a Defenred</h1>
+          {data.map((usuario) => (
+            <Usuario
+              key={usuario._id}
+              id={usuario._id}
+              nombre={usuario.nombre}
+              apellido={usuario.apellido}
+              apellido2={usuario.apellido2}
+              birthdate={usuario.birthdate}
+              correo={usuario.correo}
+              telefono={usuario.telefono}
+              consentimiento={usuario.consentimiento}
+            />
+          ))}
+        </div>
+      <Footer />
       </section>
-    </>
   );
 };
 

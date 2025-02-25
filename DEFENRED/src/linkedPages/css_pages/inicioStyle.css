@@ -169,7 +169,7 @@
   font-weight: 400;
   width: 100%;
   text-indent: 10px; 
-  line-height: 25px; 
+  line-height: 1.5; 
   font-size: clamp(0.9rem, 2vw, 1.1rem); 
   padding: 15px; 
   background-color: var(--white);

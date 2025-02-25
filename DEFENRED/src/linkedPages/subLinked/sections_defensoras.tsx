@@ -28,7 +28,7 @@ const sec_defensoras = () => {
                         <img  className="defenredTrain" src={defenredTrain} alt="Reunión Defenred" />
                     </div>
                     <div className="section-defensoras">
-                        <img className="defenredTeam" src={defenredTeam} alt="Reunión Defenred" />
+                    <img className="defenredTeam" src={defenredTeam} alt="Reunión Defenred" />
                         <p>La <span className="keywords-defensoras">Casa de Respiro</span> planea compartir más experiencias de <span className="keywords-defensoras">defensores</span> de derechos humanos en su página web, para dar visibilidad a sus historias y proyectos, y concienciar al público sobre la importancia de esta labor colectiva. Este lugar nos recuerda que la lucha por los <span className="keywords-defensoras">derechos humanos</span> es más efectiva cuando se realiza de forma colectiva. <span className="section-defensoras-quote">Aquí, cada persona y grupo pueden seguir fortaleciendo su trabajo en defensa de los <span className="keywords-defensoras">derechos</span>  fundamentales en sus comunidades.</span>
                         </p>
                     </div>

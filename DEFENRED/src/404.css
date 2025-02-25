@@ -1,0 +1,37 @@
+:root {
+    --orange: rgb(240, 101, 0);
+    --white: rgb(230, 229, 229);
+    --black: rgb(34, 34, 34);
+    --blue: rgb(12, 53, 67);
+    --gray: rgb(217, 217, 217);
+}
+.notFound-container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+.notFound-container img{
+    max-width: 300px;
+    height: auto;
+}
+.notFound-container h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2rem;
+    color: var(--black);
+}
+.notFound-container h1:hover{
+    color: var(--orange);
+}
+.notFound-container p{
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.notFound-container p:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}

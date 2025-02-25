@@ -1,51 +1,89 @@
 :root {
-    --orange: rgb(240, 101, 0);
-    --white: rgb(230, 229, 229);
-    --black: rgb(34, 34, 34);
-    --blue: rgb(12, 53, 67);
-    --gray: rgb(217, 217, 217);
+  --orange: rgb(240, 101, 0);
+  --white: rgb(230, 229, 229);
+  --black: rgb(34, 34, 34);
+  --blue: rgb(12, 53, 67);
+  --gray: rgb(217, 217, 217);
 }
-.form-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    border: 1px solid;
-    border-radius: 8px;
-    background-color: var(--white);
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .form-group label {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .form-group input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .submit-button {
-    padding: 10px 20px;
-    background-color: var(--blue);
-    color: var(--white);
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-button:hover {
-    background-color: var(--orange);
-  }
+
+.background-container-altaUsuario {
+  background-image: url(/src/assets/img/grayFlower_background.jpg);
+  max-height: 100%;
+}
+
+.container-altaUsuario {
+  padding: 30px;
+}
+
+.title-altaUsuario {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: var(--white);
+  background-color: var(--blue);
+  font-style: italic;
+  font-size: 3rem;
+  padding: 10px;
+  margin: 30px 420px;
+  border-radius: 20px;
+  border: groove;
+
+  transition: all ease 0.5s;
+}
+.title-altaUsuario:hover {
+  background-color: var(--orange);
+}
+
+.form-container-altaUsuario {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 400;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border: 1px solid;
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.form-group-alta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group-alta label {
+  font-weight: bold;
+  color: var(--black);
+}
+
+.form-group-alta input {
+  padding: 8px;
+  border: groove var(--white);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all ease 0.5s;
+}
+
+.form-group-alta input:focus {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--orange);
+}

@@ -1,5 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
+/*Biblioteca especializada 'react-helmet' */
+/*Instalar con 'npm install react-helmet-async' */
+import { HelmetProvider } from "react-helmet-async";
 import Navtab from "./componentes/navTab";
 import Index from "./index";
 import Defenred from "./linkedPages/defenred";
@@ -11,6 +14,7 @@ import SectionDefensoras from "./linkedPages/subLinked/sections_defensoras";
 // Componentes 'admin'
 import AltaUsuario from "./linkedPages/subLinked/altaUsuario"; 
 import VerMienbros from "./linkedPages/verMienbros";
+import VerDonativos from "./linkedPages/verDonativos";
 
 import NotFound from "./404";
 
@@ -22,7 +26,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 const App: React.FC = () => {
   return (
-    <>
+    <HelmetProvider>
     <div id="root">
     <ParallaxProvider>
         <section>
@@ -51,15 +55,16 @@ const App: React.FC = () => {
               <Route path="/formulario" element={<Formulario />} />
               {/* Página para ver usuarios */}
               <Route path="/verMienbros" element={<VerMienbros />} />
+              {/* Página para ver donativos */}
+              <Route path="/verDonativos" element={<VerDonativos />} />
               {/* Página de error 404*/}
-              <Route path="/404" element={<NotFound/>}/>
+              <Route path="*" element={<NotFound/>}/>
             </Routes>
           </BrowserRouter>
         </section>
       </ParallaxProvider>
     </div>
-      
-    </>
+    </HelmetProvider>
   );
 };
 
