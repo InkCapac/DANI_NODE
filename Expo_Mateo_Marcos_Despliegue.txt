@@ -1,5 +1,0 @@
-SOBRE EL TEMA -RAILWAY-:
-(5 diapositivas)
-- PRECIO
-- Que nos deja hacer en la versión gratuita
-- Hacer un despliegue(en directo) subiendo una pagina a la plataforma indicada

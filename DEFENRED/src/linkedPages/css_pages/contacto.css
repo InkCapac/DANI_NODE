@@ -83,7 +83,7 @@
     }
 }
 
-/* Media queries para dispositivos muy pequeños (ej. smartphones pequeños) */
+/* Media queries para dispositivos muy pequeños*/
 @media (max-width: 480px) {
     .contact-title {
         font-size: 1.2rem;
